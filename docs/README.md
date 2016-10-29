@@ -1,4 +1,4 @@
-Heroku link:
+Heroku link: https://air-got.herokuapp.com/
 
 Minimum Viable Product
 
@@ -24,6 +24,19 @@ Sample State
 Implementation Timeline
 
 Phase 1: Backend setup and Front End User Authentication (2 days)
-Objective: Functioning rails project with front-end Authentication plus seed data
+Objective: Functioning rails project with front-end Authentication
 
-Phase 2: 
+Phase 2: Places Model, API, and Components (2 days)
+Objective: Places can be created, viewed, edited and deleted. Place seed data complete.
+
+Phase 3: Bookings Model, API, and Components (2 days)
+Objective: Bookings can be made, viewed, edited and deleted. Booking seed data complete.
+
+Phase 4: Searchable Map (1 day)
+Objective: A map can be viewed and used to filter places in a search.
+
+Phase 5: Reviews Model, API, and Components (1 day)
+Objective: Reviews can be created, viewed, and deleted all on the place page. Review seed data complete.
+
+Phase 6: User Model, API, and Components (2 days)
+Objective: Users will have a profile page that can be viewed and edited. User seed data complete. Places will have a user as a host.
