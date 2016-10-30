@@ -14,7 +14,9 @@
 
 **PlacesItemContainer**
   - Place
+  - NewBookingForm
   - ReviewsIndex
+  - NewReviewForm
 
 **SearchResultsContainer**
   - Search
@@ -23,19 +25,8 @@
 **BookingsContainer**
   - BookingsIndex
 
-**BookingsItemContainer**
-  - Booking
-
-**NewEditBookingContainer**
-  - NewEditBookingForm
-
-**NewReviewContainer**
-  - NewReviewForm
-
-**NewEditPlaceContainer**
-  - NewEditPlaceForm
-
-**EditUserContainer**
+**UsersContainer**
+  - User
   - EditUserForm
 
 ## Routes  
@@ -44,11 +35,6 @@
 - "/home" - "HomeContainer"
 - "/home/search" - "SearchResultsContainer"
 - "home/places/:placeId" - "PlacesItemContainer"
-- "home/myBookings" - "BookingsContainer"
-- "home/myBookings/:bookingId" - "BookingsItemContainer"
-- "new-place" - "NewEditPlaceContainer"
-- "edit-place" - "NewEditPlaceContainer"
-- "new-booking" - "NewEditBookingContainer"
-- "edit-booking" - "NewEditBookingContainer"
-- "new-review" - "NewEditReviewContainer"
-- "edit-profile" - "EditUserContainer"
+- "home/bookings" - "BookingsContainer"
+- "home/profile" - "UsersContainer"
+- "home/profile-edit" - "EditUserForm"

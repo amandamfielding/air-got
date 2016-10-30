@@ -22,9 +22,10 @@
       latitude: 5.23,
       longitude 156.57,
       number_rooms: 24,
-      number_bathrooms: 8,
       number_beds: 32,
-      max_guests: 40
+      max_guests: 40,
+      property_type: "palace",
+      house_rules: "no fighting with the King's Guard"
       bookings: {
         1: {
           user_id: 1,
@@ -39,8 +40,7 @@
           body: "awesome place",
           author_id: 1,
           place_id: 1,
-          number_of_stars: 5,
-          date: 11/4/2016
+          number_of_stars: 5
         }
       }
     }
@@ -49,7 +49,6 @@
     1: {
       name: "Cersei Lannister",
       username: "queenC",
-      email_address: "iheartpower@lannister.com",
       profile_description: "I kill everyone",
       image_url: ""
     }
