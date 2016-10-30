@@ -1,7 +1,10 @@
 # AirGoT
-[https://air-got.herokuapp.com/][heroku]
+[Heroku link][heroku]
 
 [Trello link][trello]
+
+[heroku]: https://air-got.herokuapp.com/
+[trello]: https://trello.com/b/qLFXvUUM/airgot
 
 ## Minimum Viable Product
 
