@@ -20,11 +20,11 @@ AirGoT is a Game of Thrones style web application inspired by AirBnB. By the end
 - [ ] Production README
 
 ## Design Docs
-*[View Wireframes][wireframes]
-*[React Components][components]
-*[API endpoints][api-endpoints]
-*[DB schema][schema]
-*[Sample State][sample-state]
+* [View Wireframes][wireframes]
+* [React Components][components]
+* [API endpoints][api-endpoints]
+* [DB schema][schema]
+* [Sample State][sample-state]
 
 [wireframes]: docs/wireframes
 [components]: docs/component-hierarchy.md
