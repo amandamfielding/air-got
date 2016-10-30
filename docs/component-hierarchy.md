@@ -4,8 +4,13 @@
   - AuthForm
 
 **HomeContainer**
-  - Home
   - Header
+    Home
+    RegionsContainer
+    Footer
+
+**RegionsContainer**
+  - RegionsIndex
 
 **PlacesItemContainer**
   - Place
