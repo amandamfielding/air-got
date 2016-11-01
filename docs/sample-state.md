@@ -25,16 +25,7 @@
       number_beds: 32,
       max_guests: 40,
       property_type: "palace",
-      house_rules: "no fighting with the King's Guard"
-      bookings: {
-        1: {
-          user_id: 1,
-          place_id: 1,
-          check_in_date: 11/1/2016,
-          check_out_date: 11/3/2016,
-          number_of_guests: 14
-        }
-      },
+      house_rules: "no fighting with the King's Guard",
       reviews: {
         1: {
           body: "awesome place",
@@ -45,12 +36,22 @@
       }
     }
   },
+  bookings: {
+    1: {
+      user_id: 1,
+      place_id: 1,
+      check_in_date: 11/1/2016,
+      check_out_date: 11/3/2016,
+      number_of_guests: 14
+    }
+  },
   users: {
     1: {
       name: "Cersei Lannister",
       username: "queenC",
       profile_description: "I kill everyone",
-      image_url: ""
+      image_url: "",
+      house: "Lannister"
     }
   }  
 }

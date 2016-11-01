@@ -26,11 +26,11 @@
 - `DELETE /api/places/:id`
 
 ### Bookings
-- `GET /api/places/:id/bookings`
-- `POST /api/places/:id/bookings`
-- `GET /api/places/:id/bookings/:id`
-- `PATCH /api/places/:id/bookings/:id`
-- `DELETE /api/places/:id/bookings/:id`
+- `GET /api/bookings`
+- `POST /api/bookings`
+- `GET /api/bookings/:id`
+- `PATCH /api/bookings/:id`
+- `DELETE /api/bookings/:id`
 
 ### REVIEWS
 - a place's reviews will be included in the place show page
