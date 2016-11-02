@@ -26,14 +26,14 @@
       max_guests: 40,
       property_type: "palace",
       house_rules: "no fighting with the King's Guard",
-      reviews: {
-        1: {
-          body: "awesome place",
-          author_id: 1,
-          place_id: 1,
-          number_of_stars: 5
-        }
-      }
+    }  
+  },
+  reviews: {
+    1: {
+      body: "awesome place",
+      author_id: 1,
+      place_id: 1,
+      number_of_stars: 5
     }
   },
   bookings: {

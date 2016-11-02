@@ -1,9 +1,12 @@
 import React from 'react';
+import HeaderLoggedOut from './headers/header_logged_out';
+import Footer from './footer/footer';
 
 const App = ({ children }) => (
   <div>
-    <h1>AirGoT</h1>
+    <HeaderLoggedOut />
     {children}
+    <Footer />
   </div>
 );
 

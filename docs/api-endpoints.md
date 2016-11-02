@@ -34,8 +34,8 @@
 
 ### REVIEWS
 - a place's reviews will be included in the place show page
-- `GET /api/places/:id/reviews`
-- `POST /api/places/:id/reviews`
-- `GET /api/places/:id/reviews/:id`
-- `PATCH /api/places/:id/reviews/:id`
-- `DELETE /api/places/:id/reviews/:id`
+- `GET /api/reviews`
+- `POST /api/reviews`
+- `GET /api/reviews/:id`
+- `PATCH /api/reviews/:id`
+- `DELETE /api/reviews/:id`

@@ -41,13 +41,13 @@ AirGoT is a Game of Thrones style web application inspired by AirBnB. By the end
 **Objective:** Places can be viewed. Place seed data complete.
 
 ### Phase 3: Bookings Model, API, and Components (2 days)
-**Objective:** Bookings can be made, viewed, and deleted. Booking seed data complete.
+**Objective:** Bookings can be made, edited, viewed, and deleted. Booking seed data complete.
 
 ### Phase 4: Searchable Map (1 day)
 **Objective:** A map can be viewed and used to filter places in a search.
 
 ### Phase 5: Reviews Model, API, and Components (1 day)
-**Objective:** Reviews can be created and viewed on the place page. Review seed data complete.
+**Objective:** Reviews can be created, deleted, edited, and viewed on the place page. Review seed data complete.
 
 ### BONUS: Phase 6: User Model, API, and Components (2 days)
 **Objective:** Users will have a profile page that can be viewed and edited. User seed data complete. Places will have a user as a host.

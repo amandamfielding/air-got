@@ -1,0 +1,78 @@
+.form-box {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.form {
+  margin: 30px;
+}
+
+.errors {
+  color: red;
+  border: none;
+  background-color: white;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  margin-bottom: 15px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+span {
+  color: red;
+}
+
+.button-box {
+  display: flex;
+  margin-top: 15px;
+}
+
+.login-button {
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #DE1826;
+  color: white;
+}
+
+.signup-button {
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #DE1826;
+  color: white;
+}
+
+textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#x {
+  float: right;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 1px 5px;
+}
+
+#logo {
+  width: 80px;
+  margin: auto;
+  margin-top: 20px;
+}
