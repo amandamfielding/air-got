@@ -1,8 +1,8 @@
 .footer-box {
- 
+
 }
 
-ul {
+.footer-box ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +12,9 @@ ul {
   font-size: 18px;
 }
 
-li {
+.footer-box ul li {
+  width: 30px;
   margin-left: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

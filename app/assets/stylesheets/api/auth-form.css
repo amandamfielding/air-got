@@ -9,12 +9,21 @@
 
 .form {
   margin: 30px;
+  margin-top: 15px;
 }
 
 .errors {
+  display: block;
+  margin: 0px;
+  font-size: 14px;
   color: red;
   border: none;
   background-color: white;
+  padding: 0px;
+}
+
+.errors li {
+  margin: 0px 30px;
 }
 
 label {
@@ -27,6 +36,7 @@ input {
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
+  width: 305px;
 }
 
 span {
@@ -38,29 +48,20 @@ span {
   margin-top: 15px;
 }
 
-.login-button {
-  margin: 0 auto;
-  font-size: 20px;
-  padding: 10px 20px;
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: #DE1826;
-  color: white;
-}
-
-.signup-button {
-  margin: 0 auto;
-  font-size: 20px;
-  padding: 10px 20px;
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: #DE1826;
-  color: white;
-}
-
 textarea {
   border: 1px solid black;
   border-radius: 5px;
+}
+
+#login-button, #signup-button {
+  width: 60px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #DE1826;
+  color: white;
 }
 
 #x {

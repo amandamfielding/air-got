@@ -1,10 +1,10 @@
 import React from 'react';
-import HeaderLoggedOut from './headers/header_logged_out';
+import Header from './header/header';
 import Footer from './footer/footer';
 
 const App = ({ children }) => (
   <div>
-    <HeaderLoggedOut />
+    <Header />
     {children}
     <Footer />
   </div>

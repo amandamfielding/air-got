@@ -69,7 +69,7 @@ class AuthForm extends React.Component {
 					<img id="logo" src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
 					{this.renderErrors()}
 					<div className="form">
-						<label> Username
+						<label> <span>*</span> Username
 							<br/>
 							<input type="text"
 								value={this.state.username}
@@ -77,7 +77,7 @@ class AuthForm extends React.Component {
 								/>
 						</label>
 						<br/>
-						<label> Password
+						<label> <span>*</span> Password
 							<br/>
 							<input type="password"
 								value={this.state.password}
@@ -86,7 +86,7 @@ class AuthForm extends React.Component {
 						</label>
 						<br/>
 						<div className="button-box">
-							<input className="login-button" type="submit" value="Submit" />
+							<input id="login-button" type="submit" value="Submit" />
 						</div>
 					</div>
 				</form>
@@ -102,7 +102,7 @@ class AuthForm extends React.Component {
 						<img id="logo" src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
 	          {this.renderErrors()}
 	          <div className="form">
-	            <label> Username
+	            <label> <span>*</span> Username
 								<br/>
 	              <input type="text"
 	                value={this.state.username}
@@ -110,7 +110,7 @@ class AuthForm extends React.Component {
 	                />
 	            </label>
 	            <br/>
-	            <label> Password
+	            <label> <span>*</span> Password
 								<br/>
 	              <input type="password"
 	                value={this.state.password}
@@ -118,7 +118,7 @@ class AuthForm extends React.Component {
 	                className="signup-input" />
 	            </label>
 	            <br/>
-	            <label> Name
+	            <label> <span>*</span> Name
 								<br/>
 	              <input type="text"
 	                value={this.state.name}
@@ -136,7 +136,7 @@ class AuthForm extends React.Component {
 	            </label>
 							<br/>
 							<div className="button-box">
-	            	<input className="signup-button" type="submit" value="Submit" />
+	            	<input id="signup-button" type="submit" value="Submit" />
 							</div>
 	          </div>
 	        </form>
