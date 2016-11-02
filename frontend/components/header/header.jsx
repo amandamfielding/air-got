@@ -20,6 +20,7 @@ class Header extends React.Component {
     this.state = { modalIsOpen: false, formType: "login" };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    
   }
 
   openModal(formType) {
