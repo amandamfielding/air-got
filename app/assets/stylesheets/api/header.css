@@ -1,0 +1,130 @@
+.header-box {
+  background-color: #575757;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  opacity: .5;
+}
+
+.nav {
+  display: flex;
+  z-index: 1;
+}
+
+.header-box ul {
+  display: flex;
+  align-items: center;
+  border: none;
+
+}
+
+.header-box li {
+  margin: 5px 12px;
+  list-style: none;
+}
+
+.nav button {
+  margin: 15px 10px 5px 10px;
+  border: 1px solid white;
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: #CC1200;
+  border-radius: 5px;
+  border: 1px solid #575757;
+}
+
+nav .logged-out-button {
+  margin: auto;
+  margin-right: 10px;
+}
+
+.header-box img {
+  width: 60px;
+  margin-left: 15px;
+}
+
+.search {
+  margin-top: 15px;
+  font-size: 18px;
+  background-color: white;
+  color: #DE1826;
+  width: 200px;
+}
+
+.header-list {
+  position: relative;
+}
+
+#user-name {
+  font-size: 20px;
+  margin: auto;
+}
+
+#user-dropdown {
+  position: absolute;
+  background: #fff;
+  display: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+  top: 64px;
+  left: 15px;
+  font-size: 18px;
+}
+
+ul:hover #user-dropdown {
+  display: block;
+}
+
+#logout {
+  cursor: pointer;
+}
+
+#trips {
+  margin: 15px;
+  font-size: 20px;
+  background-color: #CC1200;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+#user-icon {
+  margin: 0px 15px 0px 15px;
+}
+
+#user-icon img {
+  height: 64px;
+  width: 95px;
+  margin-left: 0;
+}
+
+#user-dropdown > li {
+  margin: auto;
+  text-align: center;
+  padding: 7px;
+  border-top: 1px solid #ccc;
+  color: #000;
+}
+
+#user-dropdown > li:hover {
+  background: #eee;
+}
+
+#header-logo {
+  text-align: center;
+}
+
+#title {
+  font-size: 20px;
+  color: white;
+}
+
+#caption {
+  font-size: 14px;
+  color: white;
+}

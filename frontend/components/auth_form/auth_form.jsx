@@ -6,20 +6,12 @@ class AuthForm extends React.Component {
 		super(props);
 		this.state = {
 			username: "",
-			password: ""
+			password: "",
+			name: "",
+			about_me: ""
 		};
 		this.handleLogInSubmit = this.handleLogInSubmit.bind(this);
 		this.handleSignUpSubmit = this.handleSignUpSubmit.bind(this);
-	}
-
-	componentDidUpdate() {
-		this.redirectIfLoggedIn();
-	}
-
-	redirectIfLoggedIn() {
-		if (this.props.loggedIn) {
-			this.props.router.push("/");
-		}
 	}
 
 	update(field) {
@@ -31,19 +23,13 @@ class AuthForm extends React.Component {
 	handleLogInSubmit(e) {
 		e.preventDefault();
 		const user = this.state;
-		this.props.login({user});
+		this.props.login(user);
 	}
 
 	handleSignUpSubmit(e) {
 		e.preventDefault();
 		const user = this.state;
-		this.props.signup({user});
-	}
-
-	componentWillReceiveProps(newProps) {
-		if (newProps.loggedIn) {
-			this.props.closeModal();
-		}
+		this.props.signup(user);
 	}
 
 	renderErrors() {
@@ -115,7 +101,7 @@ class AuthForm extends React.Component {
 	              <input type="password"
 	                value={this.state.password}
 	                onChange={this.update("password")}
-	                className="signup-input" />
+	               	/>
 	            </label>
 	            <br/>
 	            <label> <span>*</span> Name
