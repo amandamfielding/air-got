@@ -1,0 +1,35 @@
+.regions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.region-pic {
+  height: 200px;
+  width: 290px;
+  margin: 7px;
+}
+
+.region-name {
+  color: white;
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  font-size: 30px;
+  text-shadow: 0 0 8px #000000;
+}
+
+.region-element {
+  position: relative;
+}
+
+#regions-title  {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#regions-subtitle  {
+  text-align: center;
+  margin-top: 10px;
+}

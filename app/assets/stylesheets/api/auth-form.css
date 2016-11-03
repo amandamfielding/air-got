@@ -1,6 +1,5 @@
 .form-box {
   border: 1px solid black;
-  border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 0px;
   margin-left: 40px;
@@ -38,7 +37,6 @@ input {
   margin-bottom: 15px;
   font-size: 20px;
   border: 1px solid black;
-  border-radius: 5px;
   padding: 5px;
   width: 305px;
 }
@@ -54,7 +52,6 @@ span {
 
 textarea {
   border: 1px solid black;
-  border-radius: 5px;
 }
 
 #login-button, #signup-button {
@@ -63,17 +60,13 @@ textarea {
   font-size: 20px;
   padding: 10px 20px;
   border: 1px solid white;
-  border-radius: 10px;
   background-color: #DE1826;
   color: white;
 }
 
 #x {
   float: right;
-  border: 1px solid black;
-  border-radius: 2px;
   margin: 5px;
-  padding: 1px 5px;
 }
 
 #logo {

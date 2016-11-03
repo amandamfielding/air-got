@@ -3,21 +3,16 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import Home from './home/home';
+import SearchContainer from './search/search_container';
 
 const Root = ({ store }) => {
-
-  const _redirectIfLoggedIn = (nextState, replace) => {
-    const currentUser = store.getState().session.currentUser;
-    if (currentUser) {
-      replace('/');
-    }
-  };
 
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App}>
-    
+          <IndexRoute component={Home} />
+          <Route path="/search" component={SearchContainer}/>
         </Route>
       </Router>
     </Provider>
