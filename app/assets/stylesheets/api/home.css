@@ -9,12 +9,11 @@
   font-size: 40px;
   text-align: center;
   display: block;
-  position: relative;
 }
 
 .home h2 {
   position: absolute;
-  top: 160px;
+  top: 200px;
   left: 370px;
   font-size: 75px;
 
@@ -22,7 +21,7 @@
 
 .home p {
   position: absolute;
-  top: 230px;
+  top: 270px;
   left: 370px;
   font-size: 45px;
   padding-top: 30px;

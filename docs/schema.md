@@ -24,9 +24,9 @@ lng             | float     | not null, unique, indexed
 lat             | float     | not null, unique, indexed
 description     | text      |
 price_per_night | integer   | not null
-region_id       | string    | not null, foreign_key
-number_rooms    | not null  |
-number_beds     | integer   | not null
+region_id       | integer   | not null, foreign_key
+number_rooms    | integer   | not null
+number_beds     | integer   |
 max_guests      | integer   | not null
 property_type   | string    | not null
 house_rules     | text      |
@@ -42,19 +42,25 @@ id              | integer   | not null, primary key
 name            | string    | not null
 image_url       | string    | not null
 
-## images
+- associations: regions will have many places
+
+## place_images
 column name     | data type | details
 ----------------|-----------|--------------------------------
 id              | integer   | not null, primary key
 place_id        | integer   | not null, foreign key
 url             | string    | not null
 
+- associations: place images will belong to a place
+
 ## allegiances
 column name     | data type | details
 ----------------|-----------|--------------------------------
 id              | integer   | not null, primary key
-house_name            | string    | not null
+house_name      | string    | not null
 flag_image_url  | string    |
+
+- associations: allegiances will have many users and places
 
 ## bookings
 column name     | data type | details

@@ -4,19 +4,17 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  opacity: .5;
+  opacity: .9;
 }
 
 .nav {
   display: flex;
-  z-index: 1;
 }
 
 .header-box ul {
   display: flex;
   align-items: center;
   border: none;
-
 }
 
 .header-box li {
@@ -77,7 +75,7 @@ nav .logged-out-button {
   font-size: 18px;
 }
 
-ul:hover #user-dropdown {
+.header-list:hover #user-dropdown {
   display: block;
 }
 
@@ -121,10 +119,17 @@ ul:hover #user-dropdown {
 
 #title {
   font-size: 20px;
-  color: white;
+  font-family: 'Cinzel Decorative';
+  font-weight: 700;
+  color: #CC1200;
+}
+
+#first-little, #second-little {
+  font-size: 16px;
+  color: #CC1200;
 }
 
 #caption {
   font-size: 14px;
-  color: white;
+  color: #CC1200;
 }

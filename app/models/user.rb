@@ -19,6 +19,9 @@ class User < ActiveRecord::Base
   validates :password, length: {minimum:6, allow_nil: true}
   validates :username, :session_token, uniqueness: true
 
+  belongs_to :allegiance
+  has_many :places
+
   after_initialize :ensure_token
 
   def self.find_by_credentials(username,password)

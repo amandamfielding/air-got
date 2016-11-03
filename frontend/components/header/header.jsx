@@ -97,7 +97,7 @@ class Header extends React.Component {
             <img src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/></a>
             <li id="header-logo">
               <a href="#">
-              <span id="title">AirGoT</span> <br/>
+              <span id="title">A<span id="first-little">ir</span>G<span id="second-little">o</span>T</span> <br/>
               <span id="caption">A Game of Thrones AirBnB</span></a>
             </li>
             <input className="search" type="text" placeholder="Search"></input>
@@ -108,6 +108,5 @@ class Header extends React.Component {
     );
   }
 }
-
 
 export default Header;
