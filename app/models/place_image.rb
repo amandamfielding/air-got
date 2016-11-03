@@ -7,6 +7,7 @@
 #  url        :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  caption    :string
 #
 
 class PlaceImage < ActiveRecord::Base
