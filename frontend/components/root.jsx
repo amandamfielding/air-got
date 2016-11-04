@@ -14,7 +14,7 @@ const Root = ({ store }) => {
         <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="/search" component={SearchContainer}/>
-          <Route path="/places/:id" component={PlaceShowContainer}/>
+          <Route path="/places/:placeId" component={PlaceShowContainer}/>
         </Route>
       </Router>
     </Provider>

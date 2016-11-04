@@ -5,7 +5,7 @@ const PlacesReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type){
     case RECEIVE_PLACES:
-      return action.benches;
+      return action.places;
     case RECEIVE_PLACE:
       const newPlace = {[action.place.id]: action.place};
       return merge({}, state, newPlace);

@@ -1,10 +1,9 @@
 .header-box {
-  background-color: #575757;
+  background-color: rgba(114,127,138,0.7);
   color: white;
   display: flex;
   justify-content: space-between;
   position: relative;
-  opacity: .9;
 }
 
 .nav {

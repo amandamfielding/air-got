@@ -2,8 +2,7 @@ import React from 'react';
 import PlaceIndexItem from './place_index_item';
 
 const PlaceIndex = ({ places }) => (
-  <div>
-    <h1>Listings: </h1>
+  <div className="place-index">
        {places.map(place => (
          <PlaceIndexItem place={place} key={place.id} />
        ))}
