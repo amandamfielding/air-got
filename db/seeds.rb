@@ -139,8 +139,8 @@ region12 = Region.create!(name:"The Vale of Arryn",image_url:"http://res.cloudin
 # allegiance11 = Allegiance.create!(house_name:"Bolton",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144982/flags/real_bolton.png")
 # allegiance12 = Allegiance.create!(house_name:"Martell",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144983/flags/house_martell.png")
 
-# booking1 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)
-# booking2 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)
+booking1 = Booking.create!(place_id:1,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 30),number_of_guests:30)
+booking2 = Booking.create!(place_id:3,user_id:2,check_in_date:DateTime.new(2005, 3, 22),check_out_date:DateTime.new(20013, 10, 1),number_of_guests:1)
 # booking3 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)
 # booking4 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)
 # booking5 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)

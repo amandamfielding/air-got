@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161105173224) do
+ActiveRecord::Schema.define(version: 20161105214251) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 20161105173224) do
     t.string   "flag_image_url", null: false
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+  end
+
+  create_table "bookings", force: :cascade do |t|
+    t.integer  "place_id",         null: false
+    t.integer  "user_id",          null: false
+    t.date     "check_in_date",    null: false
+    t.date     "check_out_date",   null: false
+    t.integer  "number_of_guests", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "place_images", force: :cascade do |t|

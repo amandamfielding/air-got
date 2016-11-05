@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
 
   belongs_to :allegiance
   has_many :places
+  has_many :bookings
   has_many :reviews,
     primary_key: :id,
     foreign_key: :author_id,

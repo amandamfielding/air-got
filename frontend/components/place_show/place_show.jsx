@@ -3,8 +3,9 @@ import { withRouter } from 'react-router';
 import ReviewsContainer from '../reviews/reviews_container';
 
 class Place extends React.Component {
-  constructor(props) {
-    super(props);
+
+  componentDiDMount() {
+    this.props.fetchReviews();
   }
 
   handleProfileClick() {
@@ -13,8 +14,8 @@ class Place extends React.Component {
   }
 
   render() {
-    const { host, description, region, price_per_night, title, max_guests, stars, number_rooms, number_beds, property_type, place_images, house_rules } = this.props.place;
-    if (host){
+    const { host, reviews, description, region, price_per_night, title, max_guests, stars, number_rooms, number_beds, property_type, place_images, house_rules } = this.props.place;
+    if (host && reviews) {
       return (
         <div className="place-show">
           <div className="pics">
@@ -95,7 +96,8 @@ class Place extends React.Component {
             </div>
             <div className="Reviews">
               <h2>Reviews</h2>
-              <ReviewsContainer place={this.props}/>
+              <ReviewsContainer
+                reviews={reviews}/>
             </div>
           </div>
         </div>

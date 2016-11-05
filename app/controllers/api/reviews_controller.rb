@@ -8,15 +8,16 @@ class Api::ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.author = current_user
     if @review.save!
-      render "api/reviews/show"
+      render "api/reviews"
     else
-      render json: @review.errors.full_messages
+      render json: @review.errors.full_messages, status:422
     end
   end
 
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
+    render 'api/reviews'
   end
 
   private

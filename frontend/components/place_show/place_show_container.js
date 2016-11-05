@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import Place from './place_show';
 import { requestPlace } from '../../actions/place_actions';
+import { fetchReviews } from '../../actions/reviews_actions';
 import { selectPlace } from '../../reducers/selectors';
-
 
 const mapStateToProps = (state, { params }) => {
   const placeId = parseInt(params.placeId);
@@ -13,10 +13,11 @@ const mapStateToProps = (state, { params }) => {
   };
 };
 
-const mapDispatchToProps = dispatch => ({
-  requestPlace: id => dispatch(requestPlace(id))
+const mapDispatchToProps = (dispatch) => ({
+  fetchReviews: () => dispatch(fetchReviews()),
 });
 
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Place);
