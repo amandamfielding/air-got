@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resources :allegiances, only: [:index]
     resources :places
     resources :place_images, only: [:index]
+    resources :reviews, only: [:index,:create,:destroy]
+    resources :bookings, only: [:index,:create,:update,:destroy]
   end
   root "static_pages#root"
 end

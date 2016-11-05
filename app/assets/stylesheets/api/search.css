@@ -11,40 +11,44 @@
   height: 500px;
   overflow-y: scroll;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .place-index-item {
-  cursor: pointer;
-  margin: 20px;
+  margin: 15px 15px 0px 15px;
 }
 
 .place-and-host {
   position: relative;
+  margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .place-pic {
-  width: 280px;
-  height: 180px;
+  width: 285px;
+  height: 185px;
 }
 
 .index-item-title {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .place-details {
   display: flex;
   color: rgb(160,0,17);
+  position: relative;
 }
 
 .index-item-value {
-  margin: 5px 5px 5px 0px;
+  margin: 2px 5px 5px 0px;
+  padding-right: 5px;
 }
 
 .host-pic {
-  width: 10%;
+  width: 27%;
   position: absolute;
-  left: 260px;
-  bottom: -10px;
+  left: 225px;
+  bottom: -20px;
 }
 
 .host-pic-button {
@@ -59,4 +63,17 @@
   background-color: rgb(248,239,204);
   color: rgb(160,0,17);
   padding: 5px 10px;
+}
+
+#rating {
+  position: absolute;
+  top: -4px;
+}
+
+.host-pic-button:hover {
+  box-shadow: 0 0 6px #000000;
+}
+
+.place-pic:hover {
+  box-shadow: 0 0 8px #000000;
 }

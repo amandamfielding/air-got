@@ -68,7 +68,7 @@ nav .logged-out-button {
   z-index: 10;
   top: 64px;
   left: 15px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .header-list:hover #user-dropdown {
@@ -92,7 +92,7 @@ nav .logged-out-button {
 
 #user-icon img {
   height: 64px;
-  width: 95px;
+  width: 70px;
   margin-left: 0;
 }
 
@@ -128,4 +128,8 @@ nav .logged-out-button {
 #caption {
   font-size: 14px;
   color: #CC1200;
+}
+
+#header-logo:hover {
+  text-shadow: 0 0 4px white;
 }

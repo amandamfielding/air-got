@@ -1,0 +1,131 @@
+.place-show {
+
+}
+
+.text {
+  margin: 15px;
+}
+
+.header-text {
+  margin: 10px;
+}
+
+.place-images {
+  overflow: auto;
+  display: flex;
+  overflow-y: hidden;
+  height: 360px;
+}
+
+.place-image {
+  width: 700px;
+}
+
+.show-place-categories {
+  display: flex;
+}
+
+.show-host-info {
+  font-size: 20px;
+  position: relative;
+  justify-content: center;
+}
+
+.show-host-info span {
+  font-size: 16px;
+  display: inline;
+}
+
+.show-host-pic {
+  width: 75px;
+  position: absolute;
+  left: -15px;
+  bottom: -60px;
+}
+
+.show-host-pic-button {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.show-place-details {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.show-place-details li {
+  margin: 10px;
+}
+
+#show-rating {
+  position: absolute;
+  top: 3px;
+}
+
+.show-about {
+  margin-top: 50px;
+}
+
+p {
+  margin-top: 15px;
+}
+
+.make-booking-box {
+  display: inline;
+  background-color: rgb(221,203,142);
+  padding: 20px;
+  margin: 15px;
+  position: absolute;;
+  right: -6px;
+  bottom: -70px;
+  flex-direction: column;
+  width: 380px;
+}
+
+.make-booking-box form {
+  margin: 0px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-price {
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.booking-input {
+  width: 170px;
+  font-size: 16px;
+}
+
+.dates {
+  font-size: 18px;
+}
+
+.make-booking-box .submit-booking {
+  margin: 0 auto;
+  width: 136px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.num-guests select {
+  margin-left: 10px;
+}
+
+.booking-category {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.dates {
+  display: flex;
+}
+
+.num-guests {
+  margin: auto;
+}

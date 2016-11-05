@@ -1,6 +1,6 @@
 import React from 'react';
 import PlaceIndex from './place_index';
-import Map from '../map';
+import Map from '../got_map';
 
 const Search = ({places}) => (
   <div className="search-pane group">

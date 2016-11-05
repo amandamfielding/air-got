@@ -21,6 +21,10 @@ class User < ActiveRecord::Base
 
   belongs_to :allegiance
   has_many :places
+  has_many :reviews,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Review
 
   after_initialize :ensure_token
 
