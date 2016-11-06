@@ -3,11 +3,16 @@
 }
 
 .text {
-  margin: 15px;
+  margin: 20px 20px 20px 80px;
+  width: 60%;
+  position: relative;
+  height: 500px;
+  overflow: scroll;
 }
 
 .header-text {
-  margin: 10px;
+  height: 100px;
+  position: relative;
 }
 
 .place-images {
@@ -21,67 +26,97 @@
   width: 700px;
 }
 
-.show-place-categories {
-  display: flex;
-}
-
 .show-host-info {
-  font-size: 20px;
-  position: relative;
-  justify-content: center;
+  position: absolute;;
+  left: 30px;
 }
 
 .show-host-info span {
-  font-size: 16px;
-  display: inline;
+  position: absolute;
+  top: 120px;
+  left: -15px;
+  font-size: 20px;
+  width: 150px;
 }
 
 .show-host-pic {
-  width: 75px;
+  width: 100px;
   position: absolute;
-  left: -15px;
-  bottom: -60px;
+  left: 5px;
+  top: 15px;
 }
 
 .show-host-pic-button {
   width: 100%;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.show-host-pic-button:hover {
+  box-shadow: 0 0 8px #000000;
+}
+
+.show-place-categories {
+  list-style: none;
+  position: absolute;
+  left: 250px;
+}
+
+.show-place-categories h3 {
+  margin: 10px 0 20px 0;
 }
 
 .show-place-details {
   display: flex;
-  list-style: none;
-  position: relative;
+  justify-content: center;
+
 }
 
 .show-place-details li {
-  margin: 10px;
+  margin: 5px 35px 10px 0;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-place-details li img {
+  width: 60%;
 }
 
 #show-rating {
   position: absolute;
-  top: 3px;
+  top: 1px;
+  left: 210px;
+  font-size: 20px;
 }
 
 .show-about {
-  margin-top: 50px;
+  margin-top: 100px;
+  border-bottom: 1px solid grey;
+  width: 90%;
+}
+
+.show-rules {
+  border-bottom: 1px solid grey;
+  margin-bottom: 30px;
+  width: 90%;
 }
 
 p {
-  margin-top: 15px;
+  margin: 20px 0;
 }
 
 .make-booking-box {
-  display: inline;
   background-color: rgb(221,203,142);
   padding: 20px;
   margin: 15px;
-  position: absolute;;
-  right: -6px;
-  bottom: -70px;
+  position: absolute;
+  right: 5px;
+  top: 440px;
   flex-direction: column;
-  width: 380px;
+  width: 30%;
+  height: 440px;
 }
 
 .make-booking-box form {
@@ -94,22 +129,24 @@ p {
 .booking-price {
   margin: auto;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .booking-input {
-  width: 170px;
-  font-size: 16px;
+  width: 240px;
+  font-size: 18px;
 }
 
 .dates {
-  font-size: 18px;
+  margin: auto;
 }
 
 .make-booking-box .submit-booking {
   margin: 0 auto;
-  width: 136px;
+  width: auto;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 26px;
+  padding: 10px 20px;
 }
 
 .num-guests select {
@@ -119,13 +156,11 @@ p {
 .booking-category {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 15px;
 }
 
-.dates {
-  display: flex;
-}
 
 .num-guests {
   margin: auto;
+  padding: 10px;
 }

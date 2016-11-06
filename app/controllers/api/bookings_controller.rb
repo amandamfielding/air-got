@@ -3,17 +3,13 @@ class Api::BookingsController < ApplicationController
     @bookings = Booking.all
   end
 
-  def show
-    @booking = Booking.find(params[:id])
-  end
-
   def create
     @booking = Booking.new(booking_params)
     @booking.user = current_user
     if @booking.save
       render 'api/bookings/show'
     else
-      render json: @booking.errors.full_messages, , status:422
+      render json: @booking.errors.full_messages, status:422
     end
   end
 
@@ -22,7 +18,7 @@ class Api::BookingsController < ApplicationController
     if @booking.update(booking_params)
       render 'api/bookings/show'
     else
-      render json: @booking.errors.full_messages, , status:422
+      render json: @booking.errors.full_messages, status:422
     end
   end
 

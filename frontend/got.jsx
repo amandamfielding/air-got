@@ -5,6 +5,7 @@ import configureStore from './store/store';
 import { fetchRegions } from './actions/regions_actions';
 import { requestPlaces } from './actions/place_actions';
 import { fetchReviews} from './actions/reviews_actions';
+import { requestBookings } from './actions/bookings_actions';
 
 document.addEventListener('DOMContentLoaded',() => {
   let store;
@@ -21,6 +22,9 @@ document.addEventListener('DOMContentLoaded',() => {
   window.store = store;
   window.fetchRegions = fetchRegions;
   window.fetchReviews = fetchReviews;
+  window.requestBookings = requestBookings;
   store.dispatch(fetchRegions());
   store.dispatch(requestPlaces());
+  store.dispatch(fetchReviews());
+  store.dispatch(requestBookings());
 });

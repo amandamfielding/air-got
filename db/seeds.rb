@@ -29,7 +29,7 @@ user5 = User.create!(username:"NoOne",password:"jaqenh",name:"Jaqen H'ghar",abou
 # user29 = User.create!(username:"EvilKing",password:"joffre",name:"Joffrey Baratheon",about_me:"",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478070651/Users/joffrey.jpg",allegiance_id:1)
 # user30 = User.create!(username:"hodorhodor",password:"hodor1",name:"Hodor",about_me:"Hodor hodor hodor hodor",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478070785/Users/hodor.jpg",allegiance_id:2)
 
-place1 = Place.create!(host_id:1,title:"The Red Keep",lng:1,lat:1,description:"King's Landing palace",price_per_night:1400,region_id:1,number_rooms:24,number_beds:32,max_guests:40,property_type:"Palace",house_rules:"a",allegiance_id:1,stars:5)
+place1 = Place.create!(host_id:1,title:"The Red Keep",lng:1,lat:1,description:"King's Landing palace ",price_per_night:1400,region_id:1,number_rooms:24,number_beds:32,max_guests:40,property_type:"Palace",house_rules:"a",allegiance_id:1,stars:5)
 place2 = Place.create!(host_id:2,title:"Castle Black",lng:2,lat:2,description:"home to Knight's Watch", price_per_night: 80,region_id:6,number_rooms:1,number_beds:1,max_guests:16,property_type:"Castle",house_rules:"a",stars:3)
 place3 = Place.create!(host_id:3,title:"Winterfell",lng:3,lat:3,description:"Stark house",price_per_night:40,region_id:2,number_rooms:1,number_beds:1,max_guests:10,property_type:"Castle",house_rules:"a",allegiance_id:2,stars:5)
 place4 = Place.create!(host_id:4,title:"Great Pyramid",lng:4,lat:4,description:"Meereen",price_per_night:180,region_id:10,number_rooms:1,number_beds:1,max_guests:20,property_type:"Pyramid",house_rules:"a",stars:5)
@@ -113,12 +113,12 @@ PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upl
 # PlaceImage.create(place_id:, url:"")
 # PlaceImage.create(place_id:, url:"")
 
-region1 = Region.create!(name:"Crownlands & Stormlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073941/Regions/crownlands.jpg") #6
+region1 = Region.create!(name:"Crownlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073941/Regions/crownlands.jpg") #6
 region2 = Region.create!(name:"The North",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073940/Regions/the_north.jpg") #2
 region3 = Region.create!(name:"Braavos",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478063294/Regions/braavos.jpg") #2
 region4 = Region.create!(name:"The Reach",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073949/Regions/thereach.png") #2
 region5 = Region.create!(name:"The Iron Islands & Westerlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073942/Regions/ironislands.jpg") #2
-region6 = Region.create!(name:"Beyond the Wall & The Gift",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073936/Regions/beyondthewall.jpg") #2
+region6 = Region.create!(name:"The Wall & Beyond",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073936/Regions/beyondthewall.jpg") #2
 region7 = Region.create!(name:"Riverlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073937/Regions/riverlands.jpg") #3
 region8 = Region.create!(name:"Dorne",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073940/Regions/Dorne.jpg") #1
 region9 = Region.create!(name:"Dothraki Sea",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478073936/Regions/dothraki_sea.jpg") #1
@@ -141,7 +141,7 @@ region12 = Region.create!(name:"The Vale of Arryn",image_url:"http://res.cloudin
 
 booking1 = Booking.create!(place_id:1,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 30),number_of_guests:30)
 booking2 = Booking.create!(place_id:3,user_id:2,check_in_date:DateTime.new(2005, 3, 22),check_out_date:DateTime.new(20013, 10, 1),number_of_guests:1)
-# booking3 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)
+booking3 = Booking.create!(place_id:5,user_id:1,check_in_date:DateTime.new(2005, 3, 22),check_out_date:DateTime.new(20013, 10, 1),number_of_guests:2)
 # booking4 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)
 # booking5 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)
 # booking6 = Booking.create!(place_id:,user_id:2,check_in_date:,check_out_date:,number_of_guests:)

@@ -1,7 +1,7 @@
 export const fetchReviews = (success,error) => {
   $.ajax({
     method: 'GET',
-    url: '/api/reviews',
+    url: 'api/reviews',
     success,
     error: console.log(error)
   });

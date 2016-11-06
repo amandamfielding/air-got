@@ -1,0 +1,100 @@
+.reviews {
+  margin-top: 40px;
+}
+
+.review {
+  margin: 20px;
+}
+
+.review-details {
+  display: flex;
+  position: relative;
+}
+
+.review-author {
+  position: absolute;
+  top: 70px;
+  font-size: 14px;
+}
+
+.review-user-pic {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.review-user-pic:hover {
+  box-shadow: 0 0 4px #000000;
+}
+
+.rating-and-body {
+  margin-left: 40px;
+  width: 75%;
+  border-bottom: 1px solid grey;
+  position: relative;;
+}
+
+.form {
+  width: 75%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgb(248,239,204);
+  padding: 25px;
+}
+
+.review-body {
+  padding: 10px 0 30px 0;
+}
+
+.form-body {
+  font-size: 18px;
+  margin: 10px 0;
+  width: 98%;
+}
+
+.delete-review-button {
+  padding: 3px 7px;
+  margin: 10px;
+  background-color: rgb(114,127,138);
+  font-size: 14px;
+  position: absolute;
+  left: 475px;
+  top: 38px;
+}
+
+.review-submit {
+  width: auto;
+  margin-right: 20px;
+  font-size: 18px;
+  margin-bottom: 0px;
+  border: none;
+  background-color: rgb(114,127,138);
+  padding: 3px 7px;
+}
+
+.submit-and-cancel {
+  display: flex;
+  justify-content: center;
+}
+
+.form h3 {
+  text-align: center;
+  margin: auto;
+}
+
+.cancel {
+  font-size: 18px;
+  background-color: rgb(114,127,138);
+  padding: 3px 7px;
+}
+
+#span-rating {
+  font-size: 20px;
+  float: left;
+  margin: 10px;
+}
+
+.stars {
+  float: left;
+}

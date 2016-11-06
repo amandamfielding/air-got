@@ -43,7 +43,7 @@ class PlaceIndexItem extends React.Component {
             <li className="index-item-value">&bull;</li>
             <li className="index-item-value">{max_guests} guests</li>
             <li className="index-item-value">&bull;</li>
-            <li className="index-item-value"><span id="rating">{"⭐️".repeat(stars)}</span></li>
+            <li className="index-item-value"><span id="rating">{"♛".repeat(stars)}</span></li>
           </ul>
 
         </div>

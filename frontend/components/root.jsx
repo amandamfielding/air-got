@@ -6,6 +6,7 @@ import Home from './home/home';
 import SearchContainer from './search/search_container';
 import PlaceShowContainer from './place_show/place_show_container';
 import UserContainer from './users/user_container';
+import BookingsContainer from './bookings/bookings_container';
 
 const Root = ({ store }) => {
 
@@ -24,6 +25,7 @@ const Root = ({ store }) => {
           <Route path="/search" component={SearchContainer} onEnter={_ensureLoggedIn}/>
           <Route path="/places/:placeId" component={PlaceShowContainer}  onEnter={_ensureLoggedIn}/>
           <Route path="/users/:userId" component={UserContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/bookings" component={BookingsContainer} onEnter={_ensureLoggedIn}/>
         </Route>
       </Router>
     </Provider>
