@@ -1,11 +1,17 @@
+.footer-box {
+	position: static;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer-box ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  background-color: #DE1826;
-  color: white;
-  font-size: 18px;
+  border: none;
+  background-color: #403C39;
+  color: #E5E6EA;
+  font-size: 1.2em;
 }
 
 .footer-box ul li {

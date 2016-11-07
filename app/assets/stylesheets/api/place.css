@@ -1,5 +1,5 @@
 .place-show {
-
+  min-height: calc(100vh - 50px);
 }
 
 .text {
@@ -23,27 +23,29 @@
 }
 
 .place-image {
-  width: 700px;
+  width: 50vw;
 }
 
 .show-host-info {
-  position: absolute;;
-  left: 30px;
+  font-size: 1.6em;
+  position: relative;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .show-host-info span {
+  display: inline-block;
+  margin-left: 15px;
   position: absolute;
-  top: 120px;
-  left: -15px;
-  font-size: 20px;
-  width: 150px;
+  left: 24px;
+  top: 140px;
+  font-size: 18px;
 }
 
 .show-host-pic {
   width: 100px;
-  position: absolute;
-  left: 5px;
-  top: 15px;
+  position: relative;;
+  display: inline-block;
 }
 
 .show-host-pic-button {
@@ -51,6 +53,9 @@
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: -50px;
 }
 
 .show-host-pic-button:hover {
@@ -108,15 +113,17 @@ p {
 }
 
 .make-booking-box {
-  background-color: rgb(221,203,142);
+  display: inline;
+  background-color: #587388;
   padding: 20px;
   margin: 15px;
   position: absolute;
-  right: 5px;
-  top: 440px;
+  right: 0;
+  bottom: 35px;
   flex-direction: column;
-  width: 30%;
-  height: 440px;
+  color: #fff;
+  border-radius: 6px;
+  width: 380px;
 }
 
 .make-booking-box form {
@@ -145,8 +152,10 @@ p {
   margin: 0 auto;
   width: auto;
   margin-top: 20px;
-  font-size: 26px;
-  padding: 10px 20px;
+  font-size: 20px;
+  background: #CE522C;
+  padding: 12px 24px;
+  border-radius: 6px;
 }
 
 .num-guests select {

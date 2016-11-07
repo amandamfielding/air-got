@@ -4,18 +4,24 @@
 
 .left-half-places {
   width: 50%;
-
 }
 
-.place-index {
-  height: 500px;
-  overflow-y: scroll;
-  flex-wrap: wrap;
-  display: flex;
+@media only screen and (min-width : 767px) {
+  .place-index {
+    height: auto;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 60px 0;
+  }
 }
 
 .place-index-item {
   margin: 15px 15px 0px 15px;
+}
+
+.place-index-item span {
+  color: #587388;
 }
 
 .place-and-host {
@@ -35,7 +41,7 @@
 
 .place-details {
   display: flex;
-  color: rgb(160,0,17);
+  color: rgba(88, 115, 136, 0.74);
   position: relative;
 }
 
@@ -60,8 +66,8 @@
 .index-item-price {
   position: absolute;
   bottom: 15px;
-  background-color: rgb(248,239,204);
-  color: rgb(160,0,17);
+  background-color: #DFF0F8;
+  color: #403C39;
   padding: 5px 10px;
 }
 

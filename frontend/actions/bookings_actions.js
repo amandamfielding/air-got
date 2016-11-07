@@ -6,6 +6,7 @@ export const REMOVE_BOOKING = "REMOVE_BOOKING";
 export const DELETE_BOOKING = "DELETE_BOOKING";
 export const CREATE_BOOKING = "CREATE_BOOKING";
 export const UPDATE_BOOKING = "UPDATE_BOOKING";
+export const RECEIVE_BOOKING_ERRORS = "RECEIVE_BOOKING_ERRORS";
 
 export const requestBookings = () => ({
    type: REQUEST_BOOKINGS
@@ -44,4 +45,9 @@ export const removeBooking = (booking) => ({
 export const deleteBooking = (id) => ({
    type: DELETE_BOOKING,
    id
+});
+
+export const receiveBookingErrors = (errors) => ({
+  type: RECEIVE_BOOKING_ERRORS,
+  errors
 });

@@ -21,10 +21,8 @@ document.addEventListener('DOMContentLoaded',() => {
   ReactDOM.render(<Root store={store}/>, root);
   window.store = store;
   window.fetchRegions = fetchRegions;
-  window.fetchReviews = fetchReviews;
   window.requestBookings = requestBookings;
   store.dispatch(fetchRegions());
   store.dispatch(requestPlaces());
-  store.dispatch(fetchReviews());
   store.dispatch(requestBookings());
 });

@@ -43,8 +43,12 @@ button {
 }
 
 button,
-input[type="submit"] {
+input[type="submit"],a {
   cursor: pointer;
+}
+
+span {
+    color: #587388;
 }
 
 /* Clearfix */

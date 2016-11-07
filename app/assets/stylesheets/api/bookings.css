@@ -1,0 +1,66 @@
+.bookings-container {
+  text-align: center;
+  margin: 40px;
+}
+
+.bookings{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking {
+  margin: 30px 27px;
+  width: 28%;
+  background-color: lightgray;
+  position: relative;
+}
+
+.place-main-image {
+  height: 200px;
+}
+
+.host-image-url {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 155px;
+  left: 125px;
+}
+
+.host-image-url:hover {
+  box-shadow: 0 0 4px #000000;
+}
+
+.booking-details {
+  margin: 40px 20px 0 20px;
+}
+
+.booking-details li {
+  padding: 5px;
+}
+
+.booking-details li h3 {
+  margin: 10px 0 5px 0;
+}
+
+.booking-rating {
+  margin-bottom: 5px;
+}
+
+.booking-link {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.booking-edit-button, .booking-delete-button {
+  padding: 5px 10px;
+  margin: 5px 10px 20px 10px;
+  font-size: 16px;
+  background-color: rgb(248,239,204);
+}
+
+.booking-edit-button {
+  margin-right: 0;
+}

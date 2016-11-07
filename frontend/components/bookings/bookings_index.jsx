@@ -1,4 +1,5 @@
 import React from 'react';
+import BookingItem from './booking_item';
 
 class BookingsIndex extends React.Component {
   constructor(props) {
@@ -8,10 +9,16 @@ class BookingsIndex extends React.Component {
   render() {
     if (this.props.bookings) {
       return (
-        <div>
+        <div className="bookings-container">
+          <h2>Upcoming Trips</h2>
+          <div className="bookings">
           {this.props.bookings.map(booking => (
-            <BookingItem booking={booking}/>
+            <BookingItem
+              booking={booking}
+              deleteBooking={this.props.deleteBooking}
+              key={booking.id} />
           ))}
+          </div>
         </div>
       );
     } else {

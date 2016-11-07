@@ -1,6 +1,7 @@
 import { RECEIVE_BOOKINGS,
          RECEIVE_BOOKING,
-         REMOVE_BOOKING } from '../actions/bookings_actions';
+         REMOVE_BOOKING,
+         RECEIVE_BOOKING_ERRORS} from '../actions/bookings_actions';
 import merge from 'lodash/merge';
 
 const BookingsReducer = (oldState={}, action) => {
@@ -14,6 +15,8 @@ const BookingsReducer = (oldState={}, action) => {
       let newState = merge({},oldState);
       delete newState[action.booking.id];
       return newState;
+    case RECEIVE_BOOKING_ERRORS:
+      return merge({},{errors: []},{errors: action.errors});
     default:
       return oldState;
   }
