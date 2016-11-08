@@ -1,5 +1,6 @@
 .place-show {
   min-height: calc(100vh - 50px);
+  padding-top: 66px;
 }
 
 .text {
@@ -114,12 +115,12 @@ p {
 
 .make-booking-box {
   display: inline;
-  background-color: #587388;
+  background-color: #403C39;
   padding: 20px;
   margin: 15px;
   position: absolute;
   right: 0;
-  bottom: 35px;
+  top: 460px;
   flex-direction: column;
   color: #fff;
   border-radius: 6px;
@@ -142,6 +143,9 @@ p {
 .booking-input {
   width: 240px;
   font-size: 18px;
+  background: lightgrey;
+  border-radius: 6px;
+  color: black;
 }
 
 .dates {
@@ -153,7 +157,7 @@ p {
   width: auto;
   margin-top: 20px;
   font-size: 20px;
-  background: #CE522C;
+  background: #CC1200;
   padding: 12px 24px;
   border-radius: 6px;
 }

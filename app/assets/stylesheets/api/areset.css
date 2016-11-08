@@ -9,15 +9,18 @@ span, article, footer, time, small {
   padding: 0;
   border: 0;
   outline: 0;
-  font-family: 'Philosopher',sans-serif;
   color: inherit;
   text-align: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
+  font-family: 'Didact Gothic';
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Philosopher';
+}
 ul {
   list-style: none;
 }
@@ -50,6 +53,7 @@ input[type="submit"],a {
 span {
     color: #587388;
 }
+
 
 /* Clearfix */
 

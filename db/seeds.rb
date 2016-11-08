@@ -1,4 +1,4 @@
-  user1 = User.create!(username:"queenC",password:"cersei",name:"Cersei Lannister",about_me:"I am a doting mother of three children. My hobbies include world politics and cultivating close relationships with my friends and relatives, especially my brother. Personal motto: The more people you love, the weaker you are. The only thing I love is power and I kill anyone who tries to take it from me.",
+user1 = User.create!(username:"queenC",password:"cersei",name:"Cersei Lannister",about_me:"I am a doting mother of three children. My hobbies include world politics and cultivating close relationships with my friends and relatives, especially my brother. Personal motto: The more people you love, the weaker you are. The only thing I love is power and I kill anyone who tries to take it from me.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478241047/Users/cersei2.jpg",allegiance_id:1)
 
 user2 = User.create!(username:"LordCommander",password:"jonsno",name:"Jon Snow",about_me:"According to my ex-girlfriend, I know nothing.",
@@ -50,7 +50,7 @@ user17 = User.create!(username:"BastardOfBolton",password:"ramsay",name:"Ramsay 
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063333/Users/ramsay.jpg",allegiance_id:11)
 
 user18 = User.create!(username:"RedPriestess",password:"melisa",name:"Melisandre",about_me:"The night is dark and full of terrors. I brought Jon Snow back to life, everyone should kneel before.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fit,h_400,w_400/v1478478604/Users/melisandre.jpg")
+image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478604/Users/melisandre.jpg")
 
 user19 = User.create!(username:"SandSnake",password:"ellari",name:"Ellaria Sand",about_me:"When my dear lover Prince Oberyn Martell of Dorne was killed in trial by combat, I pushed for House Martell to go to war with House Lannister. However, I was refused by Oberyn's older brother, Doran Martell. So I took things into my owns hands and killed him. I'm in charge now.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478767/Users/ellaria.jpg",allegiance_id:12)
@@ -70,7 +70,9 @@ image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v
 user24 = User.create!(username:"ladyC",password:"ladycr",name:"Lady Crane",about_me:"I am  an elegant, fun, charismatic, rum-drinking actress in Izembaro's traveling theater company. I portray Queen Cersei Lannister in the play 'The Bloody Hand'.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070446/Users/ladycrane.jpg")
 
-user25 = User.create!(username:"Eunuch",password:"varys1",name:"Varys",about_me:"",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478063337/Users/varys2.jpg",allegiance_id:3)
+user25 = User.create!(username:"Eunuch",password:"varys1",name:"Varys",about_me:"I was the Master of Whisperers on the King's Small Council until Tyrion and I were forced to flee King's Landing. I am a skilled manipulator and command a network of informants across two continents.
+My true loyalties lie with Daenerys Targaryen, as I believe her rule would be the best way to preserve peace and prosperity in the Seven Kingdoms.",
+image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478503141/Users/varys2.jpg",allegiance_id:3)
 
 user26 = User.create!(username:"Needle",password:"aryast",name:"Arya Stark",about_me:"I was raised at Winterfell but have been on my own from an early age.  I have been traveling the world working on my 'kill list', but not to worry I'm quite the pleasant house guest for those that are not on my 'list'.  I am happy to help with cooking and cleaning in exchange for a roof over my head.  My hobbies include fencing, archery and vengeance.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070526/Users/arya.jpg",allegiance_id:2)
@@ -90,29 +92,30 @@ image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v
 
 place1 = Place.create!(host_id:1,title:"The Red Keep",lng:1,lat:1,description:"The Red Keep is the residence of the King of the Andals and the First Men, his family and his court, located within King's Landing, the capital of the Seven Kingdoms. It dominates the skyline of the city, and serves as the city's primary fortress and redoubt.
 Located in the southeastern corner of King's Landing, the Red Keep overlooks Blackwater Bay and the Narrow Sea. It is currently the seat of Queen Cersei Lannister and was formerly the seat of King Tommen Baratheon, King Joffrey Baratheon, King Robert Baratheon, and before him the seat of the Targaryen kings.
-
-The Great Hall
+\n
+\n
 The Great Hall is the massive throne room of the Red Keep and is where the Iron Throne is situated. The King (or his Hand, in the event of the King's absence), holds court and receives petitioners within the Great Hall. It is also employed for official ceremonies.
-
-Maegor's Holdfast
+\n
+\n
 Maegor's Holdfast is a stout tower in the center of the Red Keep. It was named after King Maegor Targaryen, who built the Red Keep. It serves as a redoubt when the city is attacked. The royal apartments are also located in Maegor's Holdfast.
 Maegor's Holdfast served as a refuge for Queen Cersei and the highborn ladies of the Red Keep during the Battle of the Blackwater.
-
-The Tower of the Hand
+\n
+\n
 The Tower of the Hand is the location of the quarters and offices of the Hand of the King. The Hand's family, household and guards also live and work in the Tower of the Hand.
 When Tywin Lannister assumes his Hand duties for King Joffrey he arranges for the meetings of the small council to be held in the Tower of the Hand to assert his own authority. He is later killed by his son, Tyrion Lannister, whilst in the privy by a crossbow.
-
-The Traitor's Walk
+\n
+\n
 The Traitor's Walk is an outer corridor on one of the sides of the Red Keep with view to one of its outer walls. The heads of criminals and traitors are placed on spikes over said wall, visible both to the exterior of the Red Keep and whoever passes through the corridor.
-Following the arrest and execution of Ned Stark, his head and those of his entire household were placed on the wall beside the Traitor's Walk.[3]
-
-The Dungeons
+Following the arrest and execution of Ned Stark, his head and those of his entire household were placed on the wall beside the Traitor's Walk.
+\n
+\n
 The dungeons of the Red Keep are divided in four levels:
 On the upper level are cells with high narrow windows where common criminals are confined together.
 The second level has smaller, personal cells without windows for highborn captives and valuable hostages.
 The Black Cells are the third level. Prisoners accused of treason and other high crimes are kept within the Black Cells, as was the case of Ned Stark. Varys has access to the Black Cells, though he dons the disguise of a gaoler when entering.
 The fourth level is spoken of only in rumors. Once a man is taken here, he never sees the light of day again and is subjected to the most painful torments.
-Secret passagesEdit
+\n
+\n
 The Red Keep, according to rumors, is full of miles of secret passages running behind the walls and below the floors. Maegor the Cruel had the builders of the Red Keep executed after the castle was completed to keep the secret of the passageways.
 ",price_per_night:1400,region_id:1,number_rooms:24,number_beds:32,max_guests:40,property_type:"Palace",
 house_rules:"No disagreeing with the Queen.
@@ -302,7 +305,7 @@ booking3 = Booking.create!(place_id:5,user_id:2,check_in_date:DateTime.new(2005,
 booking4 = Booking.create!(place_id:6,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:3)
 booking5 = Booking.create!(place_id:9,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:4)
 booking6 = Booking.create!(place_id:11,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:10)
-#
+
 review1 = Review.create!(place_id:1,author_id:3,rating:2,body:"This place is as fancy as it looks, but putting up with the host, Cersei and her terrible son Joffrey is just not worth it. I regret staying here.")
 review2 = Review.create!(place_id:2,author_id:10,rating:3,body:"I found it surprisingly beautiful. In a brutal, horribly uncomfortable sort of way.")
 review3 = Review.create!(place_id:5,author_id:26,rating:1,body:"I've had my ups and downs with the host, Jaqen. I almost had to kill him once. But there's this dreadful girl who lives there and she will undoubtedly try too kill you.")

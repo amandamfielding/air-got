@@ -13,7 +13,7 @@ class ReviewsIndex extends React.Component {
               deleteReview={this.props.deleteReview}
               review={review}/>
           ))}
-        <ReviewForm />
+        <ReviewForm createReview={this.props.createReview} />
       </div>
     );
   }

@@ -5,7 +5,7 @@ import AuthFormContainer from '../auth_form/auth_form_container';
 
 const customStyles = {
   content : {
-    top                   : '50%',
+    top                   : '55%',
     left                  : '50%',
     right                 : 'auto',
     bottom                : 'auto',
@@ -62,7 +62,6 @@ class Header extends React.Component {
   }
 
   loggedOutNav() {
-
     return (
       <nav className="nav">
         <button className="logged-out-button"

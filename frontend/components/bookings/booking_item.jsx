@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router';
 import Modal from 'react-modal';
 import EditFormContainer from './edit_form_container';
 
 const customStyles = {
   content : {
-    top                   : '50%',
+    top                   : '55%',
     left                  : '50%',
     right                 : 'auto',
     bottom                : 'auto',
@@ -15,7 +15,6 @@ const customStyles = {
 };
 
 class BookingItem extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = { modalIsOpen: false };
@@ -33,7 +32,6 @@ class BookingItem extends React.Component {
 
  closeModal() {
     this.setState({modalIsOpen: false});
-    this.props.clearErrors();
   }
 
   update(field) {
@@ -41,6 +39,12 @@ class BookingItem extends React.Component {
 			[field]: e.currentTarget.value
 		});
 	}
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.errors.length === 0) {
+      this.closeModal();
+    }
+  }
 
   render() {
     const {user, place_id, place_title, place_main_image, check_in_date, check_out_date, host_image_url, region_name, stars} = this.props.booking;
@@ -78,4 +82,4 @@ class BookingItem extends React.Component {
   }
 }
 
-export default BookingItem;
+export default withRouter(BookingItem);

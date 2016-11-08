@@ -22,10 +22,10 @@ const Root = ({ store }) => {
       <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Home} />
-          <Route path="/search" component={SearchContainer} onEnter={_ensureLoggedIn}/>
-          <Route path="/places/:placeId" component={PlaceShowContainer}  onEnter={_ensureLoggedIn}/>
-          <Route path="/users/:userId" component={UserContainer} onEnter={_ensureLoggedIn}/>
-          <Route path="/bookings" component={BookingsContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/search" component={SearchContainer} />
+          <Route path="/places/:placeId" component={PlaceShowContainer} />
+          <Route path="/users/:userId" component={UserContainer} />
+          <Route path="/bookings" component={BookingsContainer} />
         </Route>
       </Router>
     </Provider>

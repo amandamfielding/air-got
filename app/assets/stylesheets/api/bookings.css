@@ -1,6 +1,10 @@
 .bookings-container {
   text-align: center;
-  margin: 40px;
+  margin: 0 40px;
+  padding-top: 60px;
+}
+.bookings-container h2 {
+  margin-top: 20px;
 }
 
 .bookings{
@@ -10,7 +14,7 @@
 
 .booking {
   margin: 30px 27px;
-  width: 28%;
+  width: 325px;
   background-color: lightgray;
   position: relative;
 }
@@ -58,7 +62,8 @@
   padding: 5px 10px;
   margin: 5px 10px 20px 10px;
   font-size: 16px;
-  background-color: rgb(248,239,204);
+  background-color: rgb(83,89,98);
+  color: white;
 }
 
 .booking-edit-button {

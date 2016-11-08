@@ -22,7 +22,7 @@ class ReviewForm extends React.Component{
     const review = Object.assign({}, this.state, {
       place_id: placeId
     });
-    createReview({review});
+    this.props.createReview({review});
     this.navigateToPlaceShow();
   }
 

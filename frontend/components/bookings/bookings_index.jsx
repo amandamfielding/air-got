@@ -8,16 +8,24 @@ class BookingsIndex extends React.Component {
 
   render() {
     if (this.props.bookings) {
+      let bookings = this.props.bookings.map(booking => {
+        if (booking) {
+          return (
+            <BookingItem
+              clearErrors={this.props.clearErrors}
+              booking={booking}
+              errors={this.props.errors}
+              deleteBooking={this.props.deleteBooking}
+              key={booking.id} />
+            );
+          }
+        });
+
       return (
         <div className="bookings-container">
           <h2>Upcoming Trips</h2>
           <div className="bookings">
-          {this.props.bookings.map(booking => (
-            <BookingItem
-              booking={booking}
-              deleteBooking={this.props.deleteBooking}
-              key={booking.id} />
-          ))}
+            {bookings}
           </div>
         </div>
       );

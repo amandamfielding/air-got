@@ -7,7 +7,7 @@ class Api::BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.user = current_user
     if @booking.save
-      render 'api/bookings'
+      render 'api/bookings/show'
     else
       render json: @booking.errors.full_messages, status:422
     end
@@ -17,7 +17,7 @@ class Api::BookingsController < ApplicationController
     @booking = current_user.bookings.find(params[:id])
 
     if @booking.update(booking_params)
-      render 'api/bookings'
+      render 'api/bookings/show'
     else
       render json: @booking.errors.full_messages, status:422
     end
@@ -26,7 +26,7 @@ class Api::BookingsController < ApplicationController
   def destroy
     @booking = Booking.find(params[:id])
     @booking.destroy
-    render 'api/bookings'
+    render 'api/bookings/show'
   end
 
   private

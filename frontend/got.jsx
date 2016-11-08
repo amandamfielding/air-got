@@ -4,7 +4,6 @@ import Root from './components/root';
 import configureStore from './store/store';
 import { fetchRegions } from './actions/regions_actions';
 import { requestPlaces } from './actions/place_actions';
-import { fetchReviews} from './actions/reviews_actions';
 import { requestBookings } from './actions/bookings_actions';
 
 document.addEventListener('DOMContentLoaded',() => {

@@ -3,18 +3,22 @@ import Place from './place_show';
 import { requestPlace } from '../../actions/place_actions';
 import { fetchReviews } from '../../actions/reviews_actions';
 import { selectPlace } from '../../reducers/selectors';
+import { createBooking, receiveBookingErrors } from '../../actions/bookings_actions';
 
 const mapStateToProps = (state, { params }) => {
   const placeId = parseInt(params.placeId);
   const place = selectPlace(state, placeId);
   return {
     placeId,
-    place
+    place,
+    errors: state.bookings.errors
   };
 };
 
 const mapDispatchToProps = (dispatch) => ({
   fetchReviews: () => dispatch(fetchReviews()),
+  createBooking: (booking) => dispatch(createBooking(booking)),
+  clearErrors: () => dispatch(receiveBookingErrors([]))
 });
 
 export default connect(

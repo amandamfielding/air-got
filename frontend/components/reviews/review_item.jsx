@@ -1,12 +1,13 @@
 import React from 'react';
 
 const ReviewItem = ({ review, deleteReview }) => {
+  const { author_image, author_name } = this.props.review;
   if (review) {
     return (
       <div className="review">
         <ul className="review-details">
-          <img className="review-user-pic" src={review.author.image_url} />
-          <span className="review-author">{review.author.name}</span>
+          <img className="review-user-pic" src={author_image} />
+          <span className="review-author">{author_name}</span>
           <div className="rating-and-body">
             <li><span id="review-rating">{"♛".repeat(review.rating)}</span></li>
             <li className="review-body">{review.body}</li>
