@@ -1,14 +1,13 @@
-.form-box {
-  border: 1px solid black;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
+.auth-modal-container {
+  margin-bottom: -30px;
 }
 
-.form {
-  margin: 30px;
-  margin-top: 15px;
+.auth-form-container {
+  background-color: lightgrey;
+}
+
+.auth-form {
+  margin: 20px 30px;
 }
 
 .errors {
@@ -17,7 +16,7 @@
   font-size: 14px;
   color: red;
   border: none;
-  background-color: white;
+  background-color: lightgrey;
   padding: 0px;
 }
 
@@ -31,27 +30,42 @@ label {
 
 textarea {
   padding: 5px;
+  font-size: 16px;
+  width: 304px;
+  margin-left: 6px;
+  background: white;
+  border-radius: 6px;
+  border: none;
 }
 
-input {
+.auth-form input, .auth-form select {
   margin-bottom: 15px;
   font-size: 20px;
-  border: 1px solid black;
+  background: white;
   padding: 5px;
   width: 305px;
+  border-radius: 5px;
+}
+.auth-form select {
+  margin-left: 6px;
+  width: 315px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 5px;
+  color: darkgray;
 }
 
 span {
-  color: red;
+  color: #DE1826;
 }
 
 .button-box {
   display: flex;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-textarea {
-  border: 1px solid black;
+.sign-up-image-url {
+  margin-left: 6px;
 }
 
 #login-button, #signup-button {
@@ -59,18 +73,22 @@ textarea {
   margin: 0 auto;
   font-size: 20px;
   padding: 10px 20px;
-  border: 1px solid white;
   background-color: #DE1826;
   color: white;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+#signup-button {
+  margin-bottom: 20px;
 }
 
-#x {
+#close {
   float: right;
   margin: 5px;
+  font-size: 16px;
 }
 
 #logo {
   width: 80px;
   margin: auto;
-  margin-top: 20px;
 }

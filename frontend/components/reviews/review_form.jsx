@@ -1,44 +1,52 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import { createReview } from '../../actions/reviews_actions';
-import ReactStars from 'react-stars';
+import Stars from 'react-stars';
 
 class ReviewForm extends React.Component{
   constructor(props) {
     super(props);
-    this.body = "";
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.state = {
+      body: "",
+      rating: ""
+    };
+    this.handleReviewSubmit = this.handleReviewSubmit.bind(this);
     this.navigateToPlaceShow = this.navigateToPlaceShow.bind(this);
   }
 
+  update(field) {
+		return e => this.setState({
+			[field]: e.currentTarget.value
+		});
+	}
 
   navigateToPlaceShow() {
     this.props.router.push(`/places/${this.props.params.placeId}`);
   }
 
-  handleSubmit(e) {
+  handleReviewSubmit(e) {
     e.preventDefault();
     const placeId = parseInt(this.props.params.placeId);
     const review = Object.assign({}, this.state, {
       place_id: placeId
     });
-    this.props.createReview({review});
+    this.props.createReview(review);
     this.navigateToPlaceShow();
   }
 
   render() {
-
     return (
-      <div className="form">
+      <div className="review-form">
         <h3>Add a Review</h3>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleReviewSubmit}>
           <div>
             <span id="span-rating">Rating:</span>
-            <ReactStars
+            <Stars
               className="stars"
               count={5}
               char={"♛"}
               size={24}
+              onChange={this.update("rating")}
               color2={'rgb(160,0,17)'} />
           </div>
 
@@ -47,6 +55,7 @@ class ReviewForm extends React.Component{
             name={this.body}
             cols='40'
             rows='5'
+            onChange={this.update("body")}
             placeholder="Add comment...">
           </textarea>
           <br/>

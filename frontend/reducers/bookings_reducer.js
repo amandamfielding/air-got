@@ -12,7 +12,6 @@ const BookingsReducer = (oldState={errors:[]}, action) => {
     case RECEIVE_BOOKING:
       let state = merge({},oldState,{[action.booking.id]:action.booking});
       state.errors = [];
-      debugger
       return state;
     case REMOVE_BOOKING:
       let newState = merge({},oldState);
@@ -21,7 +20,6 @@ const BookingsReducer = (oldState={errors:[]}, action) => {
     case RECEIVE_BOOKING_ERRORS:
       let anotherState = merge({},oldState);
       anotherState.errors = action.errors;
-      debugger
       return anotherState;
     default:
       return oldState;

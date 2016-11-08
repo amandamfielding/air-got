@@ -69,3 +69,19 @@
 .booking-edit-button {
   margin-right: 0;
 }
+
+.booking-edit-form-container {
+  background-color: lightgrey;
+}
+
+.booking-edit-form-box {
+  padding: 25px;
+}
+
+.booking-edit-form input, .booking-edit-form select {
+  margin-bottom: 15px;
+  font-size: 20px;
+  background: white;
+  padding: 5px;
+  width: 305px;
+  border-radius: 5px;

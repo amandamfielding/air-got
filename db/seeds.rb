@@ -1,4 +1,4 @@
-user1 = User.create!(username:"queenC",password:"cersei",name:"Cersei Lannister",about_me:"I am a doting mother of three children. My hobbies include world politics and cultivating close relationships with my friends and relatives, especially my brother. Personal motto: The more people you love, the weaker you are. The only thing I love is power and I kill anyone who tries to take it from me.",
+user1 = User.create!(username:"queenC",password:"cersei",name:"Cersei Lannister",about_me:"I am a doting mother of three children. My hobbies include world politics and cultivating close relationships with my friends and relatives, especially my brother. Personal motto: The more people you love, the weaker you are. The only thing I love is power and I kill anyone who tries to take it from me. When you play the game of thrones you either win or die.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478241047/Users/cersei2.jpg",allegiance_id:1)
 
 user2 = User.create!(username:"LordCommander",password:"jonsno",name:"Jon Snow",about_me:"According to my ex-girlfriend, I know nothing.",
@@ -7,7 +7,7 @@ image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v
 user3 = User.create!(username:"LittleDove",password:"sansas",name:"Sansa Stark",about_me:"Never a bridesmaid, always a bride.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240271/Users/sansa.jpg",allegiance_id:2)
 
-user4 = User.create!(username:"MotherOfDragons",password:"daener",name:"Daenerys Targaryen",about_me:"I will take what's mine.",
+user4 = User.create!(username:"MotherOfDragons",password:"daener",name:"Daenerys Targaryen",about_me:"My reign has just begun. I will take what's mine.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240565/Users/daenerys5.jpg",allegiance_id:3)
 
 user5 = User.create!(username:"NoOne",password:"jaqenh",name:"Jaqen H'ghar",about_me:"I am but one of many Faceless Men assassins of Braavos. All men must serve, faceless men most of all. I am mysterious, calm in the face of danger, and surprisingly courteous.",
@@ -19,13 +19,13 @@ image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,h_400,w_400/
 user7 = User.create!(username:"LordOfRiverrun",password:"edmure",name:"Edmure Tully",about_me:"I am the son and heir of Lord Hoster Tully. I have recently become the Lord of Riverrun and Lord Paramount of the Riverlands. The Riverlands are one of the constituent regions of the Seven Kingdoms and House Tully is one of the Great Houses of the realm.
 My mother Minisa Tully died in childbirth during my early childhood. I have two elder sisters Catelyn Stark and Lysa Arryn. I was also raised with my father's ward, Petyr Baelish. I was the one who first nicknamed him 'Littlefinger'.",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,h_400,w_400/v1478476106/Users/edmuretully.jpg",allegiance_id:5)
 
-user8 = User.create!(username:"YouKnowNothing",password:"ygritt",name:"Ygritte",about_me:"I a woman of the Free Folk who live north of the Wall. I'm not like all those prissy princesses of Westeros. I know how to fight as good as any man and better than my boyfriend, Jon Snow.",
+user8 = User.create!(username:"YouKnowNothing",password:"ygritt",name:"Ygritte",about_me:"I a woman of the Free Folk who live north of the Wall. I'm not like all those prissy princesses of Westeros. I know how to fight as good as any man and better than my boyfriend, Jon Snow. All men must die, but first we shall live.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069397/Users/ygritte.jpg")
 
 user9 = User.create!(username:"KahlDreamy",password:"kahldr",name:"Kahl Drogo",about_me:"I am a warlord of the Dothraki, the famed nomadic horse-lords of the eastern continent beyond the Narrow Sea. We are fierce warriors, skilled in battle, unrelenting in combat and known for savagery.
 My hobbies include never wearing a shirt, romancing my khaleesi, and slicing people open with giant blades.",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478476437/Users/kahldrogo.jpg")
 
-user10 = User.create!(username:"pIMP",password:"tryion",name:"Tyrion Lannister",about_me:"I am incredibly knowledgeable about two things: Wine and Whores. I am well read and well traveled. I spent my youth at Casterly Rock, but in the past few years I've been to Castle Black, Winterfell, The Eyrie, Kings Landing, Pentos, Volantis and Meereen. I'm am quite the conversationalist, using my words to get me both in and out of trouble. I'm an international man of mystery.",
+user10 = User.create!(username:"pIMP",password:"tryion",name:"Tyrion Lannister",about_me:"It's not easy being drunk all the time. If it was easy, everyone would do it. I am incredibly knowledgeable about two things: Wine and Whores. I am well read and well traveled. I spent my youth at Casterly Rock, but in the past few years I've been to Castle Black, Winterfell, The Eyrie, Kings Landing, Pentos, Volantis and Meereen. I'm am quite the conversationalist, using my words to get me both in and out of trouble. I'm an international man of mystery.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069658/Users/tyrion.jpg",allegiance_id:3)
 
 user11 = User.create!(username:"QueenOfThorns",password:"olenna",name:"Olenna Tyrell",about_me:"I am elderly matriarch of House Tyrell and adore my grandchildren, Margaery and Loras. I have been a master of court politics and intrigue throughout my life and am known for my wit and sarcasm. I hold a great deal of influence over the Reach and will live out the rest of my life to avenge Cersei Lannister.",
@@ -70,14 +70,14 @@ image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v
 user24 = User.create!(username:"ladyC",password:"ladycr",name:"Lady Crane",about_me:"I am  an elegant, fun, charismatic, rum-drinking actress in Izembaro's traveling theater company. I portray Queen Cersei Lannister in the play 'The Bloody Hand'.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070446/Users/ladycrane.jpg")
 
-user25 = User.create!(username:"Eunuch",password:"varys1",name:"Varys",about_me:"I was the Master of Whisperers on the King's Small Council until Tyrion and I were forced to flee King's Landing. I am a skilled manipulator and command a network of informants across two continents.
-My true loyalties lie with Daenerys Targaryen, as I believe her rule would be the best way to preserve peace and prosperity in the Seven Kingdoms.",
+user25 = User.create!(username:"TheSpider",password:"varys1",name:"Varys",about_me:"I was the Master of Whisperers on the King's Small Council until Tyrion and I were forced to flee King's Landing. I am a skilled manipulator and command a network of informants across two continents.
+My true loyalties lie with Daenerys Targaryen, as I believe her rule would be the best way to preserve peace and prosperity in the Seven Kingdoms. Power resides where men believe it resides.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478503141/Users/varys2.jpg",allegiance_id:3)
 
 user26 = User.create!(username:"Needle",password:"aryast",name:"Arya Stark",about_me:"I was raised at Winterfell but have been on my own from an early age.  I have been traveling the world working on my 'kill list', but not to worry I'm quite the pleasant house guest for those that are not on my 'list'.  I am happy to help with cooking and cleaning in exchange for a roof over my head.  My hobbies include fencing, archery and vengeance.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070526/Users/arya.jpg",allegiance_id:2)
 
-user27 = User.create!(username:"TheRealQueen",password:"margae",name:"Margaery Tyrell",about_me:"I was raised in privilege in the family seat and regional capital of Highgarden. I am very close to my brother Ser Loras Tyrell (not the in Cersei and Jaime kind of way). I am also close to my handmaidens, Sera Durwell and Mira Forrester, who followed me to King's Landing from Highgarden. People say I am as beautiful as I am clever.",
+user27 = User.create!(username:"TheRealQueen",password:"margae",name:"Margaery Tyrell",about_me:"I don't want to be queen, I want to be THE queen. I was raised in privilege in the family seat and regional capital of Highgarden. I am very close to my brother Ser Loras Tyrell (not the in Cersei and Jaime kind of way). I am also close to my handmaidens, Sera Durwell and Mira Forrester, who followed me to King's Landing from Highgarden. People say I am as beautiful as I am clever.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070578/Users/margaery.png",allegiance_id:6)
 
 user28 = User.create!(username:"TheMountain",password:"gregor",name:"Gregor Clegane",about_me:"I am a notoriously fearsome warrior, with a tendency toward extreme and at times excessive violence. Due to my freakishly huge size, people call me 'The Mountain'. My loyalty lies with Cersei Lannister.",
@@ -132,7 +132,7 @@ price_per_night:40,region_id:2,number_rooms:12,number_beds:20,max_guests:24,prop
 house_rules:"No talk of the Lannisters or Boltons.
 Pet our wolves, they're friendly.",allegiance_id:2,stars:5)
 
-place4 = Place.create!(host_id:4,title:"Great Pyramid",lng:4,lat:4,description:"The Great Pyramid is a massive structure in the city of Meereen. It is the largest building in the city and it is said a thousand slaves died during its construction.[1] At its apex lies a huge bronze harpy.",
+place4 = Place.create!(host_id:4,title:"Great Pyramid",lng:4,lat:4,description:"The Great Pyramid is a massive structure in the city of Meereen. It is the largest building in the city and it is said a thousand slaves died during its construction. At its apex lies a huge bronze harpy.",
 price_per_night:380,region_id:10,number_rooms:23,number_beds:28,max_guests:35,property_type:"Pyramid",house_rules:"Please do not upset my dragons.",stars:5)
 
 place5 = Place.create!(host_id:5,title:"House of Black and White",lng:5,lat:5,description:"The House of Black and White is a temple in Braavos dedicated to the Many-Faced God. It serves as the headquarters of the guild of religious assassins known as the Faceless Men. It sits alone on a small island in the lagoon of Braavos. Although it can be reached by boat or bridge from other locations in the city, the island is usually deserted. The sole entrance to the temple is a door, one half ebony, the other pale weirwood - thus one black door and one white door.
@@ -200,7 +200,7 @@ price_per_night:250,region_id:1,number_rooms:10,number_beds:14,max_guests:17,pro
 place21 = Place.create!(host_id:21,title:"Horn Hill",lng:21,lat:21,description:"Horn Hill is the seat of House Tarly in the Reach. It is located southeast of Highgarden. It is regarded as one of the most beautiful castles and largest in the land. There is a pond that lies below the castle.",
 price_per_night:1175,region_id:4,number_rooms:16,number_beds:20,max_guests:28,property_type:"Castle",house_rules:"No Wildlings.",allegiance_id:7,stars:5)
 
-place22 = Place.create!(host_id:22,title:"Dragonstone",lng:22,lat:22,description:"Dragonstone is the castle that stands upon the eponymous island located in Blackwater Bay. The Chamber of the Painted Table is inside the castle. The castle was built using advanced Valyrian stonemasonry techniques, long since lost.[1] As a result it has many exotic features unique in all of Westeros, including massive dragon-shaped gargoyles. The entire castle is dominated by dragon motifs and reliefs.",
+place22 = Place.create!(host_id:22,title:"Dragonstone",lng:22,lat:22,description:"Dragonstone is the castle that stands upon the eponymous island located in Blackwater Bay. The Chamber of the Painted Table is inside the castle. The castle was built using advanced Valyrian stonemasonry techniques, long since lost. As a result it has many exotic features unique in all of Westeros, including massive dragon-shaped gargoyles. The entire castle is dominated by dragon motifs and reliefs.",
 price_per_night:325,region_id:1,number_rooms:8,number_beds:10,max_guests:13,property_type:"Castle",house_rules:"None.",allegiance_id:4,stars:4)
 
 place23 = Place.create!(host_id:23,title:"Evenfall Hall",lng:23,lat:23,description:"Evenfall Hall is the seat of House Tarth in the Stormlands. It is located on the western coast of the island of Tarth along Shipbreaker Bay and overlooks the Straits of Tarth.",
@@ -306,37 +306,37 @@ booking4 = Booking.create!(place_id:6,user_id:2,check_in_date:DateTime.new(2017,
 booking5 = Booking.create!(place_id:9,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:4)
 booking6 = Booking.create!(place_id:11,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:10)
 
-review1 = Review.create!(place_id:1,author_id:3,rating:2,body:"This place is as fancy as it looks, but putting up with the host, Cersei and her terrible son Joffrey is just not worth it. I regret staying here.")
-review2 = Review.create!(place_id:2,author_id:10,rating:3,body:"I found it surprisingly beautiful. In a brutal, horribly uncomfortable sort of way.")
-review3 = Review.create!(place_id:5,author_id:26,rating:1,body:"I've had my ups and downs with the host, Jaqen. I almost had to kill him once. But there's this dreadful girl who lives there and she will undoubtedly try too kill you.")
-review4 = Review.create!(place_id:6,author_id:26,rating:1,body:"The worst venue for a wedding. Do no get married here!")
-# review5 = Review.create!(place_id:,author_id:,rating:,body:)
-# review6 = Review.create!(place_id:,author_id:,rating:,body:)
-# review7 = Review.create!(place_id:,author_id:,rating:,body:)
-# review8 = Review.create!(place_id:,author_id:,rating:,body:)
-# review9 = Review.create!(place_id:,author_id:,rating:,body:)
-# review10 = Review.create!(place_id:,author_id:,rating:,body:)
-# review11 = Review.create!(place_id:,author_id:,rating:,body:)
-# review12 = Review.create!(place_id:,author_id:,rating:,body:)
-# review13 = Review.create!(place_id:,author_id:,rating:,body:)
-# review14 = Review.create!(place_id:,author_id:,rating:,body:)
-# review15 = Review.create!(place_id:,author_id:,rating:,body:)
-# review16 = Review.create!(place_id:,author_id:,rating:,body:)
-# review17 = Review.create!(place_id:,author_id:,rating:,body:)
-# review18 = Review.create!(place_id:,author_id:,rating:,body:)
-# review19 = Review.create!(place_id:,author_id:,rating:,body:)
-# review20 = Review.create!(place_id:,author_id:,rating:,body:)
-# review21 = Review.create!(place_id:,author_id:,rating:,body:)
-# review22 = Review.create!(place_id:,author_id:,rating:,body:)
+review1 = Review.create!(place_id:11,author_id:1,rating:4,body:"Beautiful castle and all of the flowers and hedges are lovely, but the host didn't seem to like me very much.")
+review2 = Review.create!(place_id:3,author_id:2,rating:5,body:"Winterfell was my home for many years after Ned Stark took me in as one of their own. As long as this castle is held by the Stark family, it will be a wonderful place to stay.")
+review3 = Review.create!(place_id:1,author_id:3,rating:2,body:"This place is as fancy as it looks, but putting up with the host, Cersei and her terrible son Joffrey is just not worth it. I regret staying here.")
+review4 = Review.create!(place_id:9,author_id:4,rating:5,body:"Yurt style living at it's best. Be careful if you're not fireproof like me as the yurts are surprisingly flamable.")
+review5 = Review.create!(place_id:2,author_id:8,rating:4,body:"I'm used to roughing it so I thought this place was quite luxurious, and it comes with the handsome Jon Snow.")
+review6 = Review.create!(place_id:2,author_id:10,rating:3,body:"I found it surprisingly beautiful. In a brutal, horribly uncomfortable sort of way.")
+review7 = Review.create!(place_id:5,author_id:26,rating:1,body:"I've had my ups and downs with the host, Jaqen. I almost had to kill him once. But there's this dreadful girl who lives there and she will undoubtedly try too kill you.")
+review8 = Review.create!(place_id:6,author_id:26,rating:1,body:"The worst venue for a wedding. Do no get married here!")
+review9 = Review.create!(place_id:16,author_id:10,rating:5,body:"I am a regular here. The most beautiful women in all the land are here. Also very fine wine.")
+review10 = Review.create!(place_id:1,author_id:11,rating:3,body:"While the furnishings and linens are quite impressive, the hosts are quite rude.")
+review11 = Review.create!(place_id:7,author_id:12,rating:3,body:"Decent castle, but the grounds aren't very well kept because of all the change in ownership.")
+review12 = Review.create!(place_id:3,author_id:14,rating:4,body:"I have travelled here quite often to visit my sister and her family. Simple and rustic, but very charming castle.")
+review13 = Review.create!(place_id:17,author_id:15,rating:1,body:"Ramsay Bolton is perhaps the worst host of all time. He tortures me every single day. And their damn dogs don't stop barking.")
+review14 = Review.create!(place_id:3,author_id:16,rating:5,body:"Not fancy like King's Landing, but a reputable castle with all the charm of the North.") #littlefinger on winterfell
+review15 = Review.create!(place_id:14,author_id:16,rating:3,body:"I visit here frequently to see my 'wife' Lysa and to influence her son Robin. It's a white knuckle grip on the horse reins on the way up, but worth the view at the top. The host Lysa is very strange...just steer clear of her (and the moon door).") #littlefinger on eyrie
+review16 = Review.create!(place_id:1,author_id:28,rating:5,body:"The best best to stay in all of the kingdoms. (Cersei made me say that).") #mountain of red keep
+review17 = Review.create!(place_id:13,author_id:27,rating:3,body:"Great place to stay as long as they're not keeping you in one of the cells.") #margaery of great sept
+review18 = Review.create!(place_id:4,author_id:25,rating:5,body:"Very impressive structure in a city filled with such turmoil. The rooms are quite spacious with high ceilings, large windows, and balconies overlooking the city.") #Varys for Meereen
+review19 = Review.create!(place_id:4,author_id:10,rating:4,body:"There's dragons in the dungeon. How many times have you been able to stay somewhere with dragons???")  #Tyrion for Meereen
+review20 = Review.create!(place_id:18,author_id:10,rating:3,body:"Cozy little place in the bustlin, busy city. Nothing extravagant, but great location.")  #Tyrion Volantis
+review21 = Review.create!(place_id:10,author_id:23,rating:4,body:"The tavern on the bottom floor has the BEST pot pies. And good beer.") #Brienne Inn at Crossroad
+review22 = Review.create!(place_id:10,author_id:10,rating:4,body:"This place has the best location for travelers passing through. You'll run in to all sorts of folks here. Not the place to stay if you don't want to be found.") #Tyrion Inn at Crossroad
 # review23 = Review.create!(place_id:,author_id:,rating:,body:)
-# review24 = Review.create!(place_id:,author_id:,rating:,body:)
-# review25 = Review.create!(place_id:,author_id:,rating:,body:)
-# review26 = Review.create!(place_id:,author_id:,rating:,body:)
-# review27 = Review.create!(place_id:,author_id:,rating:,body:)
-# review28 = Review.create!(place_id:,author_id:,rating:,body:)
-# review29 = Review.create!(place_id:,author_id:,rating:,body:)
-# review30 = Review.create!(place_id:,author_id:,rating:,body:)
-# review31 = Review.create!(place_id:,author_id:,rating:,body:)
+review24 = Review.create!(place_id:13,author_id:22,rating:4,body:"The perfect place for a royal wedding.")  #Robert Great Sept
+review25 = Review.create!(place_id:16,author_id:19,rating:5,body:"This brothel is the only good thing about King's Landing.")  #Ellara on brothel
+review26 = Review.create!(place_id:1,author_id:29,rating:5,body:"Staying in this palace you will be treated like royalty (even though you're not). It has the most dutiful servants and first amenties of anywhere you can find. It also has the Iron Throne, which you can only look at (no touchy-touchy).")  #Joffrey red keep
+review27 = Review.create!(place_id:11,author_id:29,rating:3,body:"I came here to visit my fiance's family. Everyone says this place is so 'pretty', but who cares about that? It's no Red Keep.")  #Joffrey of highgarden
+review28 = Review.create!(place_id:22,author_id:18,rating:4,body:"Magnificent architecture and gorgeous view.")  #red preistess dragonstone
+review29 = Review.create!(place_id:24,author_id:26,rating:5,body:"Cozy and humble. Very welcoming host. A great place to escape the dangers of Braavos.")  #arya on ragman lane
+review30 = Review.create!(place_id:3,author_id:26,rating:5,body:"This castle has a very 'homey' feel, and I'm not just saying that because I spent most of my childhood here.")  #arya on winterfell
+review31 = Review.create!(place_id:23,author_id:6,rating:3,body:"I went find my fortune here, but it turns out there are no sapphires. Lies! They call them the Sapphire Islands because of the color of the surrouding sea.") #evenfall hall
 # review32 = Review.create!(place_id:,author_id:,rating:,body:)
 # review33 = Review.create!(place_id:,author_id:,rating:,body:)
 # review34 = Review.create!(place_id:,author_id:,rating:,body:)
@@ -351,28 +351,28 @@ review4 = Review.create!(place_id:6,author_id:26,rating:1,body:"The worst venue 
 # review43 = Review.create!(place_id:,author_id:,rating:,body:)
 # review44 = Review.create!(place_id:,author_id:,rating:,body:)
 # review45 = Review.create!(place_id:,author_id:,rating:,body:)
-# review46 = Review.create!(place_id:,author_id:,rating:,body:)
-# review47 = Review.create!(place_id:,author_id:,rating:,body:)
-# review48 = Review.create!(place_id:,author_id:,rating:,body:)
-# review49 = Review.create!(place_id:,author_id:,rating:,body:)
-# review50 = Review.create!(place_id:,author_id:,rating:,body:)
-# review51 = Review.create!(place_id:,author_id:,rating:,body:)
-# review52 = Review.create!(place_id:,author_id:,rating:,body:)
-# review53 = Review.create!(place_id:,author_id:,rating:,body:)
-# review54 = Review.create!(place_id:,author_id:,rating:,body:)
-# review55 = Review.create!(place_id:,author_id:,rating:,body:)
-# review56 = Review.create!(place_id:,author_id:,rating:,body:)
-# review57 = Review.create!(place_id:,author_id:,rating:,body:)
-# review58 = Review.create!(place_id:,author_id:,rating:,body:)
-# review59 = Review.create!(place_id:,author_id:,rating:,body:)
-# review60 = Review.create!(place_id:,author_id:,rating:,body:)
-# review61 = Review.create!(place_id:,author_id:,rating:,body:)
-# review62 = Review.create!(place_id:,author_id:,rating:,body:)
-# review63 = Review.create!(place_id:,author_id:,rating:,body:)
-# review64 = Review.create!(place_id:,author_id:,rating:,body:)
-# review65 = Review.create!(place_id:,author_id:,rating:,body:)
-# review66 = Review.create!(place_id:,author_id:,rating:,body:)
-# review67 = Review.create!(place_id:,author_id:,rating:,body:)
-# review68 = Review.create!(place_id:,author_id:,rating:,body:)
-# review69 = Review.create!(place_id:,author_id:,rating:,body:)
-# review70 = Review.create!(place_id:,author_id:,rating:,body:)
+review46 = Review.create!(place_id:1,author_id:30,rating:5,body:"hodor hodor ...hodor")
+review47 = Review.create!(place_id:2,author_id:30,rating:3,body:"hodor")
+review48 = Review.create!(place_id:3,author_id:30,rating:5,body:"Hodor, hodor, hodor, hodor, hodor. Hodor.")
+review49 = Review.create!(place_id:4,author_id:30,rating:4,body:"HODOR")
+review50 = Review.create!(place_id:5,author_id:30,rating:3,body:"hodor hodor.")
+review51 = Review.create!(place_id:6,author_id:30,rating:4,body:"hodor, hodor, hodor, hodor, hodor. Hodor.")
+review52 = Review.create!(place_id:7,author_id:30,rating:3,body:"hodor")
+review53 = Review.create!(place_id:8,author_id:30,rating:3,body:"HODOR")
+review54 = Review.create!(place_id:9,author_id:30,rating:3,body:"Hodor hodor")
+review55 = Review.create!(place_id:10,author_id:30,rating:4,body:"Hodor hodor hodor hodor.")
+review56 = Review.create!(place_id:11,author_id:30,rating:3,body:"Hodor hodor hodor hodor, hodor.")
+review57 = Review.create!(place_id:12,author_id:30,rating:2,body:"Hodor hodor!")
+review58 = Review.create!(place_id:13,author_id:30,rating:3,body:"Hodor, hodor, hodor, hodor.")
+review59 = Review.create!(place_id:14,author_id:30,rating:4,body:"HODOR")
+review60 = Review.create!(place_id:15,author_id:30,rating:3,body:"Hodor hodor")
+review61 = Review.create!(place_id:16,author_id:30,rating:2,body:"Hodor hodor, hodor hodor?")
+review62 = Review.create!(place_id:17,author_id:30,rating:2,body:"Hodor, hodor hodor hodor.")
+review63 = Review.create!(place_id:18,author_id:30,rating:3,body:"Hodor hodor?")
+review64 = Review.create!(place_id:19,author_id:30,rating:2,body:"Hodor hodor!")
+review65 = Review.create!(place_id:20,author_id:30,rating:3,body:"Hodor hodor hodor hodor.")
+review66 = Review.create!(place_id:21,author_id:30,rating:5,body:"Hodor hodor")
+review67 = Review.create!(place_id:22,author_id:30,rating:4,body:"Hodor?! hodor.")
+review68 = Review.create!(place_id:23,author_id:30,rating:3,body:"Hodor, hodor, hodor!")
+review69 = Review.create!(place_id:24,author_id:30,rating:2,body:"Hodor hodor.")
+review70 = Review.create!(place_id:25,author_id:30,rating:5,body:"Hodor hodor hodor?")

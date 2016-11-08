@@ -17,14 +17,12 @@ export default ({ getState, dispatch }) => next => action => {
   const fetchAllSuccess = data => dispatch(receiveBookings(data));
   const fetchSuccess = data => dispatch(receiveBooking(data));
   const createSuccess = data => {
-    debugger
     hashHistory.push('bookings');
     dispatch(receiveBooking(data));
   };
 
   const successDelete = data => dispatch(removeBooking(data));
   const fetchErrors = data => {
-    debugger
     return dispatch(receiveBookingErrors(data.responseJSON));
   };
 
@@ -36,7 +34,6 @@ export default ({ getState, dispatch }) => next => action => {
       fetchBooking(action.id, fetchSuccess);
       return next(action);
     case CREATE_BOOKING:
-    debugger
       createBooking(action.booking, createSuccess, fetchErrors);
       return next(action);
     case DELETE_BOOKING:

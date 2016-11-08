@@ -17,7 +17,6 @@ export const fetchBooking = (id,success,error) => {
 };
 
 export const createBooking = (booking, success, error) => {
-  debugger
   $.ajax({
     method: 'POST',
     url: '/api/bookings',

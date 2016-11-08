@@ -35,7 +35,7 @@
   position: relative;;
 }
 
-.form {
+.review-form {
   width: 75%;
   margin: auto;
   margin-top: 40px;
@@ -78,7 +78,7 @@
   justify-content: center;
 }
 
-.form h3 {
+.review-form h3 {
   text-align: center;
   margin: auto;
 }

@@ -4,9 +4,7 @@ import { RECEIVE_REVIEWS,
 import merge from 'lodash/merge';
 
 const ReviewsReducer = (oldState={}, action) => {
-  
   switch (action.type) {
-
     case RECEIVE_REVIEWS:
       return action.reviews;
     case RECEIVE_REVIEW:

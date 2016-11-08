@@ -30,7 +30,7 @@ class BookingEditForm extends React.Component {
 
 	renderErrors() {
 		if (this.props.errors.length !== 0) {
-			
+
 			return(
 				<ul className="errors">
 					{this.props.errors.map((error, i) => (
@@ -47,14 +47,14 @@ class BookingEditForm extends React.Component {
 
 	render() {
     return (
-      <div className="form-container">
+      <div className="booking-edit-form-container">
   			<div className="group">
-  				<button id="x" onClick={this.props.closeModal}>x</button>
+  				<button id="close" onClick={this.props.closeModal}>close</button>
   			</div>
-        <form onSubmit={this.handleSubmit} className="form-box">
+        <form onSubmit={this.handleSubmit} className="booking-edit-form-box">
   				<img id="logo" src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
           {this.renderErrors()}
-          <div className="form">
+          <div className="booking-edit-form">
             <label> <span>*</span> Check In
   						<br/>
               <input type="date"
@@ -70,6 +70,7 @@ class BookingEditForm extends React.Component {
             </label>
             <br/>
               <label className="num-guests"> <span>*</span>Guests
+								<br/>
                 <select
                   onChange={this.update("number_of_guests")}
                   className="booking-input">

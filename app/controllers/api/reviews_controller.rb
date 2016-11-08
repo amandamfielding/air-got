@@ -8,7 +8,7 @@ class Api::ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.author = current_user
     if @review.save
-      render "api/reviews"
+      render "api/reviews/show"
     else
       render json: @review.errors.full_messages, status:422
     end
@@ -17,11 +17,10 @@ class Api::ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
-    render 'api/reviews'
   end
 
   private
   def review_params
-    params.require(:review).permit(:body,:place_id, :rating)
+    params.require(:review).permit(:body, :place_id, :rating)
   end
 end

@@ -10,7 +10,7 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
   }
 };
 
@@ -73,7 +73,7 @@ class Header extends React.Component {
         <Modal
           isOpen={this.state.modalIsOpen}
           style={customStyles}>
-          <div>
+          <div className="auth-modal-container">
             <AuthFormContainer formType={this.state.formType} closeModal={this.closeModal}/>
           </div>
         </Modal>
