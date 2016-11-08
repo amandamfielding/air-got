@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router';
-/* globals google */
+
 
 function getNormalizedCoord(coord, zoom) {
   var y = coord.y;

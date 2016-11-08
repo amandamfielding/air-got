@@ -1,5 +1,3 @@
-/*RESET*/
-
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
@@ -37,10 +35,7 @@ input[type="text"],
 input[type="submit"],
 textarea,
 button {
-  /*
-  Get rid of native styling. Read more here:
-  http://css-tricks.com/almanac/properties/a/appearance/
-  */
+
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -54,8 +49,6 @@ span {
     color: #587388;
 }
 
-
-/* Clearfix */
 
 .group:after {
   content: "";
