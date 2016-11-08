@@ -53,8 +53,12 @@ class BookingItem extends React.Component {
         <ul className="booking">
           <img className="place-main-image" src={place_main_image} />
           <img className="host-image-url" src={host_image_url}/>
+
           <div className="booking-details">
             <li><h2>{region_name}</h2></li>
+            <div className="dates">
+              <h3>{check_in_date} -     </h3><h3>  {check_out_date}</h3>
+            </div>
             <li><h3>{place_title}</h3></li>
             <li className="booking-rating"><span>{"♛".repeat(stars)}</span></li>
             <li className="booking-link">
