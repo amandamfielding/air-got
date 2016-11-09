@@ -20,5 +20,14 @@
 
 #home-subtitle {
   margin-top: 10px;
-  text-shadow: 8px 8px 14px #000000;
+  text-shadow: 4px 4px 14px #000000;
+}
+
+#please-demo {
+  position: absolute;
+  font-size: 16px;
+  right: 15px;
+  top: 75px;
+  color: #CC1200;
+  text-shadow: 0 0 2px #000000;
 }

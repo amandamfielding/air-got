@@ -36,8 +36,10 @@ class ReviewItem extends React.Component {
       return (
         <div className="review">
           <ul className="review-details">
-            <img className="review-user-pic" src={author_image} />
-            <span className="review-author">{author_name}</span>
+            <div className="review-author">
+              <img className="review-user-pic" src={author_image} />
+              <span className="review-author-name">{author_name}</span>
+            </div>
             <div className="rating-and-body">
               <li><span id="review-rating">{"♛".repeat(this.props.review.rating)}</span></li>
               <li className="review-body">{this.props.review.body}</li>

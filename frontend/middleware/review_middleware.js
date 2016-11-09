@@ -20,13 +20,13 @@ const ReviewMiddleware = store => next => action => {
 
   switch (action.type) {
     case FETCH_REVIEWS:
-      store.dispatch(fetchReviews(successFetchAll));
+      fetchReviews(successFetchAll);
       return next(action);
     case CREATE_REVIEW:
-      store.dispatch(createReview(action.review,successFetch));
+      createReview(action.review,successFetch);
       return next(action);
     case DELETE_REVIEW:
-      store.dispatch(deleteReview(action.id,successDelete));
+      deleteReview(action.id,successDelete);
       return next(action);
     default:
       return next(action);

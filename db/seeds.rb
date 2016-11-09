@@ -22,7 +22,7 @@ My mother Minisa Tully died in childbirth during my early childhood. I have two 
 user8 = User.create!(username:"YouKnowNothing",password:"ygritt",name:"Ygritte",about_me:"I a woman of the Free Folk who live north of the Wall. I'm not like all those prissy princesses of Westeros. I know how to fight as good as any man and better than my boyfriend, Jon Snow. All men must die, but first we shall live.",
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069397/Users/ygritte.jpg")
 
-user9 = User.create!(username:"KahlDreamy",password:"kahldr",name:"Kahl Drogo",about_me:"I am a warlord of the Dothraki, the famed nomadic horse-lords of the eastern continent beyond the Narrow Sea. We are fierce warriors, skilled in battle, unrelenting in combat and known for savagery.
+user9 = User.create!(username:"KhalDreamy",password:"khaldr",name:"Khal Drogo",about_me:"I am a warlord of the Dothraki, the famed nomadic horse-lords of the eastern continent beyond the Narrow Sea. We are fierce warriors, skilled in battle, unrelenting in combat and known for savagery.
 My hobbies include never wearing a shirt, romancing my khaleesi, and slicing people open with giant blades.",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478476437/Users/kahldrogo.jpg")
 
 user10 = User.create!(username:"pIMP",password:"tryion",name:"Tyrion Lannister",about_me:"It's not easy being drunk all the time. If it was easy, everyone would do it. I am incredibly knowledgeable about two things: Wine and Whores. I am well read and well traveled. I spent my youth at Casterly Rock, but in the past few years I've been to Castle Black, Winterfell, The Eyrie, Kings Landing, Pentos, Volantis and Meereen. I'm am quite the conversationalist, using my words to get me both in and out of trouble. I'm an international man of mystery.",
@@ -90,61 +90,57 @@ user30 = User.create!(username:"hodorhodor",password:"hodor1",name:"Hodor",about
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070785/Users/hodor.jpg",allegiance_id:2)
 
 
-place1 = Place.create!(host_id:1,title:"The Red Keep",lng:1,lat:1,description:"The Red Keep is the residence of the King of the Andals and the First Men, his family and his court, located within King's Landing, the capital of the Seven Kingdoms. It dominates the skyline of the city, and serves as the city's primary fortress and redoubt.
-Located in the southeastern corner of King's Landing, the Red Keep overlooks Blackwater Bay and the Narrow Sea. It is currently the seat of Queen Cersei Lannister and was formerly the seat of King Tommen Baratheon, King Joffrey Baratheon, King Robert Baratheon, and before him the seat of the Targaryen kings.
-\n
-\n
+place1 = Place.create!(host_id:1,title:"The Red Keep",lng:1,lat:1,description:"The Red Keep is the residence of the King of the Andals and the First Men, his family and his court, located within King's Landing, the capital of the Seven Kingdoms. It dominates the skyline of the city, and serves as the city's primary fortress and redoubt. Located in the southeastern corner of King's Landing, the Red Keep overlooks Blackwater Bay and the Narrow Sea. It is currently the seat of Queen Cersei Lannister and was formerly the seat of King Tommen Baratheon, King Joffrey Baratheon, King Robert Baratheon, and before him the seat of the Targaryen kings.
+
 The Great Hall is the massive throne room of the Red Keep and is where the Iron Throne is situated. The King (or his Hand, in the event of the King's absence), holds court and receives petitioners within the Great Hall. It is also employed for official ceremonies.
-\n
-\n
-Maegor's Holdfast is a stout tower in the center of the Red Keep. It was named after King Maegor Targaryen, who built the Red Keep. It serves as a redoubt when the city is attacked. The royal apartments are also located in Maegor's Holdfast.
-Maegor's Holdfast served as a refuge for Queen Cersei and the highborn ladies of the Red Keep during the Battle of the Blackwater.
-\n
-\n
-The Tower of the Hand is the location of the quarters and offices of the Hand of the King. The Hand's family, household and guards also live and work in the Tower of the Hand.
-When Tywin Lannister assumes his Hand duties for King Joffrey he arranges for the meetings of the small council to be held in the Tower of the Hand to assert his own authority. He is later killed by his son, Tyrion Lannister, whilst in the privy by a crossbow.
-\n
-\n
-The Traitor's Walk is an outer corridor on one of the sides of the Red Keep with view to one of its outer walls. The heads of criminals and traitors are placed on spikes over said wall, visible both to the exterior of the Red Keep and whoever passes through the corridor.
-Following the arrest and execution of Ned Stark, his head and those of his entire household were placed on the wall beside the Traitor's Walk.
-\n
-\n
+
+Maegor's Holdfast is a stout tower in the center of the Red Keep. It was named after King Maegor Targaryen, who built the Red Keep. It serves as a redoubt when the city is attacked. The royal apartments are also located in Maegor's Holdfast. Maegor's Holdfast served as a refuge for Queen Cersei and the highborn ladies of the Red Keep during the Battle of the Blackwater.
+
+The Tower of the Hand is the location of the quarters and offices of the Hand of the King. The Hand's family, household and guards also live and work in the Tower of the Hand. When Tywin Lannister assumes his Hand duties for King Joffrey he arranges for the meetings of the small council to be held in the Tower of the Hand to assert his own authority. He is later killed by his son, Tyrion Lannister, whilst in the privy by a crossbow.
+
+The Traitor's Walk is an outer corridor on one of the sides of the Red Keep with view to one of its outer walls. The heads of criminals and traitors are placed on spikes over said wall, visible both to the exterior of the Red Keep and whoever passes through the corridor. Following the arrest and execution of Ned Stark, his head and those of his entire household were placed on the wall beside the Traitor's Walk.
+
 The dungeons of the Red Keep are divided in four levels:
-On the upper level are cells with high narrow windows where common criminals are confined together.
-The second level has smaller, personal cells without windows for highborn captives and valuable hostages.
-The Black Cells are the third level. Prisoners accused of treason and other high crimes are kept within the Black Cells, as was the case of Ned Stark. Varys has access to the Black Cells, though he dons the disguise of a gaoler when entering.
-The fourth level is spoken of only in rumors. Once a man is taken here, he never sees the light of day again and is subjected to the most painful torments.
-\n
-\n
+On the upper level are cells with high narrow windows where common criminals are confined together. The second level has smaller, personal cells without windows for highborn captives and valuable hostages. The Black Cells are the third level. Prisoners accused of treason and other high crimes are kept within the Black Cells, as was the case of Ned Stark. Varys has access to the Black Cells, though he dons the disguise of a gaoler when entering. The fourth level is spoken of only in rumors. Once a man is taken here, he never sees the light of day again and is subjected to the most painful torments.
+
 The Red Keep, according to rumors, is full of miles of secret passages running behind the walls and below the floors. Maegor the Cruel had the builders of the Red Keep executed after the castle was completed to keep the secret of the passageways.
 ",price_per_night:1400,region_id:1,number_rooms:24,number_beds:32,max_guests:40,property_type:"Palace",
 house_rules:"No disagreeing with the Queen.
+
 Obey The Mountain.",allegiance_id:1,stars:5)
 
 place2 = Place.create!(host_id:2,title:"Castle Black",lng:2,lat:2,description:"Castle Black is the primary headquarters and redoubt of the Night's Watch. It is located roughly halfway along the length of the Wall on its southern side, at the northern end of the Kingsroad. It is a dark and chilling home to its garrison.
-Castle Black is one of only three manned castles left on the Wall along with Eastwatch-by-the-Sea and The Shadow Tower. There are nineteen castles along the Wall, but as their numbers fell over the centuries the Night's Watch had to abandon sixteen of them. Castle Black is located between the unmanned castles of Queensgate and Oakensheild.
-Castle Black has a sept, but no Godswood. Those who are followers of the Old Gods of the Forest must travel a mile north of the Wall and into the Haunted Forest to take their vows before a heart tree.",
+
+Castle Black is one of only three manned castles left on the Wall along with Eastwatch-by-the-Sea and The Shadow Tower. There are nineteen castles along the Wall, but as their numbers fell over the centuries the Night's Watch had to abandon sixteen of them. Castle Black is located between the unmanned castles of Queensgate and Oakensheild. Castle Black has a sept, but no Godswood. Those who are followers of the Old Gods of the Forest must travel a mile north of the Wall and into the Haunted Forest to take their vows before a heart tree.",
 price_per_night: 60,region_id:6,number_rooms:6,number_beds:14,max_guests:19,property_type:"Castle",house_rules:"No arguing with the Lord Commander.
+
 Keep your vows.",stars:3)
 
-place3 = Place.create!(host_id:3,title:"Winterfell",lng:3,lat:3,description:"Winterfell,the capital of the North, is a very large castle from where the head of House Stark rules over his people. The castle is located alongside the Kingsroad as it makes its way from the Wall to the capital at King's Landing, more than a thousand miles to the south. It is situated atop hot springs which keep the castle warm even in the worst winters. Winding tombs below the castle contain the remains of Stark kings and lords and record the history of the ancient family. The castle has stood for millennia.",
+place3 = Place.create!(host_id:3,title:"Winterfell",lng:3,lat:3,description:"Winterfell,the capital of the North, is a very large castle from where the head of House Stark rules over his people. The castle is located alongside the Kingsroad as it makes its way from the Wall to the capital at King's Landing, more than a thousand miles to the south. It is situated atop hot springs which keep the castle warm even in the worst winters.
+
+Winding tombs below the castle contain the remains of Stark kings and lords and record the history of the ancient family. The castle has stood for millennia.",
 price_per_night:40,region_id:2,number_rooms:12,number_beds:20,max_guests:24,property_type:"Castle",
 house_rules:"No talk of the Lannisters or Boltons.
+
 Pet our wolves, they're friendly.",allegiance_id:2,stars:5)
 
 place4 = Place.create!(host_id:4,title:"Great Pyramid",lng:4,lat:4,description:"The Great Pyramid is a massive structure in the city of Meereen. It is the largest building in the city and it is said a thousand slaves died during its construction. At its apex lies a huge bronze harpy.",
 price_per_night:380,region_id:10,number_rooms:23,number_beds:28,max_guests:35,property_type:"Pyramid",house_rules:"Please do not upset my dragons.",stars:5)
 
 place5 = Place.create!(host_id:5,title:"House of Black and White",lng:5,lat:5,description:"The House of Black and White is a temple in Braavos dedicated to the Many-Faced God. It serves as the headquarters of the guild of religious assassins known as the Faceless Men. It sits alone on a small island in the lagoon of Braavos. Although it can be reached by boat or bridge from other locations in the city, the island is usually deserted. The sole entrance to the temple is a door, one half ebony, the other pale weirwood - thus one black door and one white door.
+
 The interior of the House features a central sanctuary with a large pool in the center. The water filling the pool is poisoned, and is given out to those who are suffering and come to the temple to seek the release of death.
+
 The atrium is lined with statues of many gods from many different faiths, from across both Essos and Westeros. Specifically they are gods that represent death and the unknown, such as the Stranger from the Faith of the Seven. The Faceless Men believe that all of these death gods are really one god who has revealed Himself to humanity in different ways: the Many Faced God of Death.",
 price_per_night:50,region_id:3,number_rooms:1,number_beds:1,max_guests:1,property_type:"Temple",house_rules:"You must be no one.",stars:2)
 
 place6 = Place.create!(host_id:6,title:"The Twins",lng:6,lat:6,description:"The Twins, sometimes known as The Crossing, is a castle and the seat of House Frey, the Great House of the Riverlands. It consists of two near-identical towers and a fortified bridge over the Green Fork of the River Trident.
+
 The Twins represents the only crossing point over the Green Fork for hundreds of miles in either direction. It is a major barrier to travelers and merchants traveling from the North to the western Riverlands. It lies directly on the main route from Winterfell to Riverrun. Moving from one castle to the other while avoiding the Twins requires a lengthy detour hundreds of miles to the south or hazardously traversing the bogs and swamps of the Neck to the north. Travelers heading south who cannot pass southwest over the Twins must pass southeast along the Kingsroad.",
 price_per_night:95,region_id:7,number_rooms:8,number_beds:12,max_guests:14,property_type:"Castle",house_rules:"No killing humans and making them into pies.",allegiance_id:8,stars:2)
 
 place7 = Place.create!(host_id:7,title:"Riverrun",lng:7,lat:7,description:"Riverrun is a large castle located in the central-western part of the Riverlands. It sits at the point where the Red Fork of the Trident River is joined by its major tributary, the Tumblestone River flowing out of the west.
+
 In times of danger, sluice gates can be opened to flood a channel cut to the west of the castle, turning Riverrun into an island. Its walls rise sheer from the waters and its towers command the opposite shores, making assaulting it almost impossible without huge casualties.",
 price_per_night:85,region_id:7,number_rooms:18,number_beds:28,max_guests:34,property_type:"Castle",house_rules:"No drama happens here, keep it that way.",allegiance_id:5,stars:3)
 
@@ -152,29 +148,42 @@ place8 = Place.create!(host_id:8,title:"Frostfang Mountains",lng:8,lat:8,descrip
 price_per_night:16,region_id:6,number_rooms:1,number_beds:1,max_guests:10,property_type:"Tent",house_rules:"None, let's have a good time!",stars:2)
 
 place9 = Place.create!(host_id:9,title:"Vaes Dothrak",lng:9,lat:9,description:"Vaes Dothrak is the only city in the Dothraki Sea, located near the far northeastern edge of the region. It lies in the shadow of a single, vast peak known by the Dothraki as the Mother of Mountains. The entrance to Vaes Dothrak is marked by two large statues depicting a pair of stallions.
+
 Vaes Dothrak is a place of peace where the Dothraki khalasars may gather and meet to trade, but not to fight. Therefore it is forbidden to draw a sword while in the city, under penalty of death. However, the restriction is specifically on drawing a bladed weapon or shedding blood (which is considered sacrilege): should the need arise, it is permissible to kill someone in the city using other lethal means, i.e. strangulation or burning. Even so, due to the respect the Dothraki have for the city, violence within it is rare.
+
 Dothraki holy women, known as dosh khaleen, live in the city and are respected by all Dothraki.
+
 The city has a large marketplace, where foreign merchants from as far afield as the Free Cities and Asshai sell their wares.",
-price_per_night:36,region_id:9,number_rooms:1,number_beds:2,max_guests:4,property_type:"Tent",house_rules:"Kahl Drogo is the hottest man in the Kingdom - we all know this. But you cannot make a move on him. Daenerys gets crazy jealous and she has dragons.",stars:2)
+price_per_night:36,region_id:9,number_rooms:1,number_beds:2,max_guests:4,property_type:"Tent",house_rules:"Khal Drogo is the hottest man in the Kingdom - we all know this. But you cannot make a move on him. Daenerys gets crazy jealous and she has dragons.",stars:2)
 
 place10 = Place.create!(host_id:10,title:"Inn at the Crossroads",lng:10,lat:10,description:"Crossroads Inn is an inn that lies at the crossroads between the Kingsroad running north-south, the River Road west through the riverlands to the westerlands, and the High Road east to the Vale of Arryn. The inn is three stories tall with turrets and chimneys made of white stone. Its south wing is built upon pilings that rise over a bed of weeds. On the north side there is a stable with a thatch roof and a bell tower. The building is surrounded by a low wall of broken white stones.",
 price_per_night:249,region_id:7,number_rooms:12,number_beds:20,max_guests:24,property_type:"Bed & Breakfast",house_rules:"If you drink too much in the tavern, no one will take you up to your room.",stars:4)
 
 place11 = Place.create!(host_id:11,title:"Highgarden",lng:11,lat:11,description:"Highgarden is among the most beautiful castles in the Seven Kingdoms. Situated on a broad, symmetrically shaped hill, the castle includes three concentric tiers of white stone walls, which increase in height and thickness as one travels upwards. Between the outermost and middle walls is Highgarden's famous 'briar maze', a labyrinth of beautifully maintained hedges that serves two important purposes; entertainment for the castle's inhabitants and deterrence against enemies (any invaders who manage to penetrate the outer wall would have no easy task finding their way through the elaborate growth of thorns and greenery).
+
 The inner rings of Highgarden are a beautiful complex of towers, courtyards, colonnades and statuary, and greenery is just as prominent inside the walls as in the fields outside; ivy, grapevines and climbing roses can be seen snaking around the buildings, and gardens and arbors are filled with flowers. Water features are also common inside the walls, with pools, fountains and even man-made waterfalls visible throughout the complex.
+
 Highgarden is the seat of House Tyrell and the regional capital of the Reach. Located on the banks of the river Mander, Highgarden sits astride the Roseroad, a major thoroughfare linking Oldtown and King's Landing.",
-price_per_night:1295,region_id:4,number_rooms:21,number_beds:32,max_guests:38,property_type:"Palace",house_rules:"We don't discuss the Lannisters here, unless you're talking about killing them.",allegiance_id:6,stars:5)
+price_per_night:1295,region_id:4,number_rooms:21,number_beds:32,max_guests:38,property_type:"Palace",house_rules:"We don't discuss the Lannisters here, unless you're talking about ways to kill them.",allegiance_id:6,stars:5)
 
 place12 = Place.create!(host_id:12,title:"Casterly Rock",lng:12,lat:12,description:"Casterly Rock is the ancestral stronghold of House Lannister. It is located on the Western coast of Westeros on a rocky promontory overlooking the Sunset Sea. It overlooks the major city of Lannisport. A major goldmine is located under Casterly Rock. It is one of the most productive in the realm and provides House Lannister with their wealth.
+
 The castle consists of fortifications built into and on top of the Rock, but the most splendid parts are actually located within the Rock itself, beneath the visible castle. Additional catacombs, dungeons and redoubts are built deep into the bowels of the formation, since Casterly Rock is also the Lannister's primary mine. The castle's main entrance is the heavily-defended Lion's Mouth.",
 price_per_night:370,region_id:5,number_rooms:11,number_beds:15,max_guests:19,property_type:"Castle",house_rules:"Don't call the host 'Kingslayer'.",allegiance_id:1,stars:4)
 
 place13 = Place.create!(host_id:13,title:"The Great Sept of Baelor",lng:13,lat:13,description:"The Sept of Baelor, is a massive sept, the center of religious worship for the Faith of the Seven and the seat of the High Septon of the Faith. It was located in King's Landing, the capital of the Seven Kingdoms, and was the largest single building in the city, though the Red Keep complex sprawls over a larger area. Great religious ceremonies have been held here. It is also the sept personally used by the royal family, thus royal weddings are held at the Great Sept in massive ceremonies.
+
 The Great Sept is decorated with paintings of the seven-pointed star and sculptures depicting the Seven different aspects of the godhead. Votive offerings and lit candles are placed at the base of statues of the Seven.
+
 The main sanctum chamber can comfortably seat seven hundred people. There are other spaces within the complex that can seat larger numbers. The Great Sept also has cells for peninents.",
-price_per_night:65,region_id:1,number_rooms:8,number_beds:14,max_guests:14,property_type:"Chapel",house_rules:"No drinking or lustful behavior.",stars:2)
+price_per_night:65,region_id:1,number_rooms:8,number_beds:14,max_guests:14,property_type:"Chapel",house_rules:"No drinking or lustful behavior.
+
+Keep silent during prayer time.
+
+Obey the faith militant.",stars:2)
 
 place14 = Place.create!(host_id:14,title:"The Eyrie",lng:14,lat:14,description:"The Eyrie is the principal stronghold of House Arryn. It is located in the Vale of Arryn near the east coast of Westeros. The Eyrie straddles the top of a peak in the Mountains of the Moon several thousand feet above the valley floor below. It is approached by a narrow causeway and road. Those who would approach the Eyrie must pass through three way-castles guarding the ascent - and then, must proceed in single file, making them very vulnerable to archers. For these reasons, the Eyrie is considered impregnable to any attack that does not involve dragons, and its defenses have never been overcome.
+
 A notable feature of the chamber is the Moon Door, a hatch built into the floor through which people can fall to the floor of the Vale far below. Being thrown through the Moon Door is the preferred method of execution at the Eyrie.",
 price_per_night:200,region_id:12,number_rooms:6,number_beds:10,max_guests:14,property_type:"Castle",house_rules:"No making fun of my son Robin or I'll throw you out the moon door.",allegiance_id:10,stars:3)
 
@@ -188,8 +197,9 @@ place17 = Place.create!(host_id:17,title:"Castle Dreadfort",lng:17,lat:17,descri
 price_per_night:45,region_id:2,number_rooms:4,number_beds:5,max_guests:7,property_type:"Castle",house_rules:"We fillet the guests who anger thier host.",allegiance_id:11,stars:1)
 
 place18 = Place.create!(host_id:18,title:"Dwelling on the Long Bridge",lng:18,lat:18,description:"The Long Bridge is a great structure located in the Free City of Volantis. It is a bridge spanning the mouth of the immense Rhoyne River just before it spills into the Summer Sea.
+
 The bridge is so large that it is covered in rows of multi-level buildings, taverns, brothels, and marketplaces, forming a small neighborhood of the city unto itself.",
-price_per_night:50,region_id:10,number_rooms:2,number_beds:3,max_guests:4,property_type:"Hosue",house_rules:"Please be quiet and do not disturb the local merchants.",stars:3)
+price_per_night:50,region_id:10,number_rooms:2,number_beds:3,max_guests:4,property_type:"Hosue",house_rules:"Please keep quiet and do not disturb the local merchants.",stars:3)
 
 place19 = Place.create!(host_id:19,title:"Spear Tower",lng:19,lat:19,description:"The Spear Tower is the dominant structure in Sunspear, the seat of House Martell in the capital of Dorne. It is a 150-foot structure with a pinnacle of shining steel.",
 price_per_night:795,region_id:8,number_rooms:9,number_beds:12,max_guests:16,property_type:"Tower",house_rules:"None.",allegiance_id:12,stars:5)

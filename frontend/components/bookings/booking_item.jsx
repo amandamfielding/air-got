@@ -46,8 +46,16 @@ class BookingItem extends React.Component {
     }
   }
 
+  calculateDate(date) {
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"];
+    let newDate = new Date(date);
+    return monthNames[newDate.getMonth()] + " " + newDate.getDate() + ", " + newDate.getFullYear();
+  }
+
   render() {
     const {user, place_id, place_title, place_main_image, check_in_date, check_out_date, host_image_url, region_name, stars} = this.props.booking;
+
     if (this.props.booking) {
       return (
         <ul className="booking">
@@ -56,8 +64,8 @@ class BookingItem extends React.Component {
 
           <div className="booking-details">
             <li><h2>{region_name}</h2></li>
-            <div className="dates">
-              <h3>{check_in_date} -     </h3><h3>  {check_out_date}</h3>
+            <div className="display-dates">
+              <li>{this.calculateDate(check_in_date)} - {this.calculateDate(check_out_date)}</li>
             </div>
             <li><h3>{place_title}</h3></li>
             <li className="booking-rating"><span>{"♛".repeat(stars)}</span></li>

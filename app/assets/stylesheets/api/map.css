@@ -1,4 +1,11 @@
-#map-container {
-    width: 640px;
-    height: 513px;
+.right-half-map {
+  width: 50%;
+  height: 500px;
+  padding-top: 70px;
+  height: calc(100vh - 70px);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }

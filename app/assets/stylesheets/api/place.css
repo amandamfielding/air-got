@@ -1,14 +1,12 @@
 .place-show {
   min-height: calc(100vh - 50px);
-  padding-top: 68px;
+  padding-top: 70px;
 }
 
 .text {
   margin: 20px 20px 20px 80px;
   width: 60%;
   position: relative;
-  height: 500px;
-  overflow: scroll;
 }
 
 .header-text {
@@ -20,27 +18,22 @@
   overflow: auto;
   display: flex;
   overflow-y: hidden;
-  height: 360px;
+  height: 320px
 }
 
 .place-image {
-  width: 50vw;
+  width: 540px;
+  height: 100%;
 }
 
-.show-host-info {
-  font-size: 1.6em;
-  position: relative;
-  justify-content: center;
-  vertical-align: middle;
+.show-host-pic {
+  text-align: center;
 }
 
-.show-host-info span {
-  display: inline-block;
-  margin-left: 15px;
+.show-host-pic span {
+  top: 116px;
   position: absolute;
-  left: 24px;
-  top: 140px;
-  font-size: 18px;
+  width: 100%;
 }
 
 .show-host-pic {
@@ -63,6 +56,14 @@
   box-shadow: 0 0 8px #000000;
 }
 
+.title-with-rating {
+  display: flex;
+}
+
+.show-title {
+  margin-right: 10px;
+}
+
 .show-place-categories {
   list-style: none;
   position: absolute;
@@ -76,7 +77,6 @@
 .show-place-details {
   display: flex;
   justify-content: center;
-
 }
 
 .show-place-details li {
@@ -91,9 +91,6 @@
 }
 
 #show-rating {
-  position: absolute;
-  top: 1px;
-  left: 210px;
   font-size: 20px;
 }
 
@@ -109,8 +106,9 @@
   width: 90%;
 }
 
-p {
+.show-about p, .show-rules p {
   margin: 20px 0;
+  white-space: pre-wrap;
 }
 
 .make-booking-box {
@@ -118,9 +116,9 @@ p {
   background-color: #403C39;
   padding: 20px;
   margin: 15px;
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 460px;
+  top: 275px;
   flex-direction: column;
   color: #fff;
   border-radius: 6px;
@@ -136,8 +134,6 @@ p {
 
 .booking-price {
   margin: auto;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .booking-input {
@@ -155,7 +151,7 @@ p {
 .make-booking-box .submit-booking {
   margin: 0 auto;
   width: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 20px;
   background: #CC1200;
   padding: 12px 24px;

@@ -35,7 +35,7 @@ class Place extends React.Component {
   renderErrors() {
     if (this.props.errors.length !== 0) {
       return(
-        <ul className="errors">
+        <ul className="booking-errors">
           {this.props.errors.map((error, i) => (
             <li  key={`error-${i}`}>
               {error}
@@ -67,23 +67,25 @@ class Place extends React.Component {
               )}
             </ul>
           </div>
-          <div className="text">
 
+          <div className="text">
             <div className="header-text">
-              <div className="show-host-info">
                 <div className="show-host-pic">
-                  <img
+                  <div><img
                     className="show-host-pic-button"
                     src={host.image_url}
                     onClick={this.handleProfileClick}/>
+                  </div>
+                  <span>{host.name}</span>
                 </div>
-                <span>{host.name}</span>
-              </div>
 
               <div className="show-place-categories">
-                <h1 className="show-title">{title}</h1>
+                <div className="title-with-rating">
+                  <h1 className="show-title">{title}</h1>
+                  <span id="show-rating">{"♛".repeat(stars)}</span>
+                </div>
                 <h3 key={region.id}>{region.name}</h3>
-                <span id="show-rating">{"♛".repeat(stars)}</span>
+
                 <ul className="show-place-details">
                   <li>
                     <img src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478414829/Palace-100_nykmvb.png" />

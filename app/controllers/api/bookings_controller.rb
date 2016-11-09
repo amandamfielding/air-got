@@ -8,6 +8,8 @@ class Api::BookingsController < ApplicationController
     @booking.user = current_user
     if @booking.save
       render 'api/bookings/show'
+    elsif !current_user
+      render( json: ["Please log in, sign up, or select demo"], status:404)
     else
       render json: @booking.errors.full_messages, status:422
     end

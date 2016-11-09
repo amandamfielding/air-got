@@ -7,11 +7,12 @@ class ReviewForm extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      body: "",
-      rating: ""
+      body:"",
+      rating:0
     };
     this.handleReviewSubmit = this.handleReviewSubmit.bind(this);
-    this.navigateToPlaceShow = this.navigateToPlaceShow.bind(this);
+    this.updateStars = this.updateStars.bind(this);
+    this.clearReviewForm = this.clearReviewForm.bind(this);
   }
 
   update(field) {
@@ -20,9 +21,20 @@ class ReviewForm extends React.Component{
 		});
 	}
 
-  navigateToPlaceShow() {
-    this.props.router.push(`/places/${this.props.params.placeId}`);
+  updateStars(newValue) {
+    this.setState({
+      rating: newValue
+    });
   }
+
+  clearReviewForm(e) {
+    e.preventDefault();
+      this.setState({
+        body:"",
+        rating:0
+      });
+  }
+
 
   handleReviewSubmit(e) {
     e.preventDefault();
@@ -31,7 +43,6 @@ class ReviewForm extends React.Component{
       place_id: placeId
     });
     this.props.createReview(review);
-    this.navigateToPlaceShow();
   }
 
   render() {
@@ -46,8 +57,10 @@ class ReviewForm extends React.Component{
               count={5}
               char={"♛"}
               size={24}
-              onChange={this.update("rating")}
-              color2={'rgb(160,0,17)'} />
+              value={this.state.rating}
+              onChange={this.updateStars}
+              color1={'white'}
+              color2={'#CC1200'} />
           </div>
 
           <textarea
@@ -61,7 +74,7 @@ class ReviewForm extends React.Component{
           <br/>
           <div className="submit-and-cancel">
             <input className="review-submit" type="submit"/>
-            <button className="cancel" onClick={this.navigateToPlaceShow}>Cancel</button>
+            <button className="cancel" onClick={this.clearReviewForm}>Cancel</button>
           </div>
         </form>
       </div>
