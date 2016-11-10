@@ -3,10 +3,7 @@ import ReviewItem from './review_item';
 import ReviewForm from './review_form';
 
 class ReviewsIndex extends React.Component {
-
-
   render() {
-    if (this.props.reviews) {
       return (
         <div>
             {this.props.reviews.map( review => (
@@ -18,9 +15,6 @@ class ReviewsIndex extends React.Component {
           <ReviewForm createReview={this.props.createReview} />
         </div>
       );
-    } else {
-      return (<div></div>);
-    }
   }
 }
 

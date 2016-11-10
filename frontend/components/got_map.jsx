@@ -38,8 +38,6 @@ function isOutsideTileRange(coord,zoom) {
 
 const nolabelMapType = new google.maps.ImageMapType({
     getTileUrl: function(coord,zoom) {
-      console.log(isOutsideTileRange(coord,zoom));
-      console.log(getTileCode(coord, zoom));
       if (isOutsideTileRange(coord,zoom)) return null;
       return "assets/fsm/"+getTileCode(coord,zoom)+".jpg";
     },
@@ -60,7 +58,7 @@ class Map extends React.Component {
     const map = this.refs.map;
     this.map = new google.maps.Map(map, {
       center: {lat: 0, lng: 0},
-      zoom: 2,
+      zoom: 1,
       streetViewControl: false,
       overviewMapControl: true,
       mapTypeControlOptions: {mapTypeIds: ["Labels", "No Labels"]}

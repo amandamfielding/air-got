@@ -27,8 +27,7 @@ class ReviewForm extends React.Component{
     });
   }
 
-  clearReviewForm(e) {
-    e.preventDefault();
+  clearReviewForm() {
       this.setState({
         body:"",
         rating:0
@@ -43,6 +42,7 @@ class ReviewForm extends React.Component{
       place_id: placeId
     });
     this.props.createReview(review);
+    this.clearReviewForm();
   }
 
   render() {
@@ -68,6 +68,7 @@ class ReviewForm extends React.Component{
             name={this.body}
             cols='40'
             rows='5'
+            value={this.state.body}
             onChange={this.update("body")}
             placeholder="Add comment...">
           </textarea>

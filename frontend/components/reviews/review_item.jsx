@@ -4,9 +4,13 @@ import React from 'react';
 class ReviewItem extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      review: this.props.review
+    };
     this.canDeleteReview = this.canDeleteReview.bind(this);
     this.cannotDeleteReview = this.cannotDeleteReview.bind(this);
   }
+
 
   canDeleteReview() {
     return (
@@ -25,14 +29,16 @@ class ReviewItem extends React.Component {
   }
 
     render() {
-    if (this.props.review && window.currentUser) {
-      let canDeleteStatus;
-      if (window.currentUser.username === this.props.review.author.username) {
-        canDeleteStatus = this.canDeleteReview();
-      } else {
-        canDeleteStatus = this.cannotDeleteReview();
-      }
-      const { author_image, author_name } = this.props.review;
+      const { author_image, author_name, author_username } = this.props.review;
+      if (this.props.review) {
+        let canDeleteStatus;
+        if (window.currentUser) {
+        if (window.currentUser.username === author_username) {
+          canDeleteStatus = this.canDeleteReview();
+        } else {
+          canDeleteStatus = this.cannotDeleteReview();
+      }}
+
       return (
         <div className="review">
           <ul className="review-details">

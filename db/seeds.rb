@@ -90,7 +90,7 @@ user30 = User.create!(username:"hodorhodor",password:"hodor1",name:"Hodor",about
 image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070785/Users/hodor.jpg",allegiance_id:2)
 
 
-place1 = Place.create!(host_id:1,title:"The Red Keep",lng:1,lat:1,description:"The Red Keep is the residence of the King of the Andals and the First Men, his family and his court, located within King's Landing, the capital of the Seven Kingdoms. It dominates the skyline of the city, and serves as the city's primary fortress and redoubt. Located in the southeastern corner of King's Landing, the Red Keep overlooks Blackwater Bay and the Narrow Sea. It is currently the seat of Queen Cersei Lannister and was formerly the seat of King Tommen Baratheon, King Joffrey Baratheon, King Robert Baratheon, and before him the seat of the Targaryen kings.
+place1 = Place.create!(host_id:1,title:"The Red Keep",lng:-97.5,lat:-44.5,description:"The Red Keep is the residence of the King of the Andals and the First Men, his family and his court, located within King's Landing, the capital of the Seven Kingdoms. It dominates the skyline of the city, and serves as the city's primary fortress and redoubt. Located in the southeastern corner of King's Landing, the Red Keep overlooks Blackwater Bay and the Narrow Sea. It is currently the seat of Queen Cersei Lannister and was formerly the seat of King Tommen Baratheon, King Joffrey Baratheon, King Robert Baratheon, and before him the seat of the Targaryen kings.
 
 The Great Hall is the massive throne room of the Red Keep and is where the Iron Throne is situated. The King (or his Hand, in the event of the King's absence), holds court and receives petitioners within the Great Hall. It is also employed for official ceremonies.
 
@@ -109,14 +109,14 @@ house_rules:"No disagreeing with the Queen.
 
 Obey The Mountain.",allegiance_id:1,stars:5)
 
-place2 = Place.create!(host_id:2,title:"Castle Black",lng:2,lat:2,description:"Castle Black is the primary headquarters and redoubt of the Night's Watch. It is located roughly halfway along the length of the Wall on its southern side, at the northern end of the Kingsroad. It is a dark and chilling home to its garrison.
+place2 = Place.create!(host_id:2,title:"Castle Black",lng:-98.5,lat:71,description:"Castle Black is the primary headquarters and redoubt of the Night's Watch. It is located roughly halfway along the length of the Wall on its southern side, at the northern end of the Kingsroad. It is a dark and chilling home to its garrison.
 
 Castle Black is one of only three manned castles left on the Wall along with Eastwatch-by-the-Sea and The Shadow Tower. There are nineteen castles along the Wall, but as their numbers fell over the centuries the Night's Watch had to abandon sixteen of them. Castle Black is located between the unmanned castles of Queensgate and Oakensheild. Castle Black has a sept, but no Godswood. Those who are followers of the Old Gods of the Forest must travel a mile north of the Wall and into the Haunted Forest to take their vows before a heart tree.",
 price_per_night: 60,region_id:6,number_rooms:6,number_beds:14,max_guests:19,property_type:"Castle",house_rules:"No arguing with the Lord Commander.
 
 Keep your vows.",stars:3)
 
-place3 = Place.create!(host_id:3,title:"Winterfell",lng:3,lat:3,description:"Winterfell,the capital of the North, is a very large castle from where the head of House Stark rules over his people. The castle is located alongside the Kingsroad as it makes its way from the Wall to the capital at King's Landing, more than a thousand miles to the south. It is situated atop hot springs which keep the castle warm even in the worst winters.
+place3 = Place.create!(host_id:3,title:"Winterfell",lng:-119.9,lat:52.2,description:"Winterfell,the capital of the North, is a very large castle from where the head of House Stark rules over his people. The castle is located alongside the Kingsroad as it makes its way from the Wall to the capital at King's Landing, more than a thousand miles to the south. It is situated atop hot springs which keep the castle warm even in the worst winters.
 
 Winding tombs below the castle contain the remains of Stark kings and lords and record the history of the ancient family. The castle has stood for millennia.",
 price_per_night:40,region_id:2,number_rooms:12,number_beds:20,max_guests:24,property_type:"Castle",
@@ -144,7 +144,7 @@ place7 = Place.create!(host_id:7,title:"Riverrun",lng:7,lat:7,description:"River
 In times of danger, sluice gates can be opened to flood a channel cut to the west of the castle, turning Riverrun into an island. Its walls rise sheer from the waters and its towers command the opposite shores, making assaulting it almost impossible without huge casualties.",
 price_per_night:85,region_id:7,number_rooms:18,number_beds:28,max_guests:34,property_type:"Castle",house_rules:"No drama happens here, keep it that way.",allegiance_id:5,stars:3)
 
-place8 = Place.create!(host_id:8,title:"Frostfang Mountains",lng:8,lat:8,description:"Come camping with the Wildlings in the beautiful Frostfang mountains. Bring your bow and arrow to hunt for dinner, and your thickest fur coat - it's a bit chilly up here.",
+place8 = Place.create!(host_id:8,title:"Frostfang Mountains",lng:-124,lat:76,description:"Come camping with the Wildlings in the beautiful Frostfang mountains. Bring your bow and arrow to hunt for dinner, and your thickest fur coat - it's a bit chilly up here.",
 price_per_night:16,region_id:6,number_rooms:1,number_beds:1,max_guests:10,property_type:"Tent",house_rules:"None, let's have a good time!",stars:2)
 
 place9 = Place.create!(host_id:9,title:"Vaes Dothrak",lng:9,lat:9,description:"Vaes Dothrak is the only city in the Dothraki Sea, located near the far northeastern edge of the region. It lies in the shadow of a single, vast peak known by the Dothraki as the Mother of Mountains. The entrance to Vaes Dothrak is marked by two large statues depicting a pair of stallions.
@@ -187,13 +187,13 @@ place14 = Place.create!(host_id:14,title:"The Eyrie",lng:14,lat:14,description:"
 A notable feature of the chamber is the Moon Door, a hatch built into the floor through which people can fall to the floor of the Vale far below. Being thrown through the Moon Door is the preferred method of execution at the Eyrie.",
 price_per_night:200,region_id:12,number_rooms:6,number_beds:10,max_guests:14,property_type:"Castle",house_rules:"No making fun of my son Robin or I'll throw you out the moon door.",allegiance_id:10,stars:3)
 
-place15 = Place.create!(host_id:15,title:"Pyke",lng:15,lat:15,description:"Pyke is the stronghold and seat of House Greyjoy, located on the island of the same name, which is one of the seven major Iron Islands. The castle is the regional capital of the Iron Islands as a whole. Pyke is an ancient stronghold and the cliff it was built on has been eroded by the sea leaving the towers standing on stone stacks. The towers are connected by swaying rope bridges. The rocky moss covered stone at its base is not suitable for ships landing so traffic to the island flows through the nearby harbor town Lordsport.",
+place15 = Place.create!(host_id:15,title:"Pyke",lng:-154.5,lat:-15,description:"Pyke is the stronghold and seat of House Greyjoy, located on the island of the same name, which is one of the seven major Iron Islands. The castle is the regional capital of the Iron Islands as a whole. Pyke is an ancient stronghold and the cliff it was built on has been eroded by the sea leaving the towers standing on stone stacks. The towers are connected by swaying rope bridges. The rocky moss covered stone at its base is not suitable for ships landing so traffic to the island flows through the nearby harbor town Lordsport.",
 price_per_night:95,region_id:5,number_rooms:5,number_beds:8,max_guests:10,property_type:"Castle",house_rules:"Be careful walking across the bridges. People have been known to 'fall off'.",allegiance_id:9,stars:3)
 
 place16 = Place.create!(host_id:16,title:"Littlefinger's Brothel",lng:16,lat:16,description:"Littlefinger's brothel is an upscale brothel located in King's Landing, expensively furnished and with high quality prostitutes, whose target clientele are wealthy merchants and members of the upper nobility. The host says this is 'An establishment like no other. The sheer range of appetites catered to. Desires that didn't even exist until we invented them.'",
 price_per_night:375,region_id:1,number_rooms:4,number_beds:4,max_guests:6,property_type:"Brothel",house_rules:"None, enjoy yourself.",stars:5)
 
-place17 = Place.create!(host_id:17,title:"Castle Dreadfort",lng:17,lat:17,description:"The Dreadfort is a castle situated in the North. It was the seat of House Bolton, located on the banks of the Weeping Water east of Winterfell. The Dreadfort is ill-omened as the stronghold of House Bolton, who are famed for the flayed skins of their enemies, often rumored to have been kept on display in the castle, including those of several ancient Stark kings.",
+place17 = Place.create!(host_id:17,title:"Castle Dreadfort",lng:-93.7,lat:54.5,description:"The Dreadfort is a castle situated in the North. It was the seat of House Bolton, located on the banks of the Weeping Water east of Winterfell. The Dreadfort is ill-omened as the stronghold of House Bolton, who are famed for the flayed skins of their enemies, often rumored to have been kept on display in the castle, including those of several ancient Stark kings.",
 price_per_night:45,region_id:2,number_rooms:4,number_beds:5,max_guests:7,property_type:"Castle",house_rules:"We fillet the guests who anger thier host.",allegiance_id:11,stars:1)
 
 place18 = Place.create!(host_id:18,title:"Dwelling on the Long Bridge",lng:18,lat:18,description:"The Long Bridge is a great structure located in the Free City of Volantis. It is a bridge spanning the mouth of the immense Rhoyne River just before it spills into the Summer Sea.
@@ -241,6 +241,7 @@ PlaceImage.create(place_id:3, url:"http://res.cloudinary.com/dbsxgncvx/image/upl
 PlaceImage.create(place_id:3, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478150842/Places/winterfell3.jpg")
 PlaceImage.create(place_id:2, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478152122/Places/Castle_Black1.jpg")
 PlaceImage.create(place_id:2, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478152119/Places/castleblack2.jpg")
+PlaceImage.create(place_id:2, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731866/Places/game-of-thrones-hbo-castle-black-northern-ireland.jpg.rend.tccom.1280.960.jpg")
 PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid1.jpg")
 PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid2.jpg",caption:"Check out that view, though")
 PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478153035/Places/pyramid3.jpg",caption:"If you see on of these guys, RUN!!!")
@@ -248,8 +249,10 @@ PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upl
 PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478153034/Places/pyramid5.jpg")
 PlaceImage.create(place_id:6, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153498/Places/twins0.jpg")
 PlaceImage.create(place_id:6, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153498/Places/twins1.jpg")
+PlaceImage.create(place_id:6, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478732152/Places/audleys1.jpg")
 PlaceImage.create(place_id:7, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153824/Places/riverrun1.jpg")
 PlaceImage.create(place_id:7, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153825/Places/riverrun2.jpg")
+PlaceImage.create(place_id:7, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478732368/Places/a8cc81d3343ac782daa97e67ed239c62.jpg")
 PlaceImage.create(place_id:8, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478154022/Places/frostfang0.jpg")
 PlaceImage.create(place_id:8, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478154083/Places/frostfang2.jpg",caption:"Isn't our campsite lovely?")
 PlaceImage.create(place_id:8, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478154018/Places/frostfang1.jpg",caption:"Pack your fur coat, it's a bit chilly.")
@@ -260,7 +263,10 @@ PlaceImage.create(place_id:9, url:"http://res.cloudinary.com/dbsxgncvx/image/upl
 PlaceImage.create(place_id:9, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156379/Places/vaesdothrak5.jpg")
 PlaceImage.create(place_id:10, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155702/Places/Inn_at_the_Crossroads1.jpg")
 PlaceImage.create(place_id:10, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155702/Places/inncrossroads2.jpg")
+PlaceImage.create(place_id:10, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478734210/Places/IMG_0245.jpg")
 PlaceImage.create(place_id:12, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_1000/v1478155899/Places/casterlyrock.jpg",caption:"Where your hiking boots. It's all the way at the top and there's no elevator.")
+PlaceImage.create(place_id:12, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731528/Places/images.jpg")
+PlaceImage.create(place_id:12, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731727/Places/lionhead4.jpg")
 PlaceImage.create(place_id:13, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156386/Places/GreatSept1.jpg")
 PlaceImage.create(place_id:13, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156388/Places/GreatSept2.jpg")
 PlaceImage.create(place_id:13, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156523/Places/GreatSept3.jpg")
@@ -272,16 +278,31 @@ PlaceImage.create(place_id:15, url:"http://res.cloudinary.com/dbsxgncvx/image/up
 PlaceImage.create(place_id:15, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478157532/Places/iron3.jpg",caption:"My sister Yara, she's always around.")
 PlaceImage.create(place_id:16, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478487162/Places/latest.png")
 PlaceImage.create(place_id:16, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487263/Places/9cd27a15de370011a0f2ae78f8312bb6.jpg")
+PlaceImage.create(place_id:16, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478734517/Places/196717_oa957.jpg")
 PlaceImage.create(place_id:17, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487466/latest_dur5i5.jpg")
+PlaceImage.create(place_id:17, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478734825/Places/10286e66bf9e1050bce00c9b495d30f3cc2d2fa5_hq.jpg")
+PlaceImage.create(place_id:17, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478735213/Places/wpid-01ca4d60-e799-0132-c01d-0a13eebe068d.jpg")
 PlaceImage.create(place_id:18, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487622/latest_yga1dc.png")
+PlaceImage.create(place_id:18, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735927/Places/503_Volantis_Long_Bridge_3.jpg")
+PlaceImage.create(place_id:18, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735986/Places/503_Volantis_Long_Bridge_2.jpg")
 PlaceImage.create(place_id:19, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487832/Sunspear_by_jonathanguzi-d89ziph_is396k.jpg")
-PlaceImage.create(place_id:20, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478488019/48700_screenshots_2013-08-13_00003_1_yk8pbw.jpg")
+PlaceImage.create(place_id:19, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478736910/Places/4d671018-f77f-4012-aaa2-b8183ab7b846.jpg")
+PlaceImage.create(place_id:19, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478736960/Places/tumblr_nsu1oqGpuh1rfrksjo1_500.png")
+PlaceImage.create(place_id:20, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737177/Places/9e8d80209e2bc85a21cdf457916e0e13.jpg")
+PlaceImage.create(place_id:20, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737358/Places/gothic_castle_room_by_xnickixstockx.jpg")
+PlaceImage.create(place_id:20, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478737304/Places/inside-castle-of-mytilini.jpg")
 PlaceImage.create(place_id:22, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478488081/latest_zwovik.jpg")
-PlaceImage.create(place_id:23, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478488162/450px-Evenfall_Hall_h6zwhs.jpg")
+PlaceImage.create(place_id:22, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737564/Places/Dragonstone_C.jpg")
+PlaceImage.create(place_id:22, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737633/Places/game-of-thrones-stannis-on-dragonstone1-e1428349599743.jpg")
+PlaceImage.create(place_id:23, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478737777/Places/16c26ccb-0038-4cc3-a47e-a3a5d26e96e8.jpg")
+PlaceImage.create(place_id:23, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737864/Places/a_room_in_a_castle_by_ravenslane-d3iadga.jpg")
+PlaceImage.create(place_id:23, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478738060/Places/8a603a08feb0fe681670e902633be56f.jpg")
 PlaceImage.create(place_id:24, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478488266/igre1_bwo1rx.jpg")
+PlaceImage.create(place_id:24, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735442/Places/Arya-in-Braavos1.png")
+PlaceImage.create(place_id:24, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735646/Places/noone4-185751.jpg")
 PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478489118/latest_yljnoe.jpg")
 PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478489164/latest_jgoky0.png")
-
+PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478738219/Places/Wars_to_come_tyrion_varys_pentos.jpg")
 
 region1 = Region.create!(name:"Crownlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/crownlands.jpg") #6
 region2 = Region.create!(name:"The North",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/the_north.jpg") #2

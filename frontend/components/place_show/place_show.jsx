@@ -49,7 +49,7 @@ class Place extends React.Component {
   }
 
   render() {
-    const { host, reviews, description, region, price_per_night, title, max_guests, stars, number_rooms, number_beds, property_type, place_images, house_rules } = this.props.place;
+    const { host, description, region, price_per_night, title, max_guests, stars, number_rooms, number_beds, property_type, place_images, house_rules } = this.props.place;
 
     if (host) {
       return (
@@ -114,8 +114,7 @@ class Place extends React.Component {
             </div>
             <div className="reviews">
               <h2>Reviews</h2>
-              <ReviewsContainer
-                reviews={reviews}/>
+              <ReviewsContainer />
             </div>
           </div>
 

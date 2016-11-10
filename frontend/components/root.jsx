@@ -7,6 +7,7 @@ import SearchContainer from './search/search_container';
 import PlaceShowContainer from './place_show/place_show_container';
 import UserContainer from './users/user_container';
 import BookingsContainer from './bookings/bookings_container';
+import { fetchReviews } from '../actions/reviews_actions';
 
 const Root = ({ store }) => {
 
@@ -17,13 +18,17 @@ const Root = ({ store }) => {
     }
   };
 
+  const _fetchReviews = () => {
+    store.dispatch(fetchReviews());
+  };
+
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="/search" component={SearchContainer} />
-          <Route path="/places/:placeId" component={PlaceShowContainer} />
+          <Route path="/places/:placeId" component={PlaceShowContainer} onEnter={_fetchReviews}/>
           <Route path="/users/:userId" component={UserContainer} />
           <Route path="/bookings" component={BookingsContainer} />
         </Route>

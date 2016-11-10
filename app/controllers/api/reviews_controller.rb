@@ -1,7 +1,7 @@
 class Api::ReviewsController < ApplicationController
 
   def index
-    @reviews = Review.all
+    @reviews = Place.find_by(params[:id]).reviews
   end
 
   def create
@@ -17,6 +17,7 @@ class Api::ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
+    render 'api/reviews/show'
   end
 
   private
