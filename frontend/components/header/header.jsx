@@ -28,8 +28,15 @@ class Header extends React.Component {
 		return e => this.setState({
 			[field]: e.currentTarget.value}, () =>
     this.props.searchRegions(this.state.letters)
-  );
+    );
 	}
+
+  clearSearchBar() {
+    debugger
+    this.setState({
+      letters: ""
+    });
+  }
 
   openModal(formType) {
     this.setState({modalIsOpen: true, formType: formType });
@@ -119,9 +126,13 @@ class Header extends React.Component {
               </li>
                 <ul id="search-dropdown">
                   {this.props.regions.map(region =>
-                    <li key={region.id+region.name+region.lat} className="search-names">
-                    <Link to={`search/${region.lat}/${region.lng}`}
-                      >{region.name}</Link>
+                    <li
+                      key={region.id+region.name+region.lat}
+                      className="search-names"
+                      onClick={this.clearSearchBar}>
+                    <Link to={`search/${region.lat}/${region.lng}`}>
+                      {region.name}
+                      </Link>
                       </li>
                   )}
                 </ul>
