@@ -10,6 +10,7 @@
 .bookings{
   display: flex;
   flex-wrap: wrap;
+  min-height: 500px;
 }
 
 .display-dates {
