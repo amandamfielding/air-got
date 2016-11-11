@@ -52,7 +52,7 @@ class BookingEditForm extends React.Component {
   				<button id="close" onClick={this.props.closeModal}>close</button>
   			</div>
         <form onSubmit={this.handleSubmit} className="booking-edit-form-box">
-  				<img id="logo" src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
+  				<img id="logo" src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
           {this.renderErrors()}
           <div className="booking-edit-form">
             <label> <span>*</span> Check In

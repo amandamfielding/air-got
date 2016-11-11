@@ -94,17 +94,17 @@ class Place extends React.Component {
 
                 <ul className="show-place-details">
                   <li>
-                    <img src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478414829/Palace-100_nykmvb.png" />
+                    <img src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478414829/Palace-100_nykmvb.png" />
                     <br/>{property_type}
                     </li>
                   <li>
-                    <img src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478414637/User_Groups-100_wopsm7.png" />
+                    <img src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478414637/User_Groups-100_wopsm7.png" />
                     <br/>{max_guests} guests</li>
                   <li>
-                    <img src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478414931/Door_Opened-100_i56gbl.png" />
+                    <img src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478414931/Door_Opened-100_i56gbl.png" />
                     <br/>{number_rooms} rooms</li>
                   <li>
-                    <img src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478414482/Bed-100_ijbuj1.png"/>
+                    <img src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478414482/Bed-100_ijbuj1.png"/>
                     <br/>{number_beds} beds</li>
                 </ul>
               </div>

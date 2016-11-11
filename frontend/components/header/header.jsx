@@ -114,7 +114,7 @@ class Header extends React.Component {
       <div className="header-box">
           <ul className="group">
             <a href="#">
-            <img src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/></a>
+            <img src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/></a>
             <li id="header-logo">
               <a href="#">
               <span id="title">A<span id="first-little">ir</span>G<span id="second-little">o</span>T</span> <br/>

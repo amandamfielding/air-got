@@ -1,93 +1,93 @@
 user1 = User.create!(username:"queenC",password:"cersei",name:"Cersei Lannister",about_me:"I am a doting mother of three children. My hobbies include world politics and cultivating close relationships with my friends and relatives, especially my brother. Personal motto: The more people you love, the weaker you are. The only thing I love is power and I kill anyone who tries to take it from me. When you play the game of thrones you either win or die.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478241047/Users/cersei2.jpg",allegiance_id:1)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478241047/Users/cersei2.jpg",allegiance_id:1)
 
 user2 = User.create!(username:"LordCommander",password:"jonsno",name:"Jon Snow",about_me:"According to my ex-girlfriend, I know nothing.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478068317/Users/Jon_Kill_the_Boy.jpg",allegiance_id:2)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478068317/Users/Jon_Kill_the_Boy.jpg",allegiance_id:2)
 
 user3 = User.create!(username:"LittleDove",password:"sansas",name:"Sansa Stark",about_me:"Never a bridesmaid, always a bride.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240271/Users/sansa.jpg",allegiance_id:2)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240271/Users/sansa.jpg",allegiance_id:2)
 
 user4 = User.create!(username:"MotherOfDragons",password:"daener",name:"Daenerys Targaryen",about_me:"My reign has just begun. I will take what's mine.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240565/Users/daenerys5.jpg",allegiance_id:3)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240565/Users/daenerys5.jpg",allegiance_id:3)
 
 user5 = User.create!(username:"NoOne",password:"jaqenh",name:"Jaqen H'ghar",about_me:"I am but one of many Faceless Men assassins of Braavos. All men must serve, faceless men most of all. I am mysterious, calm in the face of danger, and surprisingly courteous.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240491/Users/jaqenh_ghar.jpg")
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478240491/Users/jaqenh_ghar.jpg")
 
 user6 = User.create!(username:"LordFrey",password:"walder",name:"Walder Frey",about_me:"I am the head of House Frey and Lord of the Crossing. I am the most fertile ruler in all the land, having over one hundrend descendants. I love weddings - I've been married seven times! But I enjoy hosting wedding even more (just ask your friends about the Red Wedding).",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,h_400,w_400/v1478069095/Users/walderfrey.jpg",allegiance_id:8)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,h_400,w_400/v1478069095/Users/walderfrey.jpg",allegiance_id:8)
 
 user7 = User.create!(username:"LordOfRiverrun",password:"edmure",name:"Edmure Tully",about_me:"I am the son and heir of Lord Hoster Tully. I have recently become the Lord of Riverrun and Lord Paramount of the Riverlands. The Riverlands are one of the constituent regions of the Seven Kingdoms and House Tully is one of the Great Houses of the realm.
-My mother Minisa Tully died in childbirth during my early childhood. I have two elder sisters Catelyn Stark and Lysa Arryn. I was also raised with my father's ward, Petyr Baelish. I was the one who first nicknamed him 'Littlefinger'.",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,h_400,w_400/v1478476106/Users/edmuretully.jpg",allegiance_id:5)
+My mother Minisa Tully died in childbirth during my early childhood. I have two elder sisters Catelyn Stark and Lysa Arryn. I was also raised with my father's ward, Petyr Baelish. I was the one who first nicknamed him 'Littlefinger'.",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,h_400,w_400/v1478476106/Users/edmuretully.jpg",allegiance_id:5)
 
 user8 = User.create!(username:"YouKnowNothing",password:"ygritt",name:"Ygritte",about_me:"I a woman of the Free Folk who live north of the Wall. I'm not like all those prissy princesses of Westeros. I know how to fight as good as any man and better than my boyfriend, Jon Snow. All men must die, but first we shall live.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069397/Users/ygritte.jpg")
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069397/Users/ygritte.jpg")
 
 user9 = User.create!(username:"KhalDreamy",password:"khaldr",name:"Khal Drogo",about_me:"I am a warlord of the Dothraki, the famed nomadic horse-lords of the eastern continent beyond the Narrow Sea. We are fierce warriors, skilled in battle, unrelenting in combat and known for savagery.
-My hobbies include never wearing a shirt, romancing my khaleesi, and slicing people open with giant blades.",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478476437/Users/kahldrogo.jpg")
+My hobbies include never wearing a shirt, romancing my khaleesi, and slicing people open with giant blades.",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478476437/Users/kahldrogo.jpg")
 
 user10 = User.create!(username:"pIMP",password:"tryion",name:"Tyrion Lannister",about_me:"It's not easy being drunk all the time. If it was easy, everyone would do it. I am incredibly knowledgeable about two things: Wine and Whores. I am well read and well traveled. I spent my youth at Casterly Rock, but in the past few years I've been to Castle Black, Winterfell, The Eyrie, Kings Landing, Pentos, Volantis and Meereen. I'm am quite the conversationalist, using my words to get me both in and out of trouble. I'm an international man of mystery.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069658/Users/tyrion.jpg",allegiance_id:3)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069658/Users/tyrion.jpg",allegiance_id:3)
 
 user11 = User.create!(username:"QueenOfThorns",password:"olenna",name:"Olenna Tyrell",about_me:"I am elderly matriarch of House Tyrell and adore my grandchildren, Margaery and Loras. I have been a master of court politics and intrigue throughout my life and am known for my wit and sarcasm. I hold a great deal of influence over the Reach and will live out the rest of my life to avenge Cersei Lannister.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_crop,h_400,w_400/v1478069718/Users/olenna.jpg",allegiance_id:6)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_crop,h_400,w_400/v1478069718/Users/olenna.jpg",allegiance_id:6)
 
 user12 = User.create!(username:"Kingslayer",password:"jaimel",name:"Jaime Lannister",about_me:"I am the eldest son of Tywin Lannister and brother to Cersei and Tyrion. I love my children - ahem - I meant 'neice and nephews', Joffrey, Myrcella, and Tommen. I have been a knight in the King's Guard since I was a teenager. I have the most morals in my family (except for that one time I pushed that kid out of the window.)",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069767/Users/jaime2.jpg",allegiance_id:1)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069767/Users/jaime2.jpg",allegiance_id:1)
 
 user13 = User.create!(username:"FaithOfTheSeven",password:"highsp",name:"High Sparrow",about_me:"I am the leader of the religious sect known as the Sparrows and am the newly appointed High Septon. Every one of us is poor and powerless. And yet together... we can overthrow an empire.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063365/Users/highsparrow.png")
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063365/Users/highsparrow.png")
 
 user14 = User.create!(username:"MoonDoor",password:"lysaar",name:"Lysa Arryn",about_me:"I am the Lady Regent of the Vale, ruling on behalf of my young son Robin Arryn. I know my son is a little 'off', but I love him more than anything. I killed my husband because my crush Lord Petyr Baelish told me to.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478477429/Users/lysaarryn.jpg",allegiance_id:10)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478477429/Users/lysaarryn.jpg",allegiance_id:10)
 
 user15 = User.create!(username:"Reek",password:"theong",name:"Theon Greyjoy",about_me:"I am the only living son and heir of Lord Balon Greyjoy of the Iron Islands, and younger brother of Yara Greyjoy. Following our father's failed rebellion against the Iron Throne, I was taken as a hostage/ward to Lord Eddard Stark of Winterfell. After Eddard's execution in King's Landing, I pledged my loyalty to Eddard's eldest son, Robb Stark,  but I betrayed Robb and joined my father in invading the North, which lead to my capture by House Bolton. I was tortured and forced into servitude by Ramsay Bolton, who turned me into his broken pet, Reek. I redeemed myself by helping Ramsay's wife, Sansa Stark, escape from Winterfell and find refuge with Jon Snow. I returned to the Iron Islands and learned of my father's death at the hands of my own uncle, Euron Greyjoy. I have now fled with Yara to seek out an alliance with Daenerys Targaryen.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069869/Users/theon.jpg",allegiance_id:9)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478069869/Users/theon.jpg",allegiance_id:9)
 
 user16 = User.create!(username:"Littlefinger",password:"petyrb",name:"Petyr Baelish",about_me:"I used to be the Master of Coin on the Small Council. I am a skilled manipulator and use my ownership of brothels in King's Landing to both accrue intelligence on political rivals and acquire vast wealth. My spy network is eclipsed only by that of Varys.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478239/Users/littlefinger.jpg")
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478239/Users/littlefinger.jpg")
 
 user17 = User.create!(username:"BastardOfBolton",password:"ramsay",name:"Ramsay Bolton",about_me:"Some call me sick, dark, twisted, psychotic. I just enjoy having prisoners and torchering them.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063333/Users/ramsay.jpg",allegiance_id:11)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063333/Users/ramsay.jpg",allegiance_id:11)
 
 user18 = User.create!(username:"RedPriestess",password:"melisa",name:"Melisandre",about_me:"The night is dark and full of terrors. I brought Jon Snow back to life, everyone should kneel before.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478604/Users/melisandre.jpg")
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478604/Users/melisandre.jpg")
 
 user19 = User.create!(username:"SandSnake",password:"ellari",name:"Ellaria Sand",about_me:"When my dear lover Prince Oberyn Martell of Dorne was killed in trial by combat, I pushed for House Martell to go to war with House Lannister. However, I was refused by Oberyn's older brother, Doran Martell. So I took things into my owns hands and killed him. I'm in charge now.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478767/Users/ellaria.jpg",allegiance_id:12)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478478767/Users/ellaria.jpg",allegiance_id:12)
 
 user20 = User.create!(username:"WarriorOfLight",password:"stanni",name:"Stannis Baratheon",about_me:"I am the Lord of Dragonstone, the younger brother of King Robert Baratheon and older brother of Renly Baratheon. I have named myself 'Lord of Light' under the influence of the priestess Melisandre.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070020/Users/stannis.jpg",allegiance_id:4)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070020/Users/stannis.jpg",allegiance_id:4)
 
 user21 = User.create!(username:"Sam",password:"samwel",name:"Samwell Tarly",about_me:"I am a steward in the Night's Watch and am Jon Snow's closest friend. I am the eldest son of Lord Randyll Tarly and Lady Melessa Tarly of Horn Hill. Though I may be a bit overweight and not the bravest or most skilled of men, I am intelligent, well-educated, and insightful. And I love my Gilly very much.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070198/Users/sam.jpg",allegiance_id:7)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070198/Users/sam.jpg",allegiance_id:7)
 
 user22 = User.create!(username:"kingB",password:"robert",name:"Robert Baratheon",about_me:"I went hunting one day and ruing everything for everyone.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063341/Users/robert.jpg",allegiance_id:4)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063341/Users/robert.jpg",allegiance_id:4)
 
 user23 = User.create!(username:"BriennetheBeauty",password:"brienn",name:"Brienne",about_me:"I am the sole surviving child and heir of Lord Selwyn Tarth of Evenfall Hall, on the island of Tarth. I am unusually tall and muscular for a woman by Westerosi standards and developed a taste for martial activity as a child. I have become skilled at arms and dream of becoming a knight. I swore my loyalty to Catelyn Stark and will protect her kids until the day I die.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063328/Users/brienne.jpg",allegiance_id:2)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478063328/Users/brienne.jpg",allegiance_id:2)
 
 user24 = User.create!(username:"ladyC",password:"ladycr",name:"Lady Crane",about_me:"I am  an elegant, fun, charismatic, rum-drinking actress in Izembaro's traveling theater company. I portray Queen Cersei Lannister in the play 'The Bloody Hand'.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070446/Users/ladycrane.jpg")
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070446/Users/ladycrane.jpg")
 
 user25 = User.create!(username:"TheSpider",password:"varys1",name:"Varys",about_me:"I was the Master of Whisperers on the King's Small Council until Tyrion and I were forced to flee King's Landing. I am a skilled manipulator and command a network of informants across two continents.
 My true loyalties lie with Daenerys Targaryen, as I believe her rule would be the best way to preserve peace and prosperity in the Seven Kingdoms. Power resides where men believe it resides.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478503141/Users/varys2.jpg",allegiance_id:3)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478503141/Users/varys2.jpg",allegiance_id:3)
 
 user26 = User.create!(username:"Needle",password:"aryast",name:"Arya Stark",about_me:"I was raised at Winterfell but have been on my own from an early age.  I have been traveling the world working on my 'kill list', but not to worry I'm quite the pleasant house guest for those that are not on my 'list'.  I am happy to help with cooking and cleaning in exchange for a roof over my head.  My hobbies include fencing, archery and vengeance.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070526/Users/arya.jpg",allegiance_id:2)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070526/Users/arya.jpg",allegiance_id:2)
 
 user27 = User.create!(username:"TheRealQueen",password:"margae",name:"Margaery Tyrell",about_me:"I don't want to be queen, I want to be THE queen. I was raised in privilege in the family seat and regional capital of Highgarden. I am very close to my brother Ser Loras Tyrell (not the in Cersei and Jaime kind of way). I am also close to my handmaidens, Sera Durwell and Mira Forrester, who followed me to King's Landing from Highgarden. People say I am as beautiful as I am clever.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070578/Users/margaery.png",allegiance_id:6)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070578/Users/margaery.png",allegiance_id:6)
 
 user28 = User.create!(username:"TheMountain",password:"gregor",name:"Gregor Clegane",about_me:"I am a notoriously fearsome warrior, with a tendency toward extreme and at times excessive violence. Due to my freakishly huge size, people call me 'The Mountain'. My loyalty lies with Cersei Lannister.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070616/Users/mountain.jpg",allegiance_id:1)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070616/Users/mountain.jpg",allegiance_id:1)
 
 user29 = User.create!(username:"EvilKing",password:"joffre",name:"Joffrey Baratheon",about_me:"I the most hated man in all of Westeros, but who cares what those peasants think.",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070651/Users/joffrey.jpg",allegiance_id:1)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070651/Users/joffrey.jpg",allegiance_id:1)
 
 user30 = User.create!(username:"hodorhodor",password:"hodor1",name:"Hodor",about_me:"Hodor hodor hodor hodor",
-image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070785/Users/hodor.jpg",allegiance_id:2)
+image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_400,w_400/v1478070785/Users/hodor.jpg",allegiance_id:2)
 
 
 place1 = Place.create!(host_id:1,title:"The Red Keep",lng:-97.5,lat:-44.5,description:"The Red Keep is the residence of the King of the Andals and the First Men, his family and his court, located within King's Landing, the capital of the Seven Kingdoms. It dominates the skyline of the city, and serves as the city's primary fortress and redoubt. Located in the southeastern corner of King's Landing, the Red Keep overlooks Blackwater Bay and the Narrow Sea. It is currently the seat of Queen Cersei Lannister and was formerly the seat of King Tommen Baratheon, King Joffrey Baratheon, King Robert Baratheon, and before him the seat of the Targaryen kings.
@@ -223,112 +223,112 @@ place25 = Place.create!(host_id:25,title:"Lys Resort",lng:-35.5,lat:-74.5,descri
 price_per_night:300,region_id:11,number_rooms:4,number_beds:6,max_guests:8,property_type:"Resort",house_rules:"None",stars:4)
 
 
-PlaceImage.create(place_id:5, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478063363/Places/houseblackandwhite.png")
-PlaceImage.create(place_id:5, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478063349/Places/houseblackandwhite4.png")
-PlaceImage.create(place_id:5, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478063348/Places/houseblackandwhite3.jpg")
-PlaceImage.create(place_id:5, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478063347/Places/houseblackandwhite2.jpg",caption:"Come on in, we're very hospitable.")
-PlaceImage.create(place_id:1, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149778/Places/redkeep1.jpg")
-PlaceImage.create(place_id:1, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478149772/Places/redkeep2.jpg")
-PlaceImage.create(place_id:1, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149777/Places/redkeep3.jpg")
-PlaceImage.create(place_id:21, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149775/Places/hornhill2.jpg")
-PlaceImage.create(place_id:21, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150052/Places/hornhill3.jpg")
-PlaceImage.create(place_id:21, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150050/Places/hornhill4.jpg")
-PlaceImage.create(place_id:11, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149779/Places/highgarden.jpg")
-PlaceImage.create(place_id:11, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150534/Places/highgarden2.jpg")
-PlaceImage.create(place_id:11, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150584/Places/highgarden4.jpg")
-PlaceImage.create(place_id:3, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150840/Places/winterfell1.jpg")
-PlaceImage.create(place_id:3, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150842/Places/Winterfell2.jpg")
-PlaceImage.create(place_id:3, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478150842/Places/winterfell3.jpg")
-PlaceImage.create(place_id:2, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478152122/Places/Castle_Black1.jpg")
-PlaceImage.create(place_id:2, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478152119/Places/castleblack2.jpg")
-PlaceImage.create(place_id:2, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731866/Places/game-of-thrones-hbo-castle-black-northern-ireland.jpg.rend.tccom.1280.960.jpg")
-PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid1.jpg")
-PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid2.jpg",caption:"Check out that view, though")
-PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478153035/Places/pyramid3.jpg",caption:"If you see on of these guys, RUN!!!")
-PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid4.jpg")
-PlaceImage.create(place_id:4, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478153034/Places/pyramid5.jpg")
-PlaceImage.create(place_id:6, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153498/Places/twins0.jpg")
-PlaceImage.create(place_id:6, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153498/Places/twins1.jpg")
-PlaceImage.create(place_id:6, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478732152/Places/audleys1.jpg")
-PlaceImage.create(place_id:7, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153824/Places/riverrun1.jpg")
-PlaceImage.create(place_id:7, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478153825/Places/riverrun2.jpg")
-PlaceImage.create(place_id:7, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478732368/Places/a8cc81d3343ac782daa97e67ed239c62.jpg")
-PlaceImage.create(place_id:8, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478154022/Places/frostfang0.jpg")
-PlaceImage.create(place_id:8, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478154083/Places/frostfang2.jpg",caption:"Isn't our campsite lovely?")
-PlaceImage.create(place_id:8, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478154018/Places/frostfang1.jpg",caption:"Pack your fur coat, it's a bit chilly.")
-PlaceImage.create(place_id:9, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155203/Places/VaesDothrak0.jpg")
-PlaceImage.create(place_id:9, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155213/Places/VaesDothrak1.jpg")
-PlaceImage.create(place_id:9, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478155196/Places/VaesDothrak2.jpg")
-PlaceImage.create(place_id:9, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478155198/Places/VaesDothrak4.jpg")
-PlaceImage.create(place_id:9, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156379/Places/vaesdothrak5.jpg")
-PlaceImage.create(place_id:10, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155702/Places/Inn_at_the_Crossroads1.jpg")
-PlaceImage.create(place_id:10, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155702/Places/inncrossroads2.jpg")
-PlaceImage.create(place_id:10, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478734210/Places/IMG_0245.jpg")
-PlaceImage.create(place_id:12, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_1000/v1478155899/Places/casterlyrock.jpg",caption:"Where your hiking boots. It's all the way at the top and there's no elevator.")
-PlaceImage.create(place_id:12, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731528/Places/images.jpg")
-PlaceImage.create(place_id:12, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731727/Places/lionhead4.jpg")
-PlaceImage.create(place_id:13, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156386/Places/GreatSept1.jpg")
-PlaceImage.create(place_id:13, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156388/Places/GreatSept2.jpg")
-PlaceImage.create(place_id:13, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156523/Places/GreatSept3.jpg")
-PlaceImage.create(place_id:14, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156833/Places/eyrie1.png")
-PlaceImage.create(place_id:14, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478156827/Places/eyrie2.jpg")
-PlaceImage.create(place_id:14, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156827/Places/eyrie3.jpg",caption:"Don't look down!")
-PlaceImage.create(place_id:15, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478157525/Places/pyke1.jpg")
-PlaceImage.create(place_id:15, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478157526/Places/iron2.jpg")
-PlaceImage.create(place_id:15, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478157532/Places/iron3.jpg",caption:"My sister Yara, she's always around.")
-PlaceImage.create(place_id:16, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478487162/Places/latest.png")
-PlaceImage.create(place_id:16, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487263/Places/9cd27a15de370011a0f2ae78f8312bb6.jpg")
-PlaceImage.create(place_id:16, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478734517/Places/196717_oa957.jpg")
-PlaceImage.create(place_id:17, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487466/latest_dur5i5.jpg")
-PlaceImage.create(place_id:17, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478734825/Places/10286e66bf9e1050bce00c9b495d30f3cc2d2fa5_hq.jpg")
-PlaceImage.create(place_id:17, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478735213/Places/wpid-01ca4d60-e799-0132-c01d-0a13eebe068d.jpg")
-PlaceImage.create(place_id:18, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487622/latest_yga1dc.png")
-PlaceImage.create(place_id:18, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735927/Places/503_Volantis_Long_Bridge_3.jpg")
-PlaceImage.create(place_id:18, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735986/Places/503_Volantis_Long_Bridge_2.jpg")
-PlaceImage.create(place_id:19, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487832/Sunspear_by_jonathanguzi-d89ziph_is396k.jpg")
-PlaceImage.create(place_id:19, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478736910/Places/4d671018-f77f-4012-aaa2-b8183ab7b846.jpg")
-PlaceImage.create(place_id:19, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478736960/Places/tumblr_nsu1oqGpuh1rfrksjo1_500.png")
-PlaceImage.create(place_id:20, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737177/Places/9e8d80209e2bc85a21cdf457916e0e13.jpg")
-PlaceImage.create(place_id:20, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737358/Places/gothic_castle_room_by_xnickixstockx.jpg")
-PlaceImage.create(place_id:20, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478737304/Places/inside-castle-of-mytilini.jpg")
-PlaceImage.create(place_id:22, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478488081/latest_zwovik.jpg")
-PlaceImage.create(place_id:22, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737564/Places/Dragonstone_C.jpg")
-PlaceImage.create(place_id:22, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737633/Places/game-of-thrones-stannis-on-dragonstone1-e1428349599743.jpg")
-PlaceImage.create(place_id:23, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478737777/Places/16c26ccb-0038-4cc3-a47e-a3a5d26e96e8.jpg")
-PlaceImage.create(place_id:23, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737864/Places/a_room_in_a_castle_by_ravenslane-d3iadga.jpg")
-PlaceImage.create(place_id:23, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478738060/Places/8a603a08feb0fe681670e902633be56f.jpg")
-PlaceImage.create(place_id:24, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478488266/igre1_bwo1rx.jpg")
-PlaceImage.create(place_id:24, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735442/Places/Arya-in-Braavos1.png")
-PlaceImage.create(place_id:24, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735646/Places/noone4-185751.jpg")
-PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478489118/latest_yljnoe.jpg")
-PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478489164/latest_jgoky0.png")
-PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478738219/Places/Wars_to_come_tyrion_varys_pentos.jpg")
+PlaceImage.create(place_id:5, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478063363/Places/houseblackandwhite.png")
+PlaceImage.create(place_id:5, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478063349/Places/houseblackandwhite4.png")
+PlaceImage.create(place_id:5, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478063348/Places/houseblackandwhite3.jpg")
+PlaceImage.create(place_id:5, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478063347/Places/houseblackandwhite2.jpg",caption:"Come on in, we're very hospitable.")
+PlaceImage.create(place_id:1, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149778/Places/redkeep1.jpg")
+PlaceImage.create(place_id:1, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478149772/Places/redkeep2.jpg")
+PlaceImage.create(place_id:1, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149777/Places/redkeep3.jpg")
+PlaceImage.create(place_id:21, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149775/Places/hornhill2.jpg")
+PlaceImage.create(place_id:21, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150052/Places/hornhill3.jpg")
+PlaceImage.create(place_id:21, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150050/Places/hornhill4.jpg")
+PlaceImage.create(place_id:11, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478149779/Places/highgarden.jpg")
+PlaceImage.create(place_id:11, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150534/Places/highgarden2.jpg")
+PlaceImage.create(place_id:11, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150584/Places/highgarden4.jpg")
+PlaceImage.create(place_id:3, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150840/Places/winterfell1.jpg")
+PlaceImage.create(place_id:3, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478150842/Places/Winterfell2.jpg")
+PlaceImage.create(place_id:3, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478150842/Places/winterfell3.jpg")
+PlaceImage.create(place_id:2, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478152122/Places/Castle_Black1.jpg")
+PlaceImage.create(place_id:2, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478152119/Places/castleblack2.jpg")
+PlaceImage.create(place_id:2, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731866/Places/game-of-thrones-hbo-castle-black-northern-ireland.jpg.rend.tccom.1280.960.jpg")
+PlaceImage.create(place_id:4, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid1.jpg")
+PlaceImage.create(place_id:4, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid2.jpg",caption:"Check out that view, though")
+PlaceImage.create(place_id:4, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478153035/Places/pyramid3.jpg",caption:"If you see on of these guys, RUN!!!")
+PlaceImage.create(place_id:4, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478153031/Places/pyramid4.jpg")
+PlaceImage.create(place_id:4, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478153034/Places/pyramid5.jpg")
+PlaceImage.create(place_id:6, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478153498/Places/twins0.jpg")
+PlaceImage.create(place_id:6, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478153498/Places/twins1.jpg")
+PlaceImage.create(place_id:6, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478732152/Places/audleys1.jpg")
+PlaceImage.create(place_id:7, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478153824/Places/riverrun1.jpg")
+PlaceImage.create(place_id:7, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478153825/Places/riverrun2.jpg")
+PlaceImage.create(place_id:7, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478732368/Places/a8cc81d3343ac782daa97e67ed239c62.jpg")
+PlaceImage.create(place_id:8, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478154022/Places/frostfang0.jpg")
+PlaceImage.create(place_id:8, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478154083/Places/frostfang2.jpg",caption:"Isn't our campsite lovely?")
+PlaceImage.create(place_id:8, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478154018/Places/frostfang1.jpg",caption:"Pack your fur coat, it's a bit chilly.")
+PlaceImage.create(place_id:9, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155203/Places/VaesDothrak0.jpg")
+PlaceImage.create(place_id:9, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155213/Places/VaesDothrak1.jpg")
+PlaceImage.create(place_id:9, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478155196/Places/VaesDothrak2.jpg")
+PlaceImage.create(place_id:9, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478155198/Places/VaesDothrak4.jpg")
+PlaceImage.create(place_id:9, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156379/Places/vaesdothrak5.jpg")
+PlaceImage.create(place_id:10, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155702/Places/Inn_at_the_Crossroads1.jpg")
+PlaceImage.create(place_id:10, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478155702/Places/inncrossroads2.jpg")
+PlaceImage.create(place_id:10, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478734210/Places/IMG_0245.jpg")
+PlaceImage.create(place_id:12, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_1000/v1478155899/Places/casterlyrock.jpg",caption:"Where your hiking boots. It's all the way at the top and there's no elevator.")
+PlaceImage.create(place_id:12, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731528/Places/images.jpg")
+PlaceImage.create(place_id:12, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478731727/Places/lionhead4.jpg")
+PlaceImage.create(place_id:13, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156386/Places/GreatSept1.jpg")
+PlaceImage.create(place_id:13, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156388/Places/GreatSept2.jpg")
+PlaceImage.create(place_id:13, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156523/Places/GreatSept3.jpg")
+PlaceImage.create(place_id:14, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156833/Places/eyrie1.png")
+PlaceImage.create(place_id:14, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478156827/Places/eyrie2.jpg")
+PlaceImage.create(place_id:14, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478156827/Places/eyrie3.jpg",caption:"Don't look down!")
+PlaceImage.create(place_id:15, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478157525/Places/pyke1.jpg")
+PlaceImage.create(place_id:15, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478157526/Places/iron2.jpg")
+PlaceImage.create(place_id:15, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478157532/Places/iron3.jpg",caption:"My sister Yara, she's always around.")
+PlaceImage.create(place_id:16, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478487162/Places/latest.png")
+PlaceImage.create(place_id:16, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487263/Places/9cd27a15de370011a0f2ae78f8312bb6.jpg")
+PlaceImage.create(place_id:16, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478734517/Places/196717_oa957.jpg")
+PlaceImage.create(place_id:17, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487466/latest_dur5i5.jpg")
+PlaceImage.create(place_id:17, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478734825/Places/10286e66bf9e1050bce00c9b495d30f3cc2d2fa5_hq.jpg")
+PlaceImage.create(place_id:17, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478735213/Places/wpid-01ca4d60-e799-0132-c01d-0a13eebe068d.jpg")
+PlaceImage.create(place_id:18, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487622/latest_yga1dc.png")
+PlaceImage.create(place_id:18, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735927/Places/503_Volantis_Long_Bridge_3.jpg")
+PlaceImage.create(place_id:18, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735986/Places/503_Volantis_Long_Bridge_2.jpg")
+PlaceImage.create(place_id:19, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478487832/Sunspear_by_jonathanguzi-d89ziph_is396k.jpg")
+PlaceImage.create(place_id:19, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478736910/Places/4d671018-f77f-4012-aaa2-b8183ab7b846.jpg")
+PlaceImage.create(place_id:19, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478736960/Places/tumblr_nsu1oqGpuh1rfrksjo1_500.png")
+PlaceImage.create(place_id:20, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737177/Places/9e8d80209e2bc85a21cdf457916e0e13.jpg")
+PlaceImage.create(place_id:20, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737358/Places/gothic_castle_room_by_xnickixstockx.jpg")
+PlaceImage.create(place_id:20, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478737304/Places/inside-castle-of-mytilini.jpg")
+PlaceImage.create(place_id:22, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478488081/latest_zwovik.jpg")
+PlaceImage.create(place_id:22, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737564/Places/Dragonstone_C.jpg")
+PlaceImage.create(place_id:22, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737633/Places/game-of-thrones-stannis-on-dragonstone1-e1428349599743.jpg")
+PlaceImage.create(place_id:23, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478737777/Places/16c26ccb-0038-4cc3-a47e-a3a5d26e96e8.jpg")
+PlaceImage.create(place_id:23, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478737864/Places/a_room_in_a_castle_by_ravenslane-d3iadga.jpg")
+PlaceImage.create(place_id:23, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478738060/Places/8a603a08feb0fe681670e902633be56f.jpg")
+PlaceImage.create(place_id:24, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478488266/igre1_bwo1rx.jpg")
+PlaceImage.create(place_id:24, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735442/Places/Arya-in-Braavos1.png")
+PlaceImage.create(place_id:24, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478735646/Places/noone4-185751.jpg")
+PlaceImage.create(place_id:25, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478489118/latest_yljnoe.jpg")
+PlaceImage.create(place_id:25, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478489164/latest_jgoky0.png")
+PlaceImage.create(place_id:25, url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478738219/Places/Wars_to_come_tyrion_varys_pentos.jpg")
 
-region1 = Region.create!(name:"Crownlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/crownlands.jpg",lng:-97,lat:-44) #6
-region2 = Region.create!(name:"The North",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/the_north.jpg",lng:-119,lat:52) #2
-region3 = Region.create!(name:"Braavos",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478063294/Regions/braavos.jpg",lng:-38,lat:10) #2
-region4 = Region.create!(name:"The Reach",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073949/Regions/thereach.png",lng:-139,lat:-63) #2
-region5 = Region.create!(name:"The Iron Islands & Westerlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478475597/Regions/ironislands.jpg",lng:-148,lat:-15) #2
-region6 = Region.create!(name:"The Wall & Beyond",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/beyondthewall.jpg",lng:-100,lat:73) #2
-region7 = Region.create!(name:"Riverlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073937/Regions/riverlands.jpg",lng:-126,lat:-22) #3
-region8 = Region.create!(name:"Dorne",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/Dorne.jpg",lng:-71,lat:-74) #1
-region9 = Region.create!(name:"Dothraki Sea",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/dothraki_sea.jpg",lng:128,lat:-59) #1
-region10 = Region.create!(name:"Slaver's Bay & Volantis",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073950/Regions/slaversbay.png",lng:23,lat:-74) #2
-region11 = Region.create!(name:"Lys",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073938/Regions/pentos.jpg",lng:-35,lat:-74) #1
-region12 = Region.create!(name:"The Vale of Arryn",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/thevale.jpg",lng:-93,lat:-9) #1
+region1 = Region.create!(name:"Crownlands",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/crownlands.jpg",lng:-97,lat:-44) #6
+region2 = Region.create!(name:"The North",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/the_north.jpg",lng:-119,lat:52) #2
+region3 = Region.create!(name:"Braavos",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478063294/Regions/braavos.jpg",lng:-38,lat:10) #2
+region4 = Region.create!(name:"The Reach",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073949/Regions/thereach.png",lng:-139,lat:-63) #2
+region5 = Region.create!(name:"The Iron Islands & Westerlands",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478475597/Regions/ironislands.jpg",lng:-148,lat:-15) #2
+region6 = Region.create!(name:"The Wall & Beyond",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/beyondthewall.jpg",lng:-100,lat:73) #2
+region7 = Region.create!(name:"Riverlands",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073937/Regions/riverlands.jpg",lng:-126,lat:-22) #3
+region8 = Region.create!(name:"Dorne",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/Dorne.jpg",lng:-71,lat:-74) #1
+region9 = Region.create!(name:"Dothraki Sea",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/dothraki_sea.jpg",lng:128,lat:-59) #1
+region10 = Region.create!(name:"Slaver's Bay & Volantis",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073950/Regions/slaversbay.png",lng:23,lat:-74) #2
+region11 = Region.create!(name:"Lys",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073938/Regions/pentos.jpg",lng:-35,lat:-74) #1
+region12 = Region.create!(name:"The Vale of Arryn",image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/thevale.jpg",lng:-93,lat:-9) #1
 
-allegiance1 = Allegiance.create!(house_name:"Lannister",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105489/flags/Lannister.png")
-allegiance2 = Allegiance.create!(house_name:"Stark",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/stark.png")
-allegiance3 = Allegiance.create!(house_name:"Targaryen",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/Targaryen.png")
-allegiance4 = Allegiance.create!(house_name:"Baratheon",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105489/flags/baratheon.png")
-allegiance5 = Allegiance.create!(house_name:"Tully",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/bolton.png")
-allegiance6 = Allegiance.create!(house_name:"Tyrell",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/tyrell.png")
-allegiance7 = Allegiance.create!(house_name:"Tarly",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/tarly.png")
-allegiance8 = Allegiance.create!(house_name:"Frey",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144985/flags/house-frey.png")
-allegiance9 = Allegiance.create!(house_name:"Greyjoy",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105489/flags/greyjoy.png")
-allegiance10 = Allegiance.create!(house_name:"Arryn",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144983/flags/real_house_arryn.png")
-allegiance11 = Allegiance.create!(house_name:"Bolton",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144982/flags/real_bolton.png")
-allegiance12 = Allegiance.create!(house_name:"Martell",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144983/flags/house_martell.png")
+allegiance1 = Allegiance.create!(house_name:"Lannister",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105489/flags/Lannister.png")
+allegiance2 = Allegiance.create!(house_name:"Stark",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/stark.png")
+allegiance3 = Allegiance.create!(house_name:"Targaryen",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/Targaryen.png")
+allegiance4 = Allegiance.create!(house_name:"Baratheon",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105489/flags/baratheon.png")
+allegiance5 = Allegiance.create!(house_name:"Tully",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/bolton.png")
+allegiance6 = Allegiance.create!(house_name:"Tyrell",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/tyrell.png")
+allegiance7 = Allegiance.create!(house_name:"Tarly",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/tarly.png")
+allegiance8 = Allegiance.create!(house_name:"Frey",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478144985/flags/house-frey.png")
+allegiance9 = Allegiance.create!(house_name:"Greyjoy",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478105489/flags/greyjoy.png")
+allegiance10 = Allegiance.create!(house_name:"Arryn",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478144983/flags/real_house_arryn.png")
+allegiance11 = Allegiance.create!(house_name:"Bolton",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478144982/flags/real_bolton.png")
+allegiance12 = Allegiance.create!(house_name:"Martell",flag_image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/v1478144983/flags/house_martell.png")
 
 booking1 = Booking.create!(place_id:1,user_id:2,check_in_date:DateTime.new(2016, 12, 27),check_out_date:DateTime.new(2016, 12, 30),number_of_guests:30)
 booking2 = Booking.create!(place_id:3,user_id:2,check_in_date:DateTime.new(2017, 1, 22),check_out_date:DateTime.new(20017, 1, 29),number_of_guests:1)

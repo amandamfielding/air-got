@@ -10,7 +10,7 @@ class AuthForm extends React.Component {
 			name: "",
 			about_me: "",
 			allegiance_id:"",
-			image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_300,w_300/v1478741526/avatar_blank.jpg_1_yjymq5.png"
+			image_url:"https://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_300,w_300/v1478741526/avatar_blank.jpg_1_yjymq5.png"
 		};
 		this.handleLogInSubmit = this.handleLogInSubmit.bind(this);
 		this.handleSignUpSubmit = this.handleSignUpSubmit.bind(this);
@@ -54,7 +54,7 @@ class AuthForm extends React.Component {
 					<button id="close" onClick={this.props.closeModal}>close</button>
 				</div>
 				<form onSubmit={this.handleLogInSubmit} className="auth-form-box">
-					<img id="logo" src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
+					<img id="logo" src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
 					{this.renderErrors()}
 					<div className="auth-form">
 						<label> <span>*</span> Username
@@ -87,7 +87,7 @@ class AuthForm extends React.Component {
 						<button id="close" onClick={this.props.closeModal}>close</button>
 					</div>
 	        <form onSubmit={this.handleSignUpSubmit} className="auth-form-box">
-						<img id="logo" src="http://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
+						<img id="logo" src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
 	          {this.renderErrors()}
 	          <div className="auth-form">
 	            <label>
