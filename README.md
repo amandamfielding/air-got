@@ -1,53 +1,30 @@
 # AirGoT
-[Heroku link][heroku]
+[AirGoT Live][heroku]
 
-[Trello link][trello]
+AirGoT is a full-stack web application inspired by AirBnB and popular TV series Game of Thrones. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.
 
-[heroku]: https://air-got.herokuapp.com/
-[trello]: https://trello.com/b/qLFXvUUM/airgot
+## Features & Implementation
 
-## Minimum Viable Product
+###Search by Location with Map
 
-AirGoT is a Game of Thrones style web application inspired by AirBnB. By the end of week 9, this app will have adequate, seed data, complete CSS styling, and bug-free navigation, in addition to meeting the following criteria:
+Upon entering the splash page, the regions are fetched by an API call made to the database. Their images and names are rendered at the bottom of the page and are filterable in the search bar. By clicking on one of the search bar options or region images, a search pane will be rendered. The search pane includes a custom Google map initially zoomed to your chosen region, along with the places within the bounds of the map. The places index will adjust accordingly as the map is dragged or zoomed in or out to change the view.
 
-- [ ] Hosting on Heroku
-- [ ] New account creation, login, demo login, and logout
-- [ ] Places
-- [ ] Bookings
-- [ ] Places search (by location and availability) and Google Maps (with GoT map) on search
-- [ ] Reviews
-- [ ] User/host profiles
-- [ ] Production README
+![image of search pane](docs/wireframes/search.png)
 
-## Design Docs
-* [View Wireframes][wireframes]
-* [React Components][components]
-* [API endpoints][api-endpoints]
-* [DB schema][schema]
-* [Sample State][sample-state]
+###Places and Reviews
 
-[wireframes]: docs/wireframes
-[components]: docs/component-hierarchy.md
-[sample-state]: docs/sample-state.md
-[api-endpoints]: docs/api-endpoints.md
-[schema]: docs/schema.md
+By clicking on one of the marked locations on the map or the image in the places index, the place details will be rendered. The place show page includes scrollable images, the title, price, description, maximum number of guests, house rules, property type, etc. All of the reviews for the place lie beneath its details. Each review has an image and name of the author, a rating, and a body. Below the reviews index is a form to add a review of your own if you are logged in. There is also a button to delete a particular review it its author is the current user.
 
-## Implementation Timeline
+This page also has a form to create a booking for the current place with input fields for the dates and number of guests.
 
-### Phase 1: Backend setup and Front End User Authentication (2 days)
-**Objective:** Functioning rails project with front-end Authentication
+![image of place show](docs/wireframes/place.png)
 
-### Phase 2: Places Model, API, and Components (1 day)
-**Objective:** Places can be viewed. Place seed data complete.
+###Bookings
 
-### Phase 3: Bookings Model, API, and Components (2 days)
-**Objective:** Bookings can be made, edited, viewed, and deleted. Booking seed data complete.
+Once logged in, the Trips button will render the bookings index. On entering this component, an API request will be made to the database to fetch all of the bookings for the current user. Each booking item will show an image of the place, an image of the host, the region name, place title, booking dates, a link back to the place show component, and buttons to edit or cancel a booking.
 
-### Phase 4: Searchable Map (1 day)
-**Objective:** A map can be viewed and used to filter places in a search.
+![image of bookings](docs/wireframes/bookings.png)
 
-### Phase 5: Reviews Model, API, and Components (1 day)
-**Objective:** Reviews can be created, deleted, and viewed on the place page. Review seed data complete.
+##Future Plans
 
-### BONUS: Phase 6: User Model, API, and Components (2 days)
-**Objective:** Users will have a profile page that can be viewed and edited. User seed data complete. Places will have a user as a host.
+I will continue to working on to this project by adding profile pages for the users and search filters including price and number of guests.
