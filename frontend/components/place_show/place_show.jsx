@@ -16,8 +16,9 @@ class Place extends React.Component {
     this.renderErrors = this.renderErrors.bind(this);
   }
 
-  componentDidMount() {
-    this.props.fetchReviews(this.props.placeId);
+  componentWillMount() {
+    this.props.requestPlace(this.props.params.placeId);
+    this.props.fetchReviews(this.props.params.placeId);
   }
 
   handleProfileClick() {

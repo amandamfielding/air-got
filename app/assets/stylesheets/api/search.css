@@ -1,5 +1,6 @@
 .search-pane {
   display: flex;
+  padding-top: 70px;
 }
 
 .left-half-places {
@@ -15,6 +16,7 @@
     flex-wrap: wrap;
     display: flex;
     padding: 60px 0;
+    padding-top: 0;
   }
 }
 

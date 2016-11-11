@@ -89,8 +89,8 @@ class Map extends React.Component {
   _registerListeners() {
     let lastValidCenter = this.map.getCenter();
          const allowedBounds = new google.maps.LatLngBounds(
-           new google.maps.LatLng(-85,-180),
-           new google.maps.LatLng(85,180)
+           new google.maps.LatLng(-80,-170),
+           new google.maps.LatLng(80,170)
          );
      	   google.maps.event.addListener(this.map, 'center_changed', () => {
            if (allowedBounds.contains(this.map.getCenter())) {
@@ -98,7 +98,6 @@ class Map extends React.Component {
              return;
            }
            this.map.panTo(lastValidCenter);
-          //  this.setState({places: this.props.places});
          });
 
     google.maps.event.addListener(this.map, 'idle', () => {

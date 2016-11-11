@@ -5,7 +5,6 @@ const RegionsReducer = (state={}, action) => {
     case RECEIVE_REGIONS:
       return action.regions;
     case RECEIVE_SEARCH_REGIONS:
-    console.log(action.regions);
       return action.regions;
     default:
       return state;

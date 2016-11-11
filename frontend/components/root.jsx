@@ -38,7 +38,7 @@ const Root = ({ store }) => {
         <Route path="/" component={App} onEnter={_fetchRegions}>
           <IndexRoute component={Home} />
           <Route path="/search/:lat/:lng" component={SearchContainer} />
-          <Route path="/places/:placeId" component={PlaceShowContainer} />
+          <Route path="/places/:placeId" component={PlaceShowContainer} onEnter={_requestPlaces}/>
           <Route path="/users/:userId" component={UserContainer} />
           <Route path="/bookings" component={BookingsContainer} onEnter={_requestBookings}/>
         </Route>

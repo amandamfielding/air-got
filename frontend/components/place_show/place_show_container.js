@@ -16,6 +16,7 @@ const mapStateToProps = (state, { params }) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
+  requestPlace: (id) => dispatch(requestPlace(id)),
   fetchReviews: (placeId) => dispatch(fetchReviews(placeId)),
   createBooking: (booking) => dispatch(createBooking(booking)),
   clearErrors: () => dispatch(receiveBookingErrors([]))

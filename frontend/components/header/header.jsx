@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, hashHistory } from 'react-router';
+import { Link, hashHistory, withRouter } from 'react-router';
 import Modal from 'react-modal';
 import AuthFormContainer from '../auth_form/auth_form_container';
 
@@ -36,6 +36,12 @@ class Header extends React.Component {
   //     letters: ""
   //   });
   // }
+
+  navigateToSearch(lat,lng) {
+    // debugger
+    // hashHistory.replace(`search/${lat}/${lng}`);
+    this.props.router.push(`search/${lat}/${lng}`);
+  }
 
   openModal(formType) {
     this.setState({modalIsOpen: true, formType: formType });
@@ -128,11 +134,11 @@ class Header extends React.Component {
                     <li
                       key={region.id+region.name+region.lat}
                       className="search-names"
-
+                      onClick={() => this.navigateToSearch(region.lat,region.lng)}
                       >
-                    <Link to={`search/${region.lat}/${region.lng}`}>
+
                       {region.name}
-                      </Link>
+
                       </li>
                   )}
                 </ul>
@@ -145,4 +151,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
