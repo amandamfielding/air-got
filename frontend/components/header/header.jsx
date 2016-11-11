@@ -31,12 +31,11 @@ class Header extends React.Component {
     );
 	}
 
-  clearSearchBar() {
-    debugger
-    this.setState({
-      letters: ""
-    });
-  }
+  // clearSearchBar() {
+  //   this.setState({
+  //     letters: ""
+  //   });
+  // }
 
   openModal(formType) {
     this.setState({modalIsOpen: true, formType: formType });
@@ -129,7 +128,8 @@ class Header extends React.Component {
                     <li
                       key={region.id+region.name+region.lat}
                       className="search-names"
-                      onClick={this.clearSearchBar}>
+
+                      >
                     <Link to={`search/${region.lat}/${region.lng}`}>
                       {region.name}
                       </Link>
