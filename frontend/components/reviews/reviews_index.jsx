@@ -8,7 +8,7 @@ class ReviewsIndex extends React.Component {
         <div>
             {this.props.reviews.map( review => (
               <ReviewItem
-                key={review.id}
+                key={review.id + review.rating}
                 deleteReview={this.props.deleteReview}
                 review={review}/>
             ))}

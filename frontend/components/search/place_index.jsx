@@ -1,7 +1,7 @@
 import React from 'react';
 import PlaceIndexItem from './place_index_item';
 
-const PlaceIndex = ({ places, fetchReviews }) => (
+const PlaceIndex = ({ places }) => (
   <div className="place-index">
        {places.map(place => (
          <PlaceIndexItem

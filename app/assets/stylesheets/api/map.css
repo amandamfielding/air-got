@@ -1,6 +1,5 @@
 .right-half-map {
-  width: 50%;
-  height: 500px;
+  width: 48%;
   padding-top: 70px;
   height: calc(100vh - 70px);
 }

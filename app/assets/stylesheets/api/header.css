@@ -54,6 +54,7 @@ nav .logged-out-button {
   padding: 8px 12px;
   width: auto;
   border-radius: 6px;
+  position: relative;
 }
 
 .header-list {
@@ -79,6 +80,30 @@ nav .logged-out-button {
   font-size: 15px;
 }
 
+#search-dropdown {
+  position: absolute;
+  background: #fff;
+  display: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  z-index: 10;
+  top: 57px;
+  left: 280px;
+  font-size: 15px;
+  min-width: 17%;
+}
+
+.search-list:hover #search-dropdown {
+  display: block;
+}
+
+#search-dropdown:hover {
+  display: block;
+  cursor: pointer;
+}
+
 .header-list:hover #user-dropdown {
   display: block;
 }
@@ -101,7 +126,19 @@ nav .logged-out-button {
   color: #000;
 }
 
+#search-dropdown > li {
+  margin: auto;
+  text-align: center;
+  padding: 7px;
+  border-top: 1px solid #ccc;
+  color: #000;
+}
+
 #user-dropdown > li:hover {
+  background: #eee;
+}
+
+#search-dropdown > li:hover {
   background: #eee;
 }
 

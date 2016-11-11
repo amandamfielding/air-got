@@ -5,8 +5,9 @@ export const REMOVE_REVIEW = "REMOVE_REVIEW";
 export const DELETE_REVIEW = "DELETE_REVIEW";
 export const CREATE_REVIEW = "CREATE_REVIEW";
 
-export const fetchReviews = () => ({
-  type: FETCH_REVIEWS
+export const fetchReviews = (placeId) => ({
+  type: FETCH_REVIEWS,
+  placeId
 });
 
 export const receiveReviews = (reviews) => ({

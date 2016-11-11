@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import ReviewsContainer from '../reviews/reviews_container';
 
+
 class Place extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +14,10 @@ class Place extends React.Component {
     };
     this.handleCreateSubmit = this.handleCreateSubmit.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.fetchReviews(this.props.placeId);
   }
 
   handleProfileClick() {

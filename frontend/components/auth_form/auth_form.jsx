@@ -10,7 +10,7 @@ class AuthForm extends React.Component {
 			name: "",
 			about_me: "",
 			allegiance_id:"",
-			image_url:""
+			image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_fill,h_300,w_300/v1478741526/avatar_blank.jpg_1_yjymq5.png"
 		};
 		this.handleLogInSubmit = this.handleLogInSubmit.bind(this);
 		this.handleSignUpSubmit = this.handleSignUpSubmit.bind(this);
@@ -151,7 +151,7 @@ class AuthForm extends React.Component {
 							<label>
 								<input
 									className="sign-up-image-url"
-									placeholder="Image URL"
+									placeholder="Profile Pic (image url)"
 									type="text"
 									onChange={this.update("image_url")}
 									/>

@@ -20,7 +20,7 @@ const ReviewMiddleware = store => next => action => {
 
   switch (action.type) {
     case FETCH_REVIEWS:
-      fetchReviews(successFetchAll);
+      fetchReviews(action.placeId,successFetchAll);
       return next(action);
     case CREATE_REVIEW:
       createReview(action.review,successFetch);

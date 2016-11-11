@@ -7,7 +7,9 @@ import SearchContainer from './search/search_container';
 import PlaceShowContainer from './place_show/place_show_container';
 import UserContainer from './users/user_container';
 import BookingsContainer from './bookings/bookings_container';
-import { fetchReviews } from '../actions/reviews_actions';
+import { requestBookings } from '../actions/bookings_actions';
+import { requestPlaces } from '../actions/place_actions';
+import { fetchRegions } from '../actions/regions_actions';
 
 const Root = ({ store }) => {
 
@@ -18,19 +20,27 @@ const Root = ({ store }) => {
     }
   };
 
-  const _fetchReviews = () => {
-    store.dispatch(fetchReviews());
+  const _requestBookings = () => {
+    store.dispatch(requestBookings());
+  };
+
+  const _requestPlaces = () => {
+    store.dispatch(requestPlaces());
+  };
+
+  const _fetchRegions = () => {
+    store.dispatch(fetchRegions());
   };
 
   return (
     <Provider store={store}>
       <Router history={hashHistory}>
-        <Route path="/" component={App}>
+        <Route path="/" component={App} onEnter={_fetchRegions}>
           <IndexRoute component={Home} />
-          <Route path="/search" component={SearchContainer} />
-          <Route path="/places/:placeId" component={PlaceShowContainer} onEnter={_fetchReviews}/>
+          <Route path="/search/:lat/:lng" component={SearchContainer} />
+          <Route path="/places/:placeId" component={PlaceShowContainer} />
           <Route path="/users/:userId" component={UserContainer} />
-          <Route path="/bookings" component={BookingsContainer} />
+          <Route path="/bookings" component={BookingsContainer} onEnter={_requestBookings}/>
         </Route>
       </Router>
     </Provider>

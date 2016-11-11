@@ -1,3 +1,4 @@
+import { UPDATE_FILTER } from '../actions/filter_actions';
 import { requestPlaces,
          receivePlace,
          receivePlaces,
@@ -12,11 +13,17 @@ export default ({ getState, dispatch }) => next => action => {
 
   switch(action.type){
     case REQUEST_PLACES:
-      fetchPlaces(placesSuccess);
+      // debugger
+      const filters = getState().filters;
+      fetchPlaces(filters, placesSuccess);
       return next(action);
     case REQUEST_PLACE:
       fetchPlace(action.id, placeSuccess);
       return next(action);
+    case UPDATE_FILTER:
+      next(action);
+      dispatch(requestPlaces());
+      break;
     default:
       return next(action);
   }

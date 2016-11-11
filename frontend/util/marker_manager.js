@@ -3,40 +3,41 @@ export default class MarkerManager {
     this.map = map;
     this.handleClick = handleClick;
     this.markers = [];
-    //permanently bind instance methods
-    this._createMarkerFromBench = this._createMarkerFromBench.bind(this);
+    this._createMarkerFromPlace = this._createMarkerFromPlace.bind(this);
     this._removeMarker = this._removeMarker.bind(this);
     this._markersToRemove = this._markersToRemove.bind(this);
   }
 
-  updateMarkers(benches){
-    this.benches = benches;
-    this._benchesToAdd().forEach(this._createMarkerFromBench);
+  updateMarkers(places){
+
+    this.places = places;
+    this._placesToAdd().forEach(this._createMarkerFromPlace);
     this._markersToRemove().forEach(this._removeMarker);
   }
 
-  _benchesToAdd() {
-    const currentBenches = this.markers.map( marker => marker.benchId );
-    return this.benches.filter( bench => !currentBenches.includes(bench.id) );
+  _placesToAdd() {
+    const currentPlaces = this.markers.map( marker => marker.placeId );
+    return this.places.filter( place => !currentPlaces.includes(place.id) );
   }
 
   _markersToRemove(){
-    const benchIds = this.benches.map( bench => bench.id );
-    return this.markers.filter( marker => !benchIds.includes(marker.benchId) );
+    const placeIds = this.places.map( place => place.id );
+    return this.markers.filter( marker => !placeIds.includes(marker.placeId) );
   }
 
-  _createMarkerFromBench(bench) {
-    const pos = new google.maps.LatLng(bench.lat, bench.lng);
+  _createMarkerFromPlace(place) {
+    const pos = new google.maps.LatLng(place.lat, place.lng);
     const marker = new google.maps.Marker({
       position: pos,
       map: this.map,
-      benchId: bench.id
+      placeId: place.id
     });
-    marker.addListener('click', () => this.handleClick(bench));
+    marker.addListener('click', () => this.handleClick(place));
     this.markers.push(marker);
   }
 
   _removeMarker(marker) {
+    // debugger
     const idx = this.markers.indexOf( marker );
     this.markers[idx].setMap(null);
     this.markers.splice(idx, 1);

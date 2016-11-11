@@ -124,22 +124,22 @@ house_rules:"No talk of the Lannisters or Boltons.
 
 Pet our wolves, they're friendly.",allegiance_id:2,stars:5)
 
-place4 = Place.create!(host_id:4,title:"Great Pyramid",lng:4,lat:4,description:"The Great Pyramid is a massive structure in the city of Meereen. It is the largest building in the city and it is said a thousand slaves died during its construction. At its apex lies a huge bronze harpy.",
+place4 = Place.create!(host_id:4,title:"Great Pyramid",lng:139,lat:-75.3,description:"The Great Pyramid is a massive structure in the city of Meereen. It is the largest building in the city and it is said a thousand slaves died during its construction. At its apex lies a huge bronze harpy.",
 price_per_night:380,region_id:10,number_rooms:23,number_beds:28,max_guests:35,property_type:"Pyramid",house_rules:"Please do not upset my dragons.",stars:5)
 
-place5 = Place.create!(host_id:5,title:"House of Black and White",lng:5,lat:5,description:"The House of Black and White is a temple in Braavos dedicated to the Many-Faced God. It serves as the headquarters of the guild of religious assassins known as the Faceless Men. It sits alone on a small island in the lagoon of Braavos. Although it can be reached by boat or bridge from other locations in the city, the island is usually deserted. The sole entrance to the temple is a door, one half ebony, the other pale weirwood - thus one black door and one white door.
+place5 = Place.create!(host_id:5,title:"House of Black and White",lng:-38.2,lat:10,description:"The House of Black and White is a temple in Braavos dedicated to the Many-Faced God. It serves as the headquarters of the guild of religious assassins known as the Faceless Men. It sits alone on a small island in the lagoon of Braavos. Although it can be reached by boat or bridge from other locations in the city, the island is usually deserted. The sole entrance to the temple is a door, one half ebony, the other pale weirwood - thus one black door and one white door.
 
 The interior of the House features a central sanctuary with a large pool in the center. The water filling the pool is poisoned, and is given out to those who are suffering and come to the temple to seek the release of death.
 
 The atrium is lined with statues of many gods from many different faiths, from across both Essos and Westeros. Specifically they are gods that represent death and the unknown, such as the Stranger from the Faith of the Seven. The Faceless Men believe that all of these death gods are really one god who has revealed Himself to humanity in different ways: the Many Faced God of Death.",
 price_per_night:50,region_id:3,number_rooms:1,number_beds:1,max_guests:1,property_type:"Temple",house_rules:"You must be no one.",stars:2)
 
-place6 = Place.create!(host_id:6,title:"The Twins",lng:6,lat:6,description:"The Twins, sometimes known as The Crossing, is a castle and the seat of House Frey, the Great House of the Riverlands. It consists of two near-identical towers and a fortified bridge over the Green Fork of the River Trident.
+place6 = Place.create!(host_id:6,title:"The Twins",lng:-126,lat:1.5,description:"The Twins, sometimes known as The Crossing, is a castle and the seat of House Frey, the Great House of the Riverlands. It consists of two near-identical towers and a fortified bridge over the Green Fork of the River Trident.
 
 The Twins represents the only crossing point over the Green Fork for hundreds of miles in either direction. It is a major barrier to travelers and merchants traveling from the North to the western Riverlands. It lies directly on the main route from Winterfell to Riverrun. Moving from one castle to the other while avoiding the Twins requires a lengthy detour hundreds of miles to the south or hazardously traversing the bogs and swamps of the Neck to the north. Travelers heading south who cannot pass southwest over the Twins must pass southeast along the Kingsroad.",
 price_per_night:95,region_id:7,number_rooms:8,number_beds:12,max_guests:14,property_type:"Castle",house_rules:"No killing humans and making them into pies.",allegiance_id:8,stars:2)
 
-place7 = Place.create!(host_id:7,title:"Riverrun",lng:7,lat:7,description:"Riverrun is a large castle located in the central-western part of the Riverlands. It sits at the point where the Red Fork of the Trident River is joined by its major tributary, the Tumblestone River flowing out of the west.
+place7 = Place.create!(host_id:7,title:"Riverrun",lng:-126,lat:-22.5,description:"Riverrun is a large castle located in the central-western part of the Riverlands. It sits at the point where the Red Fork of the Trident River is joined by its major tributary, the Tumblestone River flowing out of the west.
 
 In times of danger, sluice gates can be opened to flood a channel cut to the west of the castle, turning Riverrun into an island. Its walls rise sheer from the waters and its towers command the opposite shores, making assaulting it almost impossible without huge casualties.",
 price_per_night:85,region_id:7,number_rooms:18,number_beds:28,max_guests:34,property_type:"Castle",house_rules:"No drama happens here, keep it that way.",allegiance_id:5,stars:3)
@@ -147,7 +147,7 @@ price_per_night:85,region_id:7,number_rooms:18,number_beds:28,max_guests:34,prop
 place8 = Place.create!(host_id:8,title:"Frostfang Mountains",lng:-124,lat:76,description:"Come camping with the Wildlings in the beautiful Frostfang mountains. Bring your bow and arrow to hunt for dinner, and your thickest fur coat - it's a bit chilly up here.",
 price_per_night:16,region_id:6,number_rooms:1,number_beds:1,max_guests:10,property_type:"Tent",house_rules:"None, let's have a good time!",stars:2)
 
-place9 = Place.create!(host_id:9,title:"Vaes Dothrak",lng:9,lat:9,description:"Vaes Dothrak is the only city in the Dothraki Sea, located near the far northeastern edge of the region. It lies in the shadow of a single, vast peak known by the Dothraki as the Mother of Mountains. The entrance to Vaes Dothrak is marked by two large statues depicting a pair of stallions.
+place9 = Place.create!(host_id:9,title:"Vaes Dothrak",lng:128.5,lat:-59.5,description:"Vaes Dothrak is the only city in the Dothraki Sea, located near the far northeastern edge of the region. It lies in the shadow of a single, vast peak known by the Dothraki as the Mother of Mountains. The entrance to Vaes Dothrak is marked by two large statues depicting a pair of stallions.
 
 Vaes Dothrak is a place of peace where the Dothraki khalasars may gather and meet to trade, but not to fight. Therefore it is forbidden to draw a sword while in the city, under penalty of death. However, the restriction is specifically on drawing a bladed weapon or shedding blood (which is considered sacrilege): should the need arise, it is permissible to kill someone in the city using other lethal means, i.e. strangulation or burning. Even so, due to the respect the Dothraki have for the city, violence within it is rare.
 
@@ -156,22 +156,22 @@ Dothraki holy women, known as dosh khaleen, live in the city and are respected b
 The city has a large marketplace, where foreign merchants from as far afield as the Free Cities and Asshai sell their wares.",
 price_per_night:36,region_id:9,number_rooms:1,number_beds:2,max_guests:4,property_type:"Tent",house_rules:"Khal Drogo is the hottest man in the Kingdom - we all know this. But you cannot make a move on him. Daenerys gets crazy jealous and she has dragons.",stars:2)
 
-place10 = Place.create!(host_id:10,title:"Inn at the Crossroads",lng:10,lat:10,description:"Crossroads Inn is an inn that lies at the crossroads between the Kingsroad running north-south, the River Road west through the riverlands to the westerlands, and the High Road east to the Vale of Arryn. The inn is three stories tall with turrets and chimneys made of white stone. Its south wing is built upon pilings that rise over a bed of weeds. On the north side there is a stable with a thatch roof and a bell tower. The building is surrounded by a low wall of broken white stones.",
+place10 = Place.create!(host_id:10,title:"Inn at the Crossroads",lng:-106.5,lat:-23,description:"Crossroads Inn is an inn that lies at the crossroads between the Kingsroad running north-south, the River Road west through the riverlands to the westerlands, and the High Road east to the Vale of Arryn. The inn is three stories tall with turrets and chimneys made of white stone. Its south wing is built upon pilings that rise over a bed of weeds. On the north side there is a stable with a thatch roof and a bell tower. The building is surrounded by a low wall of broken white stones.",
 price_per_night:249,region_id:7,number_rooms:12,number_beds:20,max_guests:24,property_type:"Bed & Breakfast",house_rules:"If you drink too much in the tavern, no one will take you up to your room.",stars:4)
 
-place11 = Place.create!(host_id:11,title:"Highgarden",lng:11,lat:11,description:"Highgarden is among the most beautiful castles in the Seven Kingdoms. Situated on a broad, symmetrically shaped hill, the castle includes three concentric tiers of white stone walls, which increase in height and thickness as one travels upwards. Between the outermost and middle walls is Highgarden's famous 'briar maze', a labyrinth of beautifully maintained hedges that serves two important purposes; entertainment for the castle's inhabitants and deterrence against enemies (any invaders who manage to penetrate the outer wall would have no easy task finding their way through the elaborate growth of thorns and greenery).
+place11 = Place.create!(host_id:11,title:"Highgarden",lng:-139,lat:-63.7,description:"Highgarden is among the most beautiful castles in the Seven Kingdoms. Situated on a broad, symmetrically shaped hill, the castle includes three concentric tiers of white stone walls, which increase in height and thickness as one travels upwards. Between the outermost and middle walls is Highgarden's famous 'briar maze', a labyrinth of beautifully maintained hedges that serves two important purposes; entertainment for the castle's inhabitants and deterrence against enemies (any invaders who manage to penetrate the outer wall would have no easy task finding their way through the elaborate growth of thorns and greenery).
 
 The inner rings of Highgarden are a beautiful complex of towers, courtyards, colonnades and statuary, and greenery is just as prominent inside the walls as in the fields outside; ivy, grapevines and climbing roses can be seen snaking around the buildings, and gardens and arbors are filled with flowers. Water features are also common inside the walls, with pools, fountains and even man-made waterfalls visible throughout the complex.
 
 Highgarden is the seat of House Tyrell and the regional capital of the Reach. Located on the banks of the river Mander, Highgarden sits astride the Roseroad, a major thoroughfare linking Oldtown and King's Landing.",
 price_per_night:1295,region_id:4,number_rooms:21,number_beds:32,max_guests:38,property_type:"Palace",house_rules:"We don't discuss the Lannisters here, unless you're talking about ways to kill them.",allegiance_id:6,stars:5)
 
-place12 = Place.create!(host_id:12,title:"Casterly Rock",lng:12,lat:12,description:"Casterly Rock is the ancestral stronghold of House Lannister. It is located on the Western coast of Westeros on a rocky promontory overlooking the Sunset Sea. It overlooks the major city of Lannisport. A major goldmine is located under Casterly Rock. It is one of the most productive in the realm and provides House Lannister with their wealth.
+place12 = Place.create!(host_id:12,title:"Casterly Rock",lng:-155.3,lat:-40,description:"Casterly Rock is the ancestral stronghold of House Lannister. It is located on the Western coast of Westeros on a rocky promontory overlooking the Sunset Sea. It overlooks the major city of Lannisport. A major goldmine is located under Casterly Rock. It is one of the most productive in the realm and provides House Lannister with their wealth.
 
 The castle consists of fortifications built into and on top of the Rock, but the most splendid parts are actually located within the Rock itself, beneath the visible castle. Additional catacombs, dungeons and redoubts are built deep into the bowels of the formation, since Casterly Rock is also the Lannister's primary mine. The castle's main entrance is the heavily-defended Lion's Mouth.",
 price_per_night:370,region_id:5,number_rooms:11,number_beds:15,max_guests:19,property_type:"Castle",house_rules:"Don't call the host 'Kingslayer'.",allegiance_id:1,stars:4)
 
-place13 = Place.create!(host_id:13,title:"The Great Sept of Baelor",lng:13,lat:13,description:"The Sept of Baelor, is a massive sept, the center of religious worship for the Faith of the Seven and the seat of the High Septon of the Faith. It was located in King's Landing, the capital of the Seven Kingdoms, and was the largest single building in the city, though the Red Keep complex sprawls over a larger area. Great religious ceremonies have been held here. It is also the sept personally used by the royal family, thus royal weddings are held at the Great Sept in massive ceremonies.
+place13 = Place.create!(host_id:13,title:"The Great Sept of Baelor",lng:-96,lat:-43,description:"The Sept of Baelor, is a massive sept, the center of religious worship for the Faith of the Seven and the seat of the High Septon of the Faith. It was located in King's Landing, the capital of the Seven Kingdoms, and was the largest single building in the city, though the Red Keep complex sprawls over a larger area. Great religious ceremonies have been held here. It is also the sept personally used by the royal family, thus royal weddings are held at the Great Sept in massive ceremonies.
 
 The Great Sept is decorated with paintings of the seven-pointed star and sculptures depicting the Seven different aspects of the godhead. Votive offerings and lit candles are placed at the base of statues of the Seven.
 
@@ -182,7 +182,7 @@ Keep silent during prayer time.
 
 Obey the faith militant.",stars:2)
 
-place14 = Place.create!(host_id:14,title:"The Eyrie",lng:14,lat:14,description:"The Eyrie is the principal stronghold of House Arryn. It is located in the Vale of Arryn near the east coast of Westeros. The Eyrie straddles the top of a peak in the Mountains of the Moon several thousand feet above the valley floor below. It is approached by a narrow causeway and road. Those who would approach the Eyrie must pass through three way-castles guarding the ascent - and then, must proceed in single file, making them very vulnerable to archers. For these reasons, the Eyrie is considered impregnable to any attack that does not involve dragons, and its defenses have never been overcome.
+place14 = Place.create!(host_id:14,title:"The Eyrie",lng:-93.5,lat:-9,description:"The Eyrie is the principal stronghold of House Arryn. It is located in the Vale of Arryn near the east coast of Westeros. The Eyrie straddles the top of a peak in the Mountains of the Moon several thousand feet above the valley floor below. It is approached by a narrow causeway and road. Those who would approach the Eyrie must pass through three way-castles guarding the ascent - and then, must proceed in single file, making them very vulnerable to archers. For these reasons, the Eyrie is considered impregnable to any attack that does not involve dragons, and its defenses have never been overcome.
 
 A notable feature of the chamber is the Moon Door, a hatch built into the floor through which people can fall to the floor of the Vale far below. Being thrown through the Moon Door is the preferred method of execution at the Eyrie.",
 price_per_night:200,region_id:12,number_rooms:6,number_beds:10,max_guests:14,property_type:"Castle",house_rules:"No making fun of my son Robin or I'll throw you out the moon door.",allegiance_id:10,stars:3)
@@ -190,36 +190,36 @@ price_per_night:200,region_id:12,number_rooms:6,number_beds:10,max_guests:14,pro
 place15 = Place.create!(host_id:15,title:"Pyke",lng:-154.5,lat:-15,description:"Pyke is the stronghold and seat of House Greyjoy, located on the island of the same name, which is one of the seven major Iron Islands. The castle is the regional capital of the Iron Islands as a whole. Pyke is an ancient stronghold and the cliff it was built on has been eroded by the sea leaving the towers standing on stone stacks. The towers are connected by swaying rope bridges. The rocky moss covered stone at its base is not suitable for ships landing so traffic to the island flows through the nearby harbor town Lordsport.",
 price_per_night:95,region_id:5,number_rooms:5,number_beds:8,max_guests:10,property_type:"Castle",house_rules:"Be careful walking across the bridges. People have been known to 'fall off'.",allegiance_id:9,stars:3)
 
-place16 = Place.create!(host_id:16,title:"Littlefinger's Brothel",lng:16,lat:16,description:"Littlefinger's brothel is an upscale brothel located in King's Landing, expensively furnished and with high quality prostitutes, whose target clientele are wealthy merchants and members of the upper nobility. The host says this is 'An establishment like no other. The sheer range of appetites catered to. Desires that didn't even exist until we invented them.'",
+place16 = Place.create!(host_id:16,title:"Littlefinger's Brothel",lng:-99,lat:-46,description:"Littlefinger's brothel is an upscale brothel located in King's Landing, expensively furnished and with high quality prostitutes, whose target clientele are wealthy merchants and members of the upper nobility. The host says this is 'An establishment like no other. The sheer range of appetites catered to. Desires that didn't even exist until we invented them.'",
 price_per_night:375,region_id:1,number_rooms:4,number_beds:4,max_guests:6,property_type:"Brothel",house_rules:"None, enjoy yourself.",stars:5)
 
 place17 = Place.create!(host_id:17,title:"Castle Dreadfort",lng:-93.7,lat:54.5,description:"The Dreadfort is a castle situated in the North. It was the seat of House Bolton, located on the banks of the Weeping Water east of Winterfell. The Dreadfort is ill-omened as the stronghold of House Bolton, who are famed for the flayed skins of their enemies, often rumored to have been kept on display in the castle, including those of several ancient Stark kings.",
 price_per_night:45,region_id:2,number_rooms:4,number_beds:5,max_guests:7,property_type:"Castle",house_rules:"We fillet the guests who anger thier host.",allegiance_id:11,stars:1)
 
-place18 = Place.create!(host_id:18,title:"Dwelling on the Long Bridge",lng:18,lat:18,description:"The Long Bridge is a great structure located in the Free City of Volantis. It is a bridge spanning the mouth of the immense Rhoyne River just before it spills into the Summer Sea.
+place18 = Place.create!(host_id:18,title:"Dwelling on the Long Bridge",lng:23,lat:-74.8,description:"The Long Bridge is a great structure located in the Free City of Volantis. It is a bridge spanning the mouth of the immense Rhoyne River just before it spills into the Summer Sea.
 
 The bridge is so large that it is covered in rows of multi-level buildings, taverns, brothels, and marketplaces, forming a small neighborhood of the city unto itself.",
 price_per_night:50,region_id:10,number_rooms:2,number_beds:3,max_guests:4,property_type:"Hosue",house_rules:"Please keep quiet and do not disturb the local merchants.",stars:3)
 
-place19 = Place.create!(host_id:19,title:"Spear Tower",lng:19,lat:19,description:"The Spear Tower is the dominant structure in Sunspear, the seat of House Martell in the capital of Dorne. It is a 150-foot structure with a pinnacle of shining steel.",
+place19 = Place.create!(host_id:19,title:"Spear Tower",lng:-71,lat:-74.3,description:"The Spear Tower is the dominant structure in Sunspear, the seat of House Martell in the capital of Dorne. It is a 150-foot structure with a pinnacle of shining steel.",
 price_per_night:795,region_id:8,number_rooms:9,number_beds:12,max_guests:16,property_type:"Tower",house_rules:"None.",allegiance_id:12,stars:5)
 
-place20 = Place.create!(host_id:20,title:"Storm's End",lng:20,lat:20,description:"Storm's End is a formidable fortress, located on the southeastern coast of Westeros overlooking Shipbreaker Bay. One of the mightiest fortresses on the entire continent, Storm's End has endured many sieges but has never fallen to any attacker in its millennia-long history. Its seaward wall is 80 feet thick with a 150 feet drop into the sea below. The castle is said to be protected by spells woven into its walls that prevent magic from penetrating its defenses.",
+place20 = Place.create!(host_id:20,title:"Storm's End",lng:-79.5,lat:-58.5,description:"Storm's End is a formidable fortress, located on the southeastern coast of Westeros overlooking Shipbreaker Bay. One of the mightiest fortresses on the entire continent, Storm's End has endured many sieges but has never fallen to any attacker in its millennia-long history. Its seaward wall is 80 feet thick with a 150 feet drop into the sea below. The castle is said to be protected by spells woven into its walls that prevent magic from penetrating its defenses.",
 price_per_night:250,region_id:1,number_rooms:10,number_beds:14,max_guests:17,property_type:"Castle",house_rules:"None",allegiance_id:4,stars:4)
 
-place21 = Place.create!(host_id:21,title:"Horn Hill",lng:21,lat:21,description:"Horn Hill is the seat of House Tarly in the Reach. It is located southeast of Highgarden. It is regarded as one of the most beautiful castles and largest in the land. There is a pond that lies below the castle.",
+place21 = Place.create!(host_id:21,title:"Horn Hill",lng:-138.5,lat:-67,description:"Horn Hill is the seat of House Tarly in the Reach. It is located southeast of Highgarden. It is regarded as one of the most beautiful castles and largest in the land. There is a pond that lies below the castle.",
 price_per_night:1175,region_id:4,number_rooms:16,number_beds:20,max_guests:28,property_type:"Castle",house_rules:"No Wildlings.",allegiance_id:7,stars:5)
 
-place22 = Place.create!(host_id:22,title:"Dragonstone",lng:22,lat:22,description:"Dragonstone is the castle that stands upon the eponymous island located in Blackwater Bay. The Chamber of the Painted Table is inside the castle. The castle was built using advanced Valyrian stonemasonry techniques, long since lost. As a result it has many exotic features unique in all of Westeros, including massive dragon-shaped gargoyles. The entire castle is dominated by dragon motifs and reliefs.",
+place22 = Place.create!(host_id:22,title:"Dragonstone",lng:-72,lat:-33,description:"Dragonstone is the castle that stands upon the eponymous island located in Blackwater Bay. The Chamber of the Painted Table is inside the castle. The castle was built using advanced Valyrian stonemasonry techniques, long since lost. As a result it has many exotic features unique in all of Westeros, including massive dragon-shaped gargoyles. The entire castle is dominated by dragon motifs and reliefs.",
 price_per_night:325,region_id:1,number_rooms:8,number_beds:10,max_guests:13,property_type:"Castle",house_rules:"None.",allegiance_id:4,stars:4)
 
-place23 = Place.create!(host_id:23,title:"Evenfall Hall",lng:23,lat:23,description:"Evenfall Hall is the seat of House Tarth in the Stormlands. It is located on the western coast of the island of Tarth along Shipbreaker Bay and overlooks the Straits of Tarth.",
+place23 = Place.create!(host_id:23,title:"Evenfall Hall",lng:-69,lat:-56,description:"Evenfall Hall is the seat of House Tarth in the Stormlands. It is located on the western coast of the island of Tarth along Shipbreaker Bay and overlooks the Straits of Tarth.",
 price_per_night:125,region_id:1,number_rooms:5,number_beds:7,max_guests:9,property_type:"Castle",house_rules:"None.",stars:3)
 
-place24 = Place.create!(host_id:24,title:"Dwelling on Ragman Lane",lng:24,lat:24,description:"Very close to Ragman Harbor. Stay here to enjoy the best of Braavos and great hospitality.",
+place24 = Place.create!(host_id:24,title:"Dwelling on Ragman Lane",lng:-36.5,lat:11,description:"Very close to Ragman Harbor. Stay here to enjoy the best of Braavos and great hospitality.",
 price_per_night:45,region_id:3,number_rooms:2,number_beds:2,max_guests:4,property_type:"House",house_rules:"Stay away from the House of Black and White.",stars:5)
 
-place25 = Place.create!(host_id:25,title:"Lys Resort",lng:25,lat:25,description:"Lys is one of the Free Cities located off the coast of Essos. It lies south of Pentos, northwest of Volantis and north of the Summer Islands. The city stretches across several islands, which are separated from mainland Essos by narrow straits. Lys is most well known for it's pleasure houses. Come stay at our resort for a relaxing vacation.",
+place25 = Place.create!(host_id:25,title:"Lys Resort",lng:-35.5,lat:-74.5,description:"Lys is one of the Free Cities located off the coast of Essos. It lies south of Pentos, northwest of Volantis and north of the Summer Islands. The city stretches across several islands, which are separated from mainland Essos by narrow straits. Lys is most well known for it's pleasure houses. Come stay at our resort for a relaxing vacation.",
 price_per_night:300,region_id:11,number_rooms:4,number_beds:6,max_guests:8,property_type:"Resort",house_rules:"None",stars:4)
 
 
@@ -304,18 +304,18 @@ PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/up
 PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478489164/latest_jgoky0.png")
 PlaceImage.create(place_id:25, url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_800/v1478738219/Places/Wars_to_come_tyrion_varys_pentos.jpg")
 
-region1 = Region.create!(name:"Crownlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/crownlands.jpg") #6
-region2 = Region.create!(name:"The North",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/the_north.jpg") #2
-region3 = Region.create!(name:"Braavos",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478063294/Regions/braavos.jpg") #2
-region4 = Region.create!(name:"The Reach",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073949/Regions/thereach.png") #2
-region5 = Region.create!(name:"The Iron Islands & Westerlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478475597/Regions/ironislands.jpg") #2
-region6 = Region.create!(name:"The Wall & Beyond",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/beyondthewall.jpg") #2
-region7 = Region.create!(name:"Riverlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073937/Regions/riverlands.jpg") #3
-region8 = Region.create!(name:"Dorne",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/Dorne.jpg") #1
-region9 = Region.create!(name:"Dothraki Sea",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/dothraki_sea.jpg") #1
-region10 = Region.create!(name:"Slaver's Bay & Volantis",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073950/Regions/slaversbay.png") #2
-region11 = Region.create!(name:"Pentos",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073938/Regions/pentos.jpg") #1
-region12 = Region.create!(name:"The Vale of Arryn",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/thevale.jpg") #1
+region1 = Region.create!(name:"Crownlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/crownlands.jpg",lng:-97,lat:-44) #6
+region2 = Region.create!(name:"The North",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/the_north.jpg",lng:-119,lat:52) #2
+region3 = Region.create!(name:"Braavos",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478063294/Regions/braavos.jpg",lng:-38,lat:10) #2
+region4 = Region.create!(name:"The Reach",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073949/Regions/thereach.png",lng:-139,lat:-63) #2
+region5 = Region.create!(name:"The Iron Islands & Westerlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478475597/Regions/ironislands.jpg",lng:-154,lat:-15) #2
+region6 = Region.create!(name:"The Wall & Beyond",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/beyondthewall.jpg",lng:-100,lat:73) #2
+region7 = Region.create!(name:"Riverlands",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073937/Regions/riverlands.jpg",lng:-126,lat:-22) #3
+region8 = Region.create!(name:"Dorne",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073940/Regions/Dorne.jpg",lng:-71,lat:-74) #1
+region9 = Region.create!(name:"Dothraki Sea",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073936/Regions/dothraki_sea.jpg",lng:128,lat:-59) #1
+region10 = Region.create!(name:"Slaver's Bay & Volantis",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073950/Regions/slaversbay.png",lng:23,lat:-74) #2
+region11 = Region.create!(name:"Lys",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073938/Regions/pentos.jpg",lng:-35,lat:-74) #1
+region12 = Region.create!(name:"The Vale of Arryn",image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/c_scale,w_600/v1478073941/Regions/thevale.jpg",lng:-93,lat:-9) #1
 
 allegiance1 = Allegiance.create!(house_name:"Lannister",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105489/flags/Lannister.png")
 allegiance2 = Allegiance.create!(house_name:"Stark",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478105490/flags/stark.png")
@@ -330,12 +330,12 @@ allegiance10 = Allegiance.create!(house_name:"Arryn",flag_image_url:"http://res.
 allegiance11 = Allegiance.create!(house_name:"Bolton",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144982/flags/real_bolton.png")
 allegiance12 = Allegiance.create!(house_name:"Martell",flag_image_url:"http://res.cloudinary.com/dbsxgncvx/image/upload/v1478144983/flags/house_martell.png")
 
-booking1 = Booking.create!(place_id:1,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 30),number_of_guests:30)
-booking2 = Booking.create!(place_id:3,user_id:2,check_in_date:DateTime.new(2005, 3, 22),check_out_date:DateTime.new(20013, 10, 1),number_of_guests:1)
-booking3 = Booking.create!(place_id:5,user_id:2,check_in_date:DateTime.new(2005, 3, 22),check_out_date:DateTime.new(20013, 10, 1),number_of_guests:2)
-booking4 = Booking.create!(place_id:6,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:3)
-booking5 = Booking.create!(place_id:9,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:4)
-booking6 = Booking.create!(place_id:11,user_id:2,check_in_date:DateTime.new(2017, 6, 24),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:10)
+booking1 = Booking.create!(place_id:1,user_id:2,check_in_date:DateTime.new(2016, 12, 27),check_out_date:DateTime.new(2016, 12, 30),number_of_guests:30)
+booking2 = Booking.create!(place_id:3,user_id:2,check_in_date:DateTime.new(2017, 1, 22),check_out_date:DateTime.new(20017, 1, 29),number_of_guests:1)
+booking3 = Booking.create!(place_id:5,user_id:2,check_in_date:DateTime.new(2017, 2, 5),check_out_date:DateTime.new(20017, 2, 13),number_of_guests:2)
+booking4 = Booking.create!(place_id:6,user_id:2,check_in_date:DateTime.new(2017, 3, 10),check_out_date:DateTime.new(2017, 3, 18),number_of_guests:3)
+booking5 = Booking.create!(place_id:9,user_id:2,check_in_date:DateTime.new(2017, 5, 14),check_out_date:DateTime.new(2017, 6, 24),number_of_guests:4)
+booking6 = Booking.create!(place_id:11,user_id:2,check_in_date:DateTime.new(2017, 8, 2),check_out_date:DateTime.new(2017, 8, 8),number_of_guests:10)
 
 review1 = Review.create!(place_id:11,author_id:1,rating:4,body:"Beautiful castle and all of the flowers and hedges are lovely, but the host didn't seem to like me very much.")
 review2 = Review.create!(place_id:3,author_id:2,rating:5,body:"Winterfell was my home for many years after Ned Stark took me in as one of their own. As long as this castle is held by the Stark family, it will be a wonderful place to stay.")

@@ -17,10 +17,19 @@ const customStyles = {
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { modalIsOpen: false, formType: "login" };
+    this.state = {
+      modalIsOpen: false,
+      formType: "login",
+      letters: ""};
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
+  update(field) {
+		return e => this.setState({
+			[field]: e.currentTarget.value}, () =>
+    this.props.searchRegions(this.state.letters)
+  );
+	}
 
   openModal(formType) {
     this.setState({modalIsOpen: true, formType: formType });
@@ -99,7 +108,24 @@ class Header extends React.Component {
               <span id="title">A<span id="first-little">ir</span>G<span id="second-little">o</span>T</span> <br/>
               <span id="caption">A Game of Thrones AirBnB</span></a>
             </li>
-            <input className="search" type="text" placeholder="Search"></input>
+            <ul className="search-list">
+              <li>
+                <input
+                  className="search"
+                  type="text"
+                  placeholder="Where to?"
+                  value={this.state.letters}
+                  onChange={this.update("letters")} />
+              </li>
+                <ul id="search-dropdown">
+                  {this.props.regions.map(region =>
+                    <li key={region.id+region.name+region.lat} className="search-names">
+                    <Link to={`search/${region.lat}/${region.lng}`}
+                      >{region.name}</Link>
+                      </li>
+                  )}
+                </ul>
+              </ul>
           </ul>
           {nav}
       </div>

@@ -42,69 +42,82 @@ const nolabelMapType = new google.maps.ImageMapType({
       return "assets/fsm/"+getTileCode(coord,zoom)+".jpg";
     },
     tileSize: new google.maps.Size(256, 256),
-    maxZoom: 5,
-    minZoom: 1,
+    maxZoom: 6,
+    minZoom: 2,
     radius: 1738000,
     name: "No Labels"
   });
 
-
 class Map extends React.Component {
   constructor(props) {
     super(props);
+    // this.state = {
+    //   places: []
+    // };
+    this._registerListeners = this._registerListeners.bind(this);
   }
 
   componentDidMount() {
+    // debugger
     const map = this.refs.map;
+    const lat = parseInt(this.props.params.lat);
+    const lng = parseInt(this.props.params.lng);
     this.map = new google.maps.Map(map, {
-      center: {lat: 0, lng: 0},
-      zoom: 1,
+      center: {lat,lng},
+      zoom: 4,
       streetViewControl: false,
       overviewMapControl: true,
-      mapTypeControlOptions: {mapTypeIds: ["Labels", "No Labels"]}
+      mapTypeControl: false
     });
     this.map.mapTypes.set('No Labels', nolabelMapType);
     this.map.setMapTypeId('No Labels');
     this.MarkerManager = new MarkerManager(this.map, this._handleMarkerClick.bind(this));
-    if (this.props.singlePlace) {
-      this.props.requestPlace(this.props.placeId);
-    } else {
-      this._registerListeners();
-      this.MarkerManager.updateMarkers(this.props.places);
-    }
+    this._registerListeners();
+    this.MarkerManager.updateMarkers(this.props.places);
+    // this.setState({places: this.props.places});
   }
 
+  // componentWillReceiveProps(newProps) {
+  //   this.setState({places: newProps.places});
+  // }
+
   componentDidUpdate() {
-    if(this.props.singlePlace){
-      this.MarkerManager.updateMarkers([this.props.places[Object.keys(this.props.places)[0]]]); //grabs only that one place
-    } else {
-      this.MarkerManager.updateMarkers(this.props.places);
-    }
+    this.MarkerManager.updateMarkers(this.props.places);
+    // this._registerListeners();
   }
 
   _registerListeners() {
+    let lastValidCenter = this.map.getCenter();
+         const allowedBounds = new google.maps.LatLngBounds(
+           new google.maps.LatLng(-85,-180),
+           new google.maps.LatLng(85,180)
+         );
+     	   google.maps.event.addListener(this.map, 'center_changed', () => {
+           if (allowedBounds.contains(this.map.getCenter())) {
+             lastValidCenter = this.map.getCenter();
+             return;
+           }
+           this.map.panTo(lastValidCenter);
+          //  this.setState({places: this.props.places});
+         });
+
     google.maps.event.addListener(this.map, 'idle', () => {
+      // debugger
       const { north, south, east, west } = this.map.getBounds().toJSON();
       const bounds = {
-        northEast: { lat:north, lng: east },
+        northEast: { lat: north, lng: east },
         southWest: { lat: south, lng: west } };
       this.props.updateFilter('bounds', bounds);
+      // this.setState({places: this.props.places});
     });
+
     google.maps.event.addListener(this.map, 'click', event => {
       const coords = _getCoordsObj(event.latLng);
-      this._handleClick(coords);
     });
   }
 
   _handleMarkerClick(place) {
     this.props.router.push(`places/${place.id}`);
-  }
-
-  _handleClick(coords) {
-    this.props.router.push({
-      pathname: "places/new",
-      query: coords
-    });
   }
 
   render() {

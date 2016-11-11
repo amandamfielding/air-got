@@ -11,8 +11,8 @@ class Regions  extends React.Component {
    this.navigateToSearch = this.navigateToSearch.bind(this);
  }
 
-  navigateToSearch() {
-    this.props.router.push("search");
+  navigateToSearch(lat,lng) {
+    this.props.router.push(`search/${lat}/${lng}`);
   }
 
   render() {
@@ -25,8 +25,7 @@ class Regions  extends React.Component {
           <button
             className="region-element"
             key={region.id}
-            onClick={this.navigateToSearch}>
-
+            onClick={() => {this.navigateToSearch(region.lat,region.lng);}}>
             <img className="region-pic" src={region.image_url}/>
             <span className="region-name">{region.name}</span>
           </button>

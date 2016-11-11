@@ -1,7 +1,7 @@
-export const fetchReviews = (success,error) => {
+export const fetchReviews = (placeId,success,error) => {
   $.ajax({
     method: 'GET',
-    url: '/api/reviews',
+    url: `/api/places/${placeId}/reviews`,
     success,
     error: console.log(error)
   });
