@@ -102,12 +102,48 @@ class Header extends React.Component {
     );
   }
 
+  onSearchPage() {
+    return (<div></div>);
+  }
+
+  offSearchPage() {
+    return (
+      <ul className="search-list">
+        <li>
+          <input
+            className="search"
+            type="text"
+            placeholder="Where to?"
+            value={this.state.letters}
+            onChange={this.update("letters")} />
+        </li>
+        <ul id="search-dropdown">
+        {this.props.regions.map(region =>
+          <li
+            key={region.id+region.name+region.lat}
+            className="search-names"
+            onClick={() => this.navigateToSearch(region.lat,region.lng)}
+            >
+            {region.name}
+          </li>
+        )}
+        </ul>
+    </ul>);
+  }
+
   render() {
     let nav;
     if (this.props.loggedIn) {
       nav = this.loggedInNav();
     } else {
       nav = this.loggedOutNav();
+    }
+
+    let search_input;
+    if (location.hash[2] === 's') {
+      search_input = this.onSearchPage();
+    } else {
+      search_input = this.offSearchPage();
     }
 
     return (
@@ -119,30 +155,8 @@ class Header extends React.Component {
               <a href="#">
               <span id="title">A<span id="first-little">ir</span>G<span id="second-little">o</span>T</span> <br/>
               <span id="caption">A Game of Thrones AirBnB</span></a>
-            </li>
-            <ul className="search-list">
-              <li>
-                <input
-                  className="search"
-                  type="text"
-                  placeholder="Where to?"
-                  value={this.state.letters}
-                  onChange={this.update("letters")} />
               </li>
-                <ul id="search-dropdown">
-                  {this.props.regions.map(region =>
-                    <li
-                      key={region.id+region.name+region.lat}
-                      className="search-names"
-                      onClick={() => this.navigateToSearch(region.lat,region.lng)}
-                      >
-
-                      {region.name}
-
-                      </li>
-                  )}
-                </ul>
-              </ul>
+              {search_input}
           </ul>
           {nav}
       </div>
