@@ -1,18 +1,16 @@
-export const fetchRegions = (success,error) => {
+export const fetchRegions = (success) => {
   $.ajax({
     type: 'GET',
     url: '/api/regions',
-    success,
-    error: console.log(error)
+    success
   });
 };
 
-export const searchRegions = (letters,success,error) => {
+export const searchRegions = (letters,success) => {
   $.ajax({
     type: 'GET',
     url: '/api/regions',
     data: {letters: letters},
-    success,
-    error: console.log(error)
+    success
   });
 };

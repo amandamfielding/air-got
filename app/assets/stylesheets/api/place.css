@@ -1,6 +1,5 @@
 .place-show {
   min-height: calc(100vh - 50px);
-  padding-top: 70px;
 }
 
 .text {
@@ -118,11 +117,11 @@
   margin: 15px;
   position: fixed;
   right: 0;
-  top: 275px;
+  top: 200px;
   flex-direction: column;
   color: #fff;
   border-radius: 6px;
-  width: 380px;
+  width: 30%;
 }
 
 .make-booking-box form {

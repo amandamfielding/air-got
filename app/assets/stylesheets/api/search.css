@@ -1,12 +1,11 @@
 .search-pane {
   display: flex;
-  padding-top: 70px;
 }
 
 .left-half-places {
   width: 52%;
   overflow: scroll;
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 
 @media only screen and (min-width : 767px) {

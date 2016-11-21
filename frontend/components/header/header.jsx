@@ -38,8 +38,6 @@ class Header extends React.Component {
   // }
 
   navigateToSearch(lat,lng) {
-    // debugger
-    // hashHistory.replace(`search/${lat}/${lng}`);
     this.props.router.push(`search/${lat}/${lng}`);
   }
 

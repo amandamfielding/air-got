@@ -3,7 +3,6 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   z-index: 2000;
   height: 70px;

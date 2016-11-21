@@ -1,18 +1,16 @@
-export const fetchBookings = (success,error) => {
+export const fetchBookings = (success) => {
   $.ajax({
     method: 'GET',
     url: '/api/bookings',
-    success,
-    error: console.log(error)
+    success
   });
 };
 
-export const fetchBooking = (id,success,error) => {
+export const fetchBooking = (id,success) => {
   $.ajax({
     method: 'GET',
     url: `/api/bookings/${id}`,
-    success,
-    error: console.log(error)
+    success
   });
 };
 
