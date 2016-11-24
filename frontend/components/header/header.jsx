@@ -23,6 +23,7 @@ class Header extends React.Component {
       letters: ""};
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.handleLogOut = this.handleLogOut.bind(this);
   }
   update(field) {
 		return e => this.setState({
@@ -54,6 +55,13 @@ class Header extends React.Component {
     this.props.clearErrors();
   }
 
+  handleLogOut() {
+    this.props.logout();
+    if (location.hash[2] !== undefined) {
+      this.props.router.push('/');
+    }
+  }
+
   loggedInNav() {
     return (
       <nav className="nav">
@@ -68,7 +76,7 @@ class Header extends React.Component {
                <Link to={`/users/${this.props.currentUser.id}`}>My Profile</Link>
               </li>
               <li>
-                <Link id="logout" onClick={this.props.logout}>Log Out</Link>
+                <Link id="logout" onClick={this.handleLogOut}>Log Out</Link>
               </li>
             </ul>
           </ul>
@@ -96,6 +104,7 @@ class Header extends React.Component {
             <AuthFormContainer formType={this.state.formType} closeModal={this.closeModal}/>
           </div>
         </Modal>
+        <span id="please-demo">Please select Demo for full functionality</span>
       </nav>
     );
   }

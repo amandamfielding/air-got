@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { withRouter } from 'react-router';
 
 class ReviewItem extends React.Component {
   constructor(props) {
@@ -9,8 +9,13 @@ class ReviewItem extends React.Component {
     };
     this.canDeleteReview = this.canDeleteReview.bind(this);
     this.cannotDeleteReview = this.cannotDeleteReview.bind(this);
+    this.handleProfileClick = this.handleProfileClick.bind(this);
   }
 
+  handleProfileClick() {
+    const authorId = this.props.review.author_id;
+    this.props.router.push(`users/${authorId}`);
+  }
 
   canDeleteReview() {
     return (
@@ -43,7 +48,9 @@ class ReviewItem extends React.Component {
         <div className="review">
           <ul className="review-details">
             <div className="review-author">
-              <img className="review-user-pic" src={author_image} />
+              <img className="review-user-pic"
+                src={author_image}
+                onClick={this.handleProfileClick} />
               <span className="review-author-name">{author_name}</span>
             </div>
             <div className="rating-and-body">
@@ -61,4 +68,4 @@ class ReviewItem extends React.Component {
   }
 }
 
-export default ReviewItem;
+export default withRouter(ReviewItem);

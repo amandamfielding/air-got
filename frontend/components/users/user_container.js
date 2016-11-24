@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import User from './user';
 import { selectUser } from '../../reducers/selectors';
+import { requestUser } from '../../actions/user_actions';
 
 const mapStateToProps = (state, { params }) => {
   const userId = parseInt(params.userId);
@@ -11,6 +12,11 @@ const mapStateToProps = (state, { params }) => {
   };
 };
 
+const mapDispatchToProps = (dispatch) => ({
+  requestUser: id => dispatch(requestUser(id))
+});
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(User);

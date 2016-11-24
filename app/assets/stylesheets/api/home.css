@@ -25,9 +25,10 @@
 
 #please-demo {
   position: absolute;
-  font-size: 16px;
+  font-size: 18px;
   right: 15px;
   top: 75px;
   color: #CC1200;
+  font-weight: 700;
   text-shadow: 0 0 2px #000000;
 }

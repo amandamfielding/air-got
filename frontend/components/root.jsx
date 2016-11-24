@@ -32,6 +32,7 @@ const Root = ({ store }) => {
     store.dispatch(fetchRegions());
   };
 
+
   return (
     <Provider store={store}>
       <Router history={hashHistory}>

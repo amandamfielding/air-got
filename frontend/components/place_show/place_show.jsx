@@ -13,6 +13,7 @@ class Place extends React.Component {
       number_of_guests: ""
     };
     this.handleCreateSubmit = this.handleCreateSubmit.bind(this);
+    this.handleProfileClick = this.handleProfileClick.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
   }
 

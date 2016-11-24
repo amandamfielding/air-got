@@ -4,4 +4,4 @@ export const asPlacesArray = ({ places }) => Object.keys(places).map(key => plac
 
 export const selectPlace = ({ places }, id) => places[id] || {};
 
-export const selectUser = ({ users }, id) => users[id] || {};
+export const selectUser = ({ user }, id) => user[id] || {};

@@ -1,0 +1,49 @@
+.user-profile {
+  min-height: calc(100vh - 100px);
+}
+
+.top-details, .bottom-details {
+  display: flex;
+}
+
+.user-main-details {
+  width: 40%;
+  margin-top: 5%;
+}
+
+.profile-pic {
+  margin: auto;
+  width: 75%;
+}
+
+.profile-username {
+  text-align: center;
+  font-size: 30px;
+}
+
+.greeting-and-about {
+  width: 60%;
+  margin: 5% 4% 0 0;
+}
+
+.profile-greeting {
+  font-size: 35px;
+}
+
+.about-me {
+  font-size: 20px;
+  margin: 3% 0;
+}
+
+.bottom-details {
+  margin: 2% 6%;
+}
+
+.profile-place {
+  width: 80%;
+}
+
+.profile-flag {
+  width: 20%;
+  height: 30%;
+}

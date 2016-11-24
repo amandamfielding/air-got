@@ -20,7 +20,10 @@ class User < ActiveRecord::Base
   validates :username, :session_token, uniqueness: true
 
   belongs_to :allegiance
-  has_many :places
+  has_many :places,
+    primary_key: :id,
+    foreign_key: :host_id,
+    class_name: :Place
   has_many :bookings
   has_many :reviews,
     primary_key: :id,

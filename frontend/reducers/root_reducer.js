@@ -5,6 +5,7 @@ import PlacesReducer from './places_reducer';
 import ReviewsReducer from './reviews_reducer';
 import BookingsReducer from './bookings_reducer';
 import FiltersReducer from './filters_reducer';
+import UserReducer from './user_reducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
@@ -12,7 +13,8 @@ const RootReducer = combineReducers({
   places: PlacesReducer,
   reviews: ReviewsReducer,
   bookings: BookingsReducer,
-  filters: FiltersReducer
+  filters: FiltersReducer,
+  user: UserReducer
 });
 
 export default RootReducer;
