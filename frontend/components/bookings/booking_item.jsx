@@ -20,6 +20,7 @@ class BookingItem extends React.Component {
     this.state = { modalIsOpen: false };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.handleProfileClick = this.handleProfileClick.bind(this);
   }
 
   openModal() {
@@ -53,15 +54,20 @@ class BookingItem extends React.Component {
     return monthNames[newDate.getMonth()] + " " + newDate.getDate() + ", " + newDate.getFullYear();
   }
 
+  handleProfileClick() {
+    this.props.router.push(`users/${this.props.booking.host_id}`);
+  }
+
   render() {
-    const {user, place_id, place_title, place_main_image, check_in_date, check_out_date, host_image_url, region_name, stars} = this.props.booking;
+    const {user, place_id, place_title, place_main_image, check_in_date, check_out_date, host_image_url, host_id, region_name, stars} = this.props.booking;
 
     if (this.props.booking) {
       return (
         <ul className="booking">
           <img className="place-main-image" src={place_main_image} />
-          <img className="host-image-url" src={host_image_url}/>
-
+          <img className="host-image-url"
+            src={host_image_url}
+            onClick={this.handleProfileClick}/>
           <div className="booking-details">
             <li><h2>{region_name}</h2></li>
             <div className="display-dates">

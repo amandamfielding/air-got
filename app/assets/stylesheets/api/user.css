@@ -2,13 +2,15 @@
   min-height: calc(100vh - 100px);
 }
 
-.top-details, .bottom-details {
+.top-details {
   display: flex;
 }
 
 .user-main-details {
   width: 40%;
   margin-top: 5%;
+  text-align: center;
+  margin-left: 4%;
 }
 
 .profile-pic {
@@ -17,13 +19,18 @@
 }
 
 .profile-username {
-  text-align: center;
   font-size: 30px;
+  margin: 10px;
+}
+
+#listing-link {
+  text-decoration: underline;
+  font-size: 18px;
 }
 
 .greeting-and-about {
   width: 60%;
-  margin: 5% 4% 0 0;
+  margin-top: 5%;
 }
 
 .profile-greeting {
@@ -35,15 +42,9 @@
   margin: 3% 0;
 }
 
-.bottom-details {
-  margin: 2% 6%;
-}
-
-.profile-place {
-  width: 80%;
-}
-
 .profile-flag {
   width: 20%;
   height: 30%;
+  margin: auto;
+  margin-right: 4%;
 }

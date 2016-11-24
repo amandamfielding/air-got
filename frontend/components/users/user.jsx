@@ -22,7 +22,7 @@ class User extends React.Component {
 
   showLink() {
     return (
-      <Link to={`/places/${this.props.user.places[0].id}`}>Check out my listing!</Link>
+      <Link to={`/places/${this.props.user.places[0].id}`} id="listing-link">Check out my listing!</Link>
     );
   }
 
@@ -41,10 +41,10 @@ class User extends React.Component {
       } else {
         show_allegiance = this.noAllegiance();
       }
-      if (places === [] || places === undefined || places === {}) {
-        show_places = this.noLink();
-      } else {
+      if (places && places[0] !== undefined) {
         show_places = this.showLink();
+      } else {
+        show_places = this.noLink();
       }
     return (
       <div className="user-profile">
@@ -52,16 +52,19 @@ class User extends React.Component {
         <div className="user-main-details">
           <img src={image_url} className="profile-pic"/>
           <div className="profile-username">{username}</div>
+          {show_places}
         </div>
         <div className="greeting-and-about">
           <span className="profile-greeting">Hey, I'm {name}!</span>
           <div className="about-me">{about_me}</div>
+
         </div>
+        {show_allegiance}
         </div>
-        <div className="bottom-details">
-          {show_places}
-          {show_allegiance}
-        </div>
+
+
+
+
       </div>
     );
     } else {
