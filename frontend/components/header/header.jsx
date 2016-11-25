@@ -32,14 +32,15 @@ class Header extends React.Component {
     );
 	}
 
-  // clearSearchBar() {
-  //   this.setState({
-  //     letters: ""
-  //   });
-  // }
+  clearSearchBar() {
+    this.setState({
+      letters: ""
+    });
+  }
 
   navigateToSearch(lat,lng) {
     this.props.router.push(`search/${lat}/${lng}`);
+    this.clearSearchBar();
   }
 
   openModal(formType) {
@@ -122,10 +123,11 @@ class Header extends React.Component {
             type="text"
             placeholder="Where to?"
             value={this.state.letters}
+            onKeyDown={() => {document.getElementById('search-dropdown').style.display='block';}}
             onChange={this.update("letters")} />
         </li>
         <ul id="search-dropdown">
-        {this.props.regions.map(region =>
+        {this.props.searchedRegions.map(region =>
           <li
             key={region.id+region.name+region.lat}
             className="search-names"

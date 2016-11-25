@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 100%;
   z-index: 2000;
-  height: 70px;
+  height: 65px;
 }
 
 .nav {
@@ -75,9 +75,10 @@ nav .logged-out-button {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
   z-index: 10;
-  top: 64px;
-  left: 15px;
+  top: 65px;
+  left: 0px;
   font-size: 15px;
+  width: 100px;
 }
 
 #search-dropdown {
@@ -89,14 +90,10 @@ nav .logged-out-button {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
   z-index: 10;
-  top: 57px;
-  left: 280px;
+  top: 53px;
+  left: 275px;
   font-size: 15px;
   min-width: 17%;
-}
-
-.search-list:hover #search-dropdown {
-  display: block;
 }
 
 #search-dropdown:hover {

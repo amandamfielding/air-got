@@ -9,7 +9,7 @@ import UserContainer from './users/user_container';
 import BookingsContainer from './bookings/bookings_container';
 import { requestBookings } from '../actions/bookings_actions';
 import { requestPlaces } from '../actions/place_actions';
-import { fetchRegions } from '../actions/regions_actions';
+import { fetchRegions, searchRegions } from '../actions/regions_actions';
 
 const Root = ({ store }) => {
 
@@ -30,6 +30,7 @@ const Root = ({ store }) => {
 
   const _fetchRegions = () => {
     store.dispatch(fetchRegions());
+    store.dispatch(searchRegions(""));
   };
 
 

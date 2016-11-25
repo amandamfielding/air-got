@@ -6,10 +6,12 @@ import ReviewsReducer from './reviews_reducer';
 import BookingsReducer from './bookings_reducer';
 import FiltersReducer from './filters_reducer';
 import UserReducer from './user_reducer';
+import RegionsSearchReducer from './regions_search_reducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
   regions: RegionsReducer,
+  searchedRegions: RegionsSearchReducer,
   places: PlacesReducer,
   reviews: ReviewsReducer,
   bookings: BookingsReducer,

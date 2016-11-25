@@ -17,7 +17,7 @@ export const searchRegions = (letters) => ({
   letters
 });
 
-export const receiveSearchRegions = (regions) => ({
+export const receiveSearchRegions = (searchedRegions) => ({
   type: RECEIVE_SEARCH_REGIONS,
-  regions
+  searchedRegions
 });
