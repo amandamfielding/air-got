@@ -19,6 +19,16 @@
   }
 }
 
+.filter-form {
+  margin: 1%;
+}
+
+#typeinp {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 50%;
+}
+
 .place-index-item {
   margin: 15px 15px 0px 15px;
 }

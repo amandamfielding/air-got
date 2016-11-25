@@ -5,6 +5,8 @@ import { updateFilter } from '../../actions/filter_actions';
 
 const mapStateToProps = state => ({
   places: asPlacesArray(state),
+  minPrice: state.filters.minPrice,
+  maxPrice: state.filters.maxPrice
 });
 
 const mapDispatchToProps = dispatch => ({
