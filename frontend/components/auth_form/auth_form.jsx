@@ -57,22 +57,16 @@ class AuthForm extends React.Component {
 					<img id="logo" src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
 					{this.renderErrors()}
 					<div className="auth-form">
-						<label> <span>*</span> Username
-							<br/>
-							<input type="text"
-								value={this.state.username}
-								onChange={this.update("username")}
-								/>
-						</label>
-						<br/>
-						<label> <span>*</span> Password
-							<br/>
+						<input type="text"
+							placeholder="*Username"
+							value={this.state.username}
+							onChange={this.update("username")}
+							/>
 							<input type="password"
+								placeholder="*Password"
 								value={this.state.password}
 								onChange={this.update("password")}
 								/>
-						</label>
-						<br/>
 						<div className="button-box">
 							<input id="login-button" type="submit" value="Submit" />
 						</div>
@@ -90,36 +84,25 @@ class AuthForm extends React.Component {
 						<img id="logo" src="https://res.cloudinary.com/dbsxgncvx/image/upload/v1478035701/logo3_up1bhc.png"/>
 	          {this.renderErrors()}
 	          <div className="auth-form">
-	            <label>
-								<span>*</span>
+
 	              <input
-									placeholder="Username"
+									placeholder="*Username"
 									type="text"
 	                value={this.state.username}
 	                onChange={this.update("username")}
 	                />
-	            </label>
-	            <br/>
-	            <label>
-								<span>*</span>
 	              <input
-									placeholder="Password"
+									placeholder="*Password"
 									type="password"
 	                value={this.state.password}
 	                onChange={this.update("password")}
 	               	/>
-	            </label>
-	            <br/>
-	            <label> <span>*</span>
 	              <input
-									placeholder="Name"
+									placeholder="*Name"
 									type="text"
 	                value={this.state.name}
 	                onChange={this.update("name")}
 	                />
-	            </label>
-	            <br/>
-	            <label>
 	              <textarea
 									placeholder="About me"
 									className="about-me"
@@ -127,9 +110,6 @@ class AuthForm extends React.Component {
 	                onChange={this.update("about_me")}
 									rows="4" cols="30"
 	                />
-	            </label>
-							<br/>
-							<label>
 								<select>
 									onChange={this.update("allegiance_id")}
 									<option value="" disabled selected>Select your Allegiance</option>
@@ -146,16 +126,12 @@ class AuthForm extends React.Component {
 									<option value="11">Bolton</option>
 									<option value="12">Martell</option>
 								</select>
-							</label>
-							<br/>
-							<label>
 								<input
 									className="sign-up-image-url"
 									placeholder="Profile Pic (image url)"
 									type="text"
 									onChange={this.update("image_url")}
 									/>
-							</label>
 							<div className="button-box">
 	            	<input id="signup-button" type="submit" value="Submit" />
 							</div>

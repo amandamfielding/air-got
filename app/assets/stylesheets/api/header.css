@@ -1,6 +1,6 @@
 .header-box {
-  background-color: rgba(37, 36, 41, 0.8);
-  color: white;
+  background-color: #4d4e50;
+  color: #f7f6f4;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -27,18 +27,23 @@
   margin: 15px 10px 5px 10px;
   padding: 8px 16px;
   font-size: 1em;
-  background-color: #CC1200;
-  color: #E5E6EA;
+  background-color: #f7f6f4;
+  color: #4d4e50;
   border-radius: 4px;
 }
 
 #trips {
   margin-bottom: 15px;
+  color: #4d4e50;
 }
 
 nav .logged-out-button {
   margin: auto;
   margin-right: 10px;
+}
+
+.logged-out-button:hover, #trips:hover {
+  box-shadow: 0 0 6px white;
 }
 
 .header-box img {
@@ -49,8 +54,8 @@ nav .logged-out-button {
 .search {
   margin-left: 10px;
   font-size: 1.2em;
-  background-color: #18171c;
-  color: #E5E6EA;
+  background-color: #272829;
+  color: #f7f6f4;
   padding: 8px 12px;
   width: auto;
   border-radius: 6px;
@@ -64,11 +69,12 @@ nav .logged-out-button {
 #user-name {
   font-size: 20px;
   margin: auto;
+  color: #f7f6f4;
 }
 
 #user-dropdown {
   position: absolute;
-  background: #fff;
+  background: #faf8fd;
   display: none;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -79,11 +85,12 @@ nav .logged-out-button {
   left: 0px;
   font-size: 15px;
   width: 100px;
+  color: #4d4e50;
 }
 
 #search-dropdown {
   position: absolute;
-  background: #fff;
+  background: #faf8fd;
   display: none;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -94,6 +101,7 @@ nav .logged-out-button {
   left: 275px;
   font-size: 15px;
   min-width: 17%;
+  color: #4d4e50;
 }
 
 #search-dropdown:hover {
@@ -120,7 +128,7 @@ nav .logged-out-button {
   text-align: center;
   padding: 7px;
   border-top: 1px solid #ccc;
-  color: #000;
+  color: #4d4e50;
 }
 
 #search-dropdown > li {
@@ -128,7 +136,7 @@ nav .logged-out-button {
   text-align: center;
   padding: 7px;
   border-top: 1px solid #ccc;
-  color: #000;
+  color: #4d4e50;
 }
 
 #user-dropdown > li:hover {
@@ -148,17 +156,17 @@ nav .logged-out-button {
   font-size: 20px;
   font-family: 'Cinzel Decorative';
   font-weight: 700;
-  color: #CC1200;
+  color: #f7f6f4;
 }
 
 #first-little, #second-little {
   font-size: 16px;
-  color: #CC1200;
+  color: #f7f6f4;
 }
 
 #caption {
   font-size: 1em;
-  color: #E5E6EA;
+  color: #f7f6f4;
 }
 
 #header-logo:hover {

@@ -1,66 +1,54 @@
 .auth-modal-container {
-  margin-bottom: -30px;
+  background-color: #f7f6f4;
 }
 
 .auth-form-container {
-  background-color: lightgrey;
+  height: 100%;
 }
 
 .auth-form {
   margin: 20px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .errors {
   display: block;
   margin: 0px;
   font-size: 14px;
-  color: red;
   border: none;
-  background-color: lightgrey;
   padding: 0px;
+  background-color: #f7f6f4;
 }
 
 .errors li {
   margin: 0px 30px;
+  text-align: center;
 }
 
-label {
-  font-size: 20px;
-}
 
-textarea {
-  padding: 5px;
-  font-size: 16px;
-  width: 304px;
-  margin-left: 6px;
-  background: white;
-  border-radius: 6px;
-  border: none;
-}
 
-.auth-form input, .auth-form select {
-  margin-bottom: 15px;
-  font-size: 20px;
-  background: white;
-  padding: 5px;
-  width: 305px;
-  border-radius: 5px;
-}
-.auth-form select {
-  margin-left: 6px;
-  width: 315px;
-  margin-top: 10px;
+.auth-form input, .auth-form select, .auth-form textarea {
   margin-bottom: 12px;
-  padding: 5px;
-  color: darkgray;
+  font-size: 20px;
+  background: #d9d8d4;
+  padding: 10px;
+  width: 305px;
 }
 
-span {
-  color: #DE1826;
+.auth-form textarea {
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.auth-form select {
+  margin: auto;
+  margin-bottom: 12px;
 }
 
 .button-box {
-  display: flex;
+  margin: auto;
   margin-top: 10px;
 }
 
@@ -73,7 +61,7 @@ span {
   margin: 0 auto;
   font-size: 20px;
   padding: 10px 20px;
-  background-color: #DE1826;
+  background-color: #4d4e50;
   color: white;
   margin-bottom: 30px;
   border-radius: 5px;

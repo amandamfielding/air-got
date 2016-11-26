@@ -126,7 +126,8 @@ class Header extends React.Component {
             onKeyDown={() => {document.getElementById('search-dropdown').style.display='block';}}
             onChange={this.update("letters")} />
         </li>
-        <ul id="search-dropdown">
+        <ul id="search-dropdown"
+          onMouseLeave={() => {document.getElementById('search-dropdown').style.display='none';}}>
         {this.props.searchedRegions.map(region =>
           <li
             key={region.id+region.name+region.lat}

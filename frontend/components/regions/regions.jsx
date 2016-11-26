@@ -17,7 +17,7 @@ class Regions  extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="regions-container">
         <h2 id="regions-title">Explore all of Westeros and Essos</h2>
         <h3 id="regions-subtitle">No matter your house name, belong anywhere</h3>
         <ul className="regions group">

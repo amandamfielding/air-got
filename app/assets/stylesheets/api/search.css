@@ -1,5 +1,6 @@
 .search-pane {
   display: flex;
+  background-color: #faf8fd;
 }
 
 .left-half-places {
@@ -20,7 +21,8 @@
 }
 
 .filter-form {
-  margin: 1%;
+  margin: 2%;
+  font-size: 18px;
 }
 
 #typeinp {
@@ -31,10 +33,6 @@
 
 .place-index-item {
   margin: 15px 15px 0px 15px;
-}
-
-.place-index-item span {
-  color: #587388;
 }
 
 .place-and-host {
