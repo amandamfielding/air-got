@@ -56,20 +56,18 @@ class BookingEditForm extends React.Component {
           {this.renderErrors()}
           <div className="booking-edit-form">
             <label> <span>*</span> Check In
-  						<br/>
+							<br/>
               <input type="date"
                 onChange={this.update("check_in_date")}
                 />
             </label>
-            <br/>
             <label> <span>*</span> Check Out
-  						<br/>
+							<br/>
               <input type="date"
                 onChange={this.update("check_out_date")}
                	/>
             </label>
-            <br/>
-              <label className="num-guests"> <span>*</span>Guests
+              <label className="num-guests-edit"> <span>*</span>Guests
 								<br/>
                 <select
                   onChange={this.update("number_of_guests")}
@@ -117,7 +115,6 @@ class BookingEditForm extends React.Component {
                   <option value="40">40</option>
                 </select>
               </label>
-            <br/>
   					<div className="button-box">
             	<input id="signup-button" type="submit" value="Submit" />
   					</div>
