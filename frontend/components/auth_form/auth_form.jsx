@@ -34,6 +34,12 @@ class AuthForm extends React.Component {
 		this.props.signup(user);
 	}
 
+	componentWillReceiveProps(newProps) {
+ 		if (newProps.loggedIn) {
+ 			this.props.closeModal();
+ 		}
+ 	}
+
 	renderErrors() {
 		return(
 			<ul className="errors">

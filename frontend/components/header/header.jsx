@@ -85,9 +85,12 @@ class Header extends React.Component {
     );
   }
 
-  componentWillReceiveProps() {
-    this.setState({modalIsOpen: false});
-  }
+  componentWillReceiveProps(newProps) {
+      if (newProps.loggedIn) {
+        this.setState({modalIsOpen: false});
+      }
+    }
+
 
   loggedOutNav() {
     return (
