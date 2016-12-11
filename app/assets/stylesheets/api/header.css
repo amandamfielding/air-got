@@ -35,15 +35,18 @@
 #trips {
   margin-bottom: 15px;
   color: #4d4e50;
+  box-shadow: 0 2px 3px 2px #272829;
 }
 
 nav .logged-out-button {
   margin: auto;
   margin-right: 10px;
+  box-shadow: 0 2px 3px 2px #272829;
 }
 
 .logged-out-button:hover, #trips:hover {
   box-shadow: 0 0 6px white;
+  opacity: 0.8;
 }
 
 .header-box img {

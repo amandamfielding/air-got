@@ -31,6 +31,7 @@
   width: 325px;
   background-color: #e1e3e0;
   position: relative;
+  box-shadow: 0 2px 3px 2px rgba(0,0,0,0.3);
 }
 
 .place-main-image {

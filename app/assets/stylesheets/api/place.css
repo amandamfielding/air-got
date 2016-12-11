@@ -114,7 +114,7 @@
 
 .make-booking-box {
   display: inline;
-  background-color: #e1e3e0;
+  background-color: rgba(225,227,224,0.8);
   padding: 20px;
   margin: 15px;
   position: fixed;
@@ -124,6 +124,7 @@
   color: #fff;
   border-radius: 6px;
   width: 30%;
+  box-shadow: 0 2px 3px 2px rgba(0,0,0,0.2);
 }
 
 .make-booking-box form {
@@ -150,7 +151,7 @@
   margin: auto;
 }
 
-.make-booking-box .submit-booking {
+.submit-booking {
   margin: 0 auto;
   width: auto;
   margin-top: 10px;
@@ -159,6 +160,12 @@
   padding: 12px 24px;
   border-radius: 6px;
   color: #faf8fd;
+  box-shadow: 0 1px 2px 1px #272829;
+}
+
+.submit-booking:hover {
+  box-shadow: 0 2px 3px 2px #272829;
+  opacity: 0.8;
 }
 
 .num-guests select {

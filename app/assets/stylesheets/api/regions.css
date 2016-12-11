@@ -13,6 +13,12 @@
   height: 200px;
   width: 290px;
   margin: 7px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.4);
+}
+
+.region-pic:hover {
+  box-shadow: 4px 4px 6px #272829;
+  opacity: 0.8;
 }
 
 .region-name {

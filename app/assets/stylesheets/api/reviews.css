@@ -43,9 +43,10 @@
   width: 75%;
   margin: auto;
   margin-top: 40px;
-  background-color: #e1e3e0;
+  background-color: rgba(225,227,224,0.8);
   padding: 5%;
   border-radius: 6px;
+  box-shadow: 0 2px 3px 2px rgba(0,0,0,0.2);
 }
 
 .review-body {
@@ -80,7 +81,9 @@
   border: none;
   color: #faf8fd;
   background-color: #4d4e50;
-  padding: 3px 7px;
+  padding: 4px 8px;
+  box-shadow: 0 1px 1px 1px #272829;
+  border-radius: 3px;
 }
 
 .submit-and-cancel {
@@ -97,7 +100,13 @@
   font-size: 18px;
   color: #faf8fd;
   background-color: #4d4e50;
-  padding: 3px 7px;
+  padding: 4px 8px;
+  box-shadow: 0 1px 1px 1px #272829;
+  border-radius: 3px;
+}
+.cancel:hover,.review-submit:hover {
+  opacity: 0.8;
+  box-shadow: 0 2px 3px 2px #272829;
 }
 
 #span-rating {

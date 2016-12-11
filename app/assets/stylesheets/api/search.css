@@ -93,4 +93,5 @@
 
 .place-pic:hover {
   box-shadow: 0 0 8px #000000;
+  opacity: 0.8;
 }
