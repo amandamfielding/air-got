@@ -18,11 +18,11 @@
   overflow: auto;
   display: flex;
   overflow-y: hidden;
-  height: 320px
+  height: calc(100vh/2);
 }
 
 .place-image {
-  width: 540px;
+  width: calc(100vw/3);
   height: 100%;
 }
 

@@ -30,7 +30,7 @@
 }
 
 .greeting-and-about {
-  width: 60%;
+  max-width: 60%;
   margin: 5% 2%;
 }
 
