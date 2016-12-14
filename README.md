@@ -11,7 +11,7 @@ AirGoT is a full-stack web application inspired by AirBnB and popular TV series 
 
 Upon entering the splash page, the regions are fetched by an API call made to the database. Their images and names are rendered at the bottom of the page and are filterable in the search bar. By clicking on one of the search bar options or region images, a search pane will be rendered. The search pane includes a custom Google map initially zoomed to your chosen region, along with the places within the bounds of the map. The places index will adjust accordingly as the map is dragged or zoomed in or out to change the view.
 
-![image of search pane](docs/screenshots/search-pane.png)
+![gif of search pane](docs/screenshots/AGsearch.gif)
 
 ### Places and Reviews
 
