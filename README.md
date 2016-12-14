@@ -19,11 +19,17 @@ By clicking on one of the marked locations on the map or the image in the places
 
 This page also has a form to create a booking for the current place with input fields for the dates and number of guests.
 
-![image of place show](docs/screenshots/AGplace.gif)
-![image of reviews](docs/screenshots/AGreviews.gif)
+![gif of place show](docs/screenshots/AGplace.gif)
+![gif of reviews](docs/screenshots/AGreviews.gif)
 
 ### Bookings
 
 Once logged in, the Trips button will render the bookings index. On entering this component, an API request will be made to the database to fetch all of the bookings for the current user. Each booking item will show an image of the place, an image of the host, the region name, place title, booking dates, a link back to the place show component, and buttons to edit or cancel a booking.
 
-![image of bookings](docs/screenshots/AGbookings.gif)
+![gif of bookings](docs/screenshots/AGbookings.gif)
+
+### Profile
+
+View any of the users' profile page which includes their username, an about me section, a link to their listing if they are a host, and the flag of their allegiance.
+
+![gif of profile](docs/screenshots/AGprofile.gif)
