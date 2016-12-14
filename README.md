@@ -19,7 +19,7 @@ By clicking on one of the marked locations on the map or the image in the places
 
 This page also has a form to create a booking for the current place with input fields for the dates and number of guests.
 
-![image of place show](docs/screenshots/place.png)
+![image of place show](docs/screenshots/AGplace.gif)
 ![image of reviews](docs/screenshots/reviews.png)
 
 ### Bookings
