@@ -3,6 +3,8 @@
 
 AirGoT is a full-stack web application inspired by AirBnB and popular TV series Game of Thrones. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.
 
+![gif of splash](docs/screenshots/AGsplash.gif)
+
 ## Features & Implementation
 
 ### Search by Location with Map
